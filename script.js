@@ -15,7 +15,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
                 messageDiv.textContent = 'Login bem-sucedido!';
                 messageDiv.style.color = "green"
                 // Redirecionamento de tela 
-                alert("Merddaaaaaa")
+                //alert("Merddaaaaaa")
                     window.location.href = 'index.html'     
             } else {
                 messageDiv.textContent = 'Usuário ou senha inválidos.';
