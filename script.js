@@ -14,8 +14,9 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
             if (user) {
                 messageDiv.textContent = 'Login bem-sucedido!';
                 messageDiv.style.color = "green"
-                // Aqui você pode redirecionar ou realizar outras ações
-                window.location.href ="index2.html"
+                // Redirecionamento de tela 
+                alert("Merddaaaaaa")
+                    window.location.href = "index.html"     
             } else {
                 messageDiv.textContent = 'Usuário ou senha inválidos.';
                 messageDiv.style.color = "red"
