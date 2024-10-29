@@ -16,7 +16,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
                 messageDiv.style.color = "green"
                 // Redirecionamento de tela 
                 alert("Merddaaaaaa")
-                    window.location.href = "index.html"     
+                    window.location.href = 'index.html'     
             } else {
                 messageDiv.textContent = 'Usuário ou senha inválidos.';
                 messageDiv.style.color = "red"
