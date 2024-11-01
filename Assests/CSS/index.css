@@ -40,7 +40,7 @@
 }
 
 #texto {
-    border: 1px solid black;
+    border-radius: 2%;
     background-image: url(../IMG/fundo_destorcido.png);
     float: left;
     margin-top: 5%;
@@ -64,6 +64,18 @@
     
 }
 
+#form-container {
+    display: none; /* Esconde o formulário inicialmente */
+    background-image: url(../IMG/fundo_destorcido.png);
+    border-radius: 2%;
+    float: right;
+    margin-top: 20%;
+    margin-right: 20%;
+    max-width: 30%;
+    text-align: center;
+
+  }
+
 #fundo2{
     background-image: url(../IMG/fundo.png);
     width: 100%;
@@ -71,19 +83,22 @@
     margin-bottom: 1%;
 }
 
-footer{
-    border: 2px solid yellow;
-    max-width: 100%;
-    height: 10rem;
-    margin-left: 1%;
-}
-
-img{ 
-    margin-left: 30%;
+/* img{ 
+    margin-left: 32%;
     max-width: 30rem;
     border-radius: 10%;
+} */
+
+span{ 
+    background-color: black;
 }
 
-/* button{ 
-    color: black;
-} */
+footer{
+    border: 2px solid black;
+    background-color: #FFEE00;
+    max-width: 1325px;
+    width: 100%;
+    height: 10rem;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
