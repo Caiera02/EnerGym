@@ -11,7 +11,7 @@
 }
 
 #logo {
-    width: 250px;
+    width: 350px;
     margin-top: 2%;
     margin-left: 2%;
 }
@@ -95,10 +95,9 @@ span{
 
 footer{
     border: 2px solid black;
-    background-color: #FFEE00;
-    max-width: 1325px;
-    width: 100%;
-    height: 10rem;
+    background-color: #FFBF00;
+    max-width: 1390px;
+    height: 15rem;
     margin-top: 2%;
-    margin-bottom: 3%;
+    padding: 2%;
 }
