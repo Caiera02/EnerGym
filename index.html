@@ -22,7 +22,7 @@
                 <button type="button" class="btn btn-outline-warning"> Sobre nós</button>
             </div>
 
-            <img id="logo" src="Assests/IMG/Frame 2.png" alt="">
+            <img id="logo" src="Assests/IMG/Captura de tela 2024-11-04 183925.png" alt="">
 
             <div id="text">
                 <p style="margin-bottom: 0px;">Aqui</p>
@@ -56,15 +56,17 @@
             </div>
 
             <div id="form-container">
+                <form id="my-Form">      
+                    <label for="altura">Altura:</label>
+                    <input type="text" id="altura" name="altura" required placeholder="Digite seu peso"><br><br>
 
-                <form id="my-Form">
-                    <label for="name">Minutos:</label>
-                    <input type="text" id="name" name="name" required placeholder="Digite os minutos"><br><br>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="Peso">Peso:</label>
+                    <input type="number" id="peso" name="peso" required><br><br>
+
+                    <label id="result">...</label>
+                    
                     <button type="submit">Enviar</button>
                 </form>
-
             </div>
 
         </div>
@@ -92,6 +94,21 @@
                     max-width: 30rem;
                     border-radius: 10%;" src="Assests/IMG/dep3.png" class="d-block w-100" alt="...">
                 </div>
+                <div class="carousel-item">
+                    <img style="margin-left: 32%;
+                    max-width: 30rem;
+                    border-radius: 10%;" src="Assests/IMG/dep4.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img style="margin-left: 32%;
+                    max-width: 30rem;
+                    border-radius: 10%;" src="Assests/IMG/dep5.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img style="margin-left: 32%;
+                    max-width: 30rem;
+                    border-radius: 10%;" src="Assests/IMG/dep6.png" class="d-block w-100" alt="...">
+                </div>
             </div>
 
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -110,17 +127,18 @@
     <footer>
         <div class="row">
             <div class="col">
-                <p> Sigam EnergGym</p>
-                <img src="Assests/IMG/whatsapp.svg" style="width: 10%; float: left;" alt="">
-                <img src="Assests/IMG/instagram.svg" style="width: 10%; float: left;" alt="">
-                <img src="Assests/IMG/telegram.svg" style="width: 10%; float: left;" alt="">
+                <p style=" margin-left: 10%;"> Sigam EnergGym</p>
+                <a href="https://wa.me/5511971498691"><img src="Assests/IMG/whatsapp.svg"
+                        style="width: 10%; float: left;" alt=""></a>
+                <img src="Assests/IMG/instagram.svg" style="width: 10%; float: left ;margin-left: 10%" alt="">
+                <img src="Assests/IMG/telegram.svg" style="width: 10%; float: left; margin-left: 10%;" alt="">
             </div>
             <div class="col">
-                Contatos
+                <p style="margin-left: 70%;">Contatos</p>
                 <ul>
                     <li> sac@energym.com.br </li>
                     <li> Trabalhe conosco </li>
-                    <li> 4002-892 2</li>
+                    <li> 4002-8922</li>
                 </ul>
             </div>
         </div>
@@ -131,17 +149,29 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
         </script>
 
-    <script>
-        function toggleForm() {
-            const formContainer = document.getElementById('form-container')
+    <script src="Assests/Javascript/index.js" >
+        // document.getElementById('my-Form').addEventListener('submit', function (event) {
+        //     event.preventDefault();
 
-            if (formContainer.style.display === 'none' || formContainer.style.display === '') {
-                formContainer.style.display = 'block'; // Mostra o formulário
-                alert('vc clicou!!!')
-            } else {
-                formContainer.style.display = 'none'; // Esconde o formulário
-            }
-        }
+        //     const peso = document.getElementById('peso').value;
+        //     const altura = document.getElementById('altura').value;
+
+        //     var contar = peso /(altura * altura)
+        //     alert(` O seu IMC é ${contar}`)
+
+        //     let result = document.getElementById(result);
+        //     result.textContent = `O valor é ${contar}`
+        // });
+        // function toggleForm() {
+        //     const formContainer = document.getElementById('form-container')
+
+        //     if (formContainer.style.display === 'none' || formContainer.style.display === '') {
+        //         formContainer.style.display = 'block'; // Mostra o formulário
+        //         // alert('vc clicou!!!')
+        //     } else {
+        //         formContainer.style.display = 'none'; // Esconde o formulário
+        //     }
+        // }
     </script>
 </body>
 
