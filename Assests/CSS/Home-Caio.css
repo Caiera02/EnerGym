@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+}
+
+#divright button {
+    float: right;
+    margin-right: 10%;
+    margin-left: 20px;
+    margin-top: 2%;
+
+}
+
+#logo {
+    width: 150px;
+    float: left;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+#capa {
+    background-image: url(../IMG/capa3.png);
+    color: white;
+    width: 100%;
+    height: 45rem;
+}
+
+#text {
+    margin-right: 2%;
+    text-transform: uppercase;
+    font-size: 80px;
+    color: #FFEE00;
+    text-align: right;
+}
+
+#fundo{
+    background-image: url(../IMG/image.png);
+    width: 100%;
+    height: 45rem;
+    bottom: 2%;
+    
+}
+
+#texto {
+    border-radius: 2%;
+    background-image: url(../IMG/fundo_destorcido.png);
+    float: left;
+    margin-top: 5%;
+    margin-left: 2%;
+    max-width: 30%;
+    text-align: center;
+}
+
+#btnCalculador{
+    max-width:190px ;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 4%;
+    background-color: #73FF00;
+    
+}
+
+#btnCalculador:hover{
+    background: linear-gradient(200deg, #73FF00,#FFBF00);
+    box-shadow: 1px 2px 8px black ;
+    
+}
+
+#form-container {
+    display: none; /* Esconde o formulário inicialmente */
+    background-image: url(../IMG/fundo_destorcido.png);
+    border-radius: 2%;
+    float: right;
+    margin-top: 20%;
+    margin-right: 20%;
+    max-width: 30%;
+    text-align: center;
+
+  }
+
+#fundo2{
+    background-image: url(../IMG/fundo.png);
+    width: 100%;
+    height: 40rem;
+    margin-bottom: 1%;
+}
+
+/* img{ 
+    margin-left: 32%;
+    max-width: 30rem;
+    border-radius: 10%;
+} */
+
+span{ 
+    background-color: black;
+}
+
+footer{
+    border: 2px solid black;
+    background-color: #FFBF00;
+    max-width: 1390px;
+    height: 15rem;
+    margin-top: 2%;
+    padding: 2%;
+}
+li{
+    margin-left: 70%;
+}

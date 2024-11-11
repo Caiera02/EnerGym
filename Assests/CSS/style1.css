@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+    
+  }
+  /* Setting fontes */
+h1{
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+h2{
+    font-family: "Kanit", sans-serif;
+}
+p{
+    font-family: "K2D", sans-serif;
+    color: white;
+}
+  
+h1, h2, h3, h4 {
+    color: #FFBF00;
+    text-align: center;
+}
+
+nav{
+    color: white;
+}
+/* Setting tamanho das imagens */
+img{
+    width: 15rem;
+
+}
+/* Setting background dos itens */
+header, header nav, a, img, ul, li {
+    background-color: #FFBF00;
+}
+h2{
+    background-color: #f7f7f743;
+}
+/* Setting margens entre elementos */
+header{
+    display: flex;
+    justify-content: space-between;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+header nav ul li{
+    margin: 10px 10px;
+}
+
+main div{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    justify-items: center;
+}
+main div p{
+    padding: 20px 0;   
+}
+

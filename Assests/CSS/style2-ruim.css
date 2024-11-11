@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+    
+  }
+.container-fluid, .navbar-brand, img, .nav-link, .navbar-nav, .nav-item, .nav-link, .navbar-expand-lg, .nav-imc, .nav-planos,.nav-pontuacao ,.nav-inicio, .navbar-collapse, .d-flex{ 
+    background-color: #FFBF00;
+    filter: drop-shadow(4 4 0.35rem black);
+}
+
+  /* Setting fontes */
+  h1{
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+h2{
+    font-family: "Kanit", sans-serif;
+}
+p{
+    font-family: "K2D", sans-serif;
+    color: white;
+}
+  
+h1, h2, h3, h4 {
+    color: #FFBF00;
+}
+/* Setting background */
+h2{
+    font-size: 32px;
+    background-color: #6e6e6e;
+    place-self: center;
+    padding: 15px 55px;
+    border-radius: 20px;
+    filter: drop-shadow(1px 4px 0px #FFBF00);
+}
+main div, main section, main div ul, main div ul li{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    justify-items: center;
+    background-color: #6e6e6e ;
+}
+/* Setting margens entre elementos */
+h1, h2, h3, h4, section, main div {
+    
+    text-align: center
+    ;
+}
+container{
+    margin: 30px;
+
+}
