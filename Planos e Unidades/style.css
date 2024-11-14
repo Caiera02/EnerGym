@@ -1,0 +1,243 @@
+/* Estilo geral do body */
+body {
+    background-image: url(./IMG/imagem\ de\ separação.jfif); /* Define a imagem de fundo */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a área do body */
+    background-position: center; /* Centraliza a imagem de fundo */
+    color: #FFCC00; /* Define a cor do texto principal como dourado */
+    font-family: Arial, sans-serif; /* Define a fonte principal */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+    box-sizing: border-box; /* Garante que padding e border sejam incluídos nas dimensões totais dos elementos */
+}
+
+/* Estilo dos títulos e subtítulos */
+h2, .section-title, h3 {
+    text-align: center; /* Centraliza o texto dos títulos */
+    color: #FFCC00; /* Define a cor do texto como dourado */
+    margin-bottom: 20px; /* Adiciona espaço abaixo dos títulos */
+}
+
+/* Estilo dos cards */
+.card {
+    min-height: 400px; /* Altura mínima do card */
+    width: 18rem; /* Largura fixa do card */
+    background-color: #fff; /* Fundo branco */
+    border: 1px solid #ddd; /* Borda leve */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno do card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+    text-align: center; /* Centraliza o texto dentro do card */
+}
+
+.card img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do card */
+    height: auto; /* Ajusta a altura da imagem proporcionalmente */
+    border-radius: 5px; /* Bordas levemente arredondadas na imagem */
+}
+
+/* Estilo da seção de planos dentro do card */
+.card-body {
+    padding: 20px; /* Espaçamento interno na área do conteúdo do card */
+}
+
+.card-title {
+    color: #FFCC00; /* Cor dourada para o título do plano */
+    font-size: 1.5rem; /* Tamanho da fonte do título */
+    margin-bottom: 15px; /* Espaço abaixo do título */
+}
+
+/* Lista de recursos do plano */
+.features {
+    list-style-type: none; /* Remove os marcadores padrão da lista */
+    margin: 20px 0; /* Margem vertical ao redor da lista */
+    padding: 0; /* Remove o padding padrão */
+}
+
+.features li {
+    display: flex; /* Exibe os itens em linha */
+    justify-content: space-between; /* Distribui o texto e o ícone nas extremidades */
+    padding: 8px 0; /* Espaçamento interno vertical */
+    border-top: 1px solid #ddd; /* Linha de separação entre os itens */
+    font-size: 1rem; /* Tamanho da fonte */
+}
+
+.features li span {
+    color: #28a745; /* Verde para o ícone de "check" */
+}
+
+.features li span:not(:last-child) {
+    color: #dc3545; /* Vermelho para o ícone de "X" */
+}
+
+/* Estilo da seção de preços */
+.price {
+    font-size: 0.9em; /* Tamanho da fonte do texto "A partir de" */
+    color: #666; /* Cor cinza */
+    margin-top: 20px; /* Espaço acima do preço */
+}
+
+.price-value {
+    font-size: 1.5em; /* Tamanho maior para o valor do preço */
+    font-weight: bold; /* Negrito para destacar o valor */
+    color: #FF6600; /* Cor laranja para o valor */
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #1e1e1e; /* Fundo escuro para o cabeçalho */
+    padding: 20px 0; /* Espaçamento vertical */
+}
+
+#capa {
+    display: flex; /* Exibe o conteúdo em linha */
+    justify-content: space-between; /* Distribui o conteúdo nas extremidades */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    padding: 0 20px; /* Espaçamento horizontal */
+}
+
+#divright {
+    display: flex; /* Exibe os elementos em linha */
+    gap: 15px; /* Espaçamento entre os elementos */
+}
+
+#logo {
+    width: 150px; /* Largura fixa para o logo */
+    height: auto; /* Altura proporcional ao logo */
+}
+
+#text {
+    color: white; /* Texto branco */
+    font-size: 1.5rem; /* Tamanho da fonte */
+    text-align: right; /* Alinha o texto à direita */
+}
+
+#text p {
+    margin: 0; /* Remove a margem padrão */
+}
+
+/* Estilo dos botões */
+button {
+    background-color: transparent; /* Fundo transparente */
+    color: white; /* Texto branco */
+    border: 2px solid white; /* Borda branca */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Efeito de transição no hover */
+}
+
+button:hover {
+    background-color: white; /* Fundo branco no hover */
+    color: #1e1e1e; /* Texto escuro no hover */
+}
+
+button:focus {
+    outline: none; /* Remove o contorno padrão ao focar */
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #1e1e1e; /* Fundo escuro para o rodapé */
+    color: white; /* Texto branco */
+    padding: 20px 0; /* Espaçamento vertical */
+    font-size: 1rem; /* Tamanho da fonte */
+}
+
+footer .row {
+    display: flex; /* Exibe as colunas em linha */
+    justify-content: space-between; /* Distribui as colunas nas extremidades */
+    padding: 0 20px; /* Espaçamento horizontal */
+}
+
+footer .col {
+    width: 45%; /* Largura das colunas */
+}
+
+footer ul {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding padrão */
+}
+
+footer ul li {
+    margin-bottom: 10px; /* Espaço entre os itens da lista */
+}
+
+footer img {
+    width: 30px; /* Define a largura das imagens dos ícones sociais */
+    margin: 0 10px; /* Espaçamento horizontal entre os ícones */
+    transition: transform 0.3s ease; /* Efeito de transição ao aplicar o hover */
+}
+
+footer img:hover {
+    transform: scale(1.1); /* Aumenta ligeiramente o tamanho no hover */
+}
+
+footer p {
+    text-align: center; /* Centraliza o texto */
+    margin-top: 20px; /* Espaço acima do texto */
+    font-size: 0.9rem; /* Tamanho menor para o texto de direitos autorais */
+}
+
+footer .col a {
+    color: white; /* Links brancos no rodapé */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    transition: color 0.3s ease; /* Transição de cor no hover */
+}
+
+footer .col a:hover {
+    color: #ffcc00; /* Cor dourada para o hover nos links */
+}
+
+/* Estilos adicionais para o cabeçalho */
+#header-container {
+    display: flex; /* Exibe os elementos em linha */
+    align-items: center; /* Alinha verticalmente os elementos */
+    justify-content: space-between; /* Distribui o conteúdo nas extremidades */
+    max-width: 1200px; /* Define a largura máxima */
+    margin: 0 auto; /* Centraliza o container */
+}
+
+#logo-container img {
+    width: 100px; /* Largura do logo */
+    height: auto; /* Altura proporcional */
+}
+
+#nav-container {
+    display: flex; /* Exibe os links de navegação em linha */
+    gap: 20px; /* Espaçamento entre os links */
+}
+
+#nav-container a {
+    color: white; /* Cor branca para os links de navegação */
+    font-size: 1rem; /* Tamanho da fonte */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    transition: color 0.3s ease; /* Transição de cor no hover */
+}
+
+#nav-container a:hover {
+    color: #ffcc00; /* Cor dourada para o hover dos links */
+}
+
+#button-container {
+    display: flex; /* Exibe os botões em linha */
+    align-items: center; /* Alinha os botões verticalmente */
+    gap: 10px; /* Espaçamento entre os botões */
+}
+
+/* Estilo dos botões no cabeçalho */
+.btn {
+    padding: 8px 16px; /* Espaçamento interno dos botões */
+    font-size: 0.9rem; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito para o texto do botão */
+    text-decoration: none; /* Remove o sublinhado */
+    color: white; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    border: 2px solid white; /* Borda branca */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transição de cor no hover */
+}
+
+.btn:hover {
+    background-color: #ffcc00; /* Fundo branco no hover */
+    color:white; /* Texto escuro no hover */
+}
+
