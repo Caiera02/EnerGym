@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+  
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: aqua;
+}
+p{
+    text-align:center;
+    
+    background-color: ;
+}
+ul{
+    padding: 0;;
+}
+li{
+    list-style-type: none;
+    text-align: center;
+}   

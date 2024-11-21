@@ -4,42 +4,51 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    color:white
 }
 body{
     background-color: #000000 ;
+/* Sidebar start */
 }
 .slide{
-    height: 100%;
+    height: 100vh;
     width: 190px;
-    position: absolute;
-    background-color: #3b3b3b;
+    position: fixed;
+    background-color: #FFBF00;
     transition: 0.3s ease;
     transform: translateX(-190px)
 }
 h1{
-    color: rgb(255, 145, 0);
+    color: rgb(254, 254, 254);
     font-weight: 800;
     text-align: right;
     padding: 10px 0px;
     padding-right: 30px;
     pointer-events: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+img{
+    width:100%
 }
 ul li{
     list-style: none;
 }
 ul li a{
-    color: rgb(245, 223, 84);
-    font-weight: 500;
+    color: rgb(0, 0, 0);
+    font-weight: 800;
     padding: 5px 20px;
     display: block;
     text-transform: capitalize;
     text-decoration: none;
     transition: 0.25s ease-out;
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+
     
 }
 ul li:hover a{
     color: #fff;
-    background-color: orange;
+    background-color: rgb(0, 0, 0);
 }
 input{
     display: none;
@@ -48,7 +57,7 @@ input{
 
 }
 .toggle{
-    position: absolute;
+    position: fixed;
     height: 30px;
     width: 30px;
     top: 20px;
@@ -56,14 +65,14 @@ input{
     z-index: 1;
     cursor: pointer;
     border-radius: 2px;
-    background-color: rgb(0, 0, 0);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .toggle .common{
     position: absolute;
     height: 2px;
     width: 20px;
-    background-color: #ffffff;
+    background-color: #000000;
     border-radius: 50px;
     transition: 0.3s ease;
 }
@@ -102,3 +111,84 @@ input:checked ~ .slide{
     transform: translateX(0);
     box-shadow: 2px 0 10px rgb(255, 255, 255);
 }
+/* Sidebar end --*/
+
+/* --Main content start */
+
+/* Titles */
+
+
+.tituloCinza {
+    background-color: #6a6a6a;
+    max-width: 200px;
+    margin: 0 auto; /* Centraliza o bloco horizontalmente */
+    margin-top: 20px;
+    text-align: center; /* Centraliza o texto dentro do bloco */
+    border-radius: 10px;
+    box-shadow: 5px 5px 4px #FFBF00;
+    color
+}
+
+.saudacao{
+    text-align: center;
+    font-size: 2.5rem;
+    color: #FFBF00;
+    font-weight: 400;
+    font-family:Kdam Thmor Pro;
+    padding: 20px
+}
+h3{
+    text-align: center;
+    font-size: 2rem;
+    color: #FFBF00;
+    font-weight: 400;
+    font-family:Kdam Thmor Pro;
+    padding: 20px
+}
+.mudarPlano{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 25px;
+}
+.linkPlano{
+    color: #FFBF00;
+}
+
+/* White Square */
+.quadroPlano{
+    background-color: #fff;
+    max-width: 250px;
+    height: 300px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 15px #FFBF00;
+
+}
+section h4{
+    padding: 40px
+}
+
+/* -- Inside container start */
+.container {
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #FFBF00;
+}
+h4{
+    font-size: x-large;
+    text-align:center;
+    color: black;
+}
+ul{
+    padding: 0;;
+}
+li{
+    list-style-type: none;
+    text-align: center;
+    color: black
+}   
+/* -- Inside container end */
+/* --Main content end */

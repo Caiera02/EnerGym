@@ -1,10 +1,6 @@
-const listItems = document.querySelectorAll(".main-menu li");
+const botaoMenu = document.querySelector('.cabecalho__menu');
+const menu = document.querySelector('.menu-lateral');
 
-listItems.forEach((listItem) => {
-  listItem.addEventListener("click", () => {
-    listItems.forEach((otherItem) => {
-      otherItem.classList.remove('active')
-    })
-    listItem.classList.add('active')
-  });
+botaoMenu.addEventListener('click', () => {
+    menu.classList.toggle('menu-lateral--ativo');
 });
