@@ -32,12 +32,12 @@
     text-align: right;
 }
 
-#fundo{
+#fundo {
     background-image: url(../IMG/image.png);
     width: 100%;
     height: 45rem;
     bottom: 2%;
-    
+
 }
 
 #texto {
@@ -50,34 +50,37 @@
     text-align: center;
 }
 
-#btnCalculador{
-    max-width:190px ;
+#btnCalculador {
+    max-width: 190px;
     border-radius: 10px;
     text-align: center;
     margin-bottom: 4%;
     background-color: #73FF00;
-    
+
 }
 
-#btnCalculador:hover{
-    background: linear-gradient(200deg, #73FF00,#FFBF00);
-    box-shadow: 1px 2px 8px black ;
-    
+#btnCalculador:hover {
+    background: linear-gradient(200deg, #73FF00, #FFBF00);
+    box-shadow: 1px 2px 8px black;
+
 }
 
 #form-container {
-    display: none; /* Esconde o formulário inicialmente */
+    display: none;
+    /* Esconde o formulário inicialmente */
     background-image: url(../IMG/fundo_destorcido.png);
+    /* background: white; */
     border-radius: 2%;
     float: right;
     margin-top: 20%;
     margin-right: 20%;
     max-width: 30%;
+    padding: 30px;
     text-align: center;
 
-  }
+}
 
-#fundo2{
+#fundo2 {
     background-image: url(../IMG/fundo.png);
     width: 100%;
     height: 40rem;
@@ -90,11 +93,11 @@
     border-radius: 10%;
 } */
 
-span{ 
+span {
     background-color: black;
 }
 
-footer{
+footer {
     border: 2px solid black;
     background-color: #FFBF00;
     max-width: 1390px;
@@ -102,6 +105,38 @@ footer{
     margin-top: 2%;
     padding: 2%;
 }
-li{
+
+li {
     margin-left: 70%;
+}
+
+@media (max-width: 700px) {
+    body {
+        max-width: 700px;
+    }
+
+    #capa {
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    #text{
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    button {
+        width: 30%;
+    }
+
+    #logo {
+        display: none;
+    }
+
 }

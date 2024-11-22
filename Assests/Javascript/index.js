@@ -8,7 +8,7 @@ document.getElementById('my-Form').addEventListener('submit', function (event) {
     // alert(` O seu IMC é ${contar}`)
 
     const result = document.getElementById('result');
-    result.textContent = `${contar.toFixed(1)}`;
+    result.innerText = `O Seu IMC é de ${contar.toFixed(1)}`;
 });
 
 function toggleForm() {
