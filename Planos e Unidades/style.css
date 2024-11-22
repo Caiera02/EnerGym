@@ -389,3 +389,7 @@ footer .col a:hover {
     color: white;
     /* Texto escuro no hover */
 }
+.centralizacao{
+    margin: 0 auto;
+    justify-content:center;
+}
