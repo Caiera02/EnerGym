@@ -8,17 +8,25 @@
   </head>
 
   <body>
-    <header>
-      <a href=""><img src="" alt="Logo" /></a>
-      <nav>
+    <label>
+      <input  type="checkbox" class="inputSide" />
+      <div class="toggle">
+        <span class="top_line common"></span>
+        <span class="middle_line common"></span>
+        <span class="bottom_line common"></span>
+      </div>
+
+      <div class="slide">
+        <h1>Menu</h1>
+        <img src="/Assests/IMG/logo.svg" alt="" />
         <ul>
-          <li>PLANOS E TREINOS</li>
-          <li>CALCULADORA</li>
-          <li>ENERGIA</li>
-          <li>PONTUAÇÃO</li>
+          <li><a href="#"> Planos / Treinos</a></li>
+          <li><a href="#"> Calculadora</a></li>
+          <li><a href="#"> Pontuação e Recompensa</a></li>
+          <li><a href="#"> início</a></li>
         </ul>
-      </nav>
-    </header>
+      </div>
+    </label>
     <main>
       <h2>CALCULADORA IMC</h2>
       <div class="container">
@@ -32,25 +40,26 @@
         </p>
       </div>
       <div class="calc">
-        
+        <form action="">
           <div class="flex">
             <div class="elementoFlex">
               <label for="">Altura</label> <br />
-              <input type="number" id="altura" placeholder="Ex.: 1.70" />
+              <input id="inputSide" type=" text" placeholder="Ex.: 1.70" />
             </div>
             <div class="elementoFlex">
               <label for="">Digite seu nome</label> <br />
-              <input type="text" id="peso" placeholder="Ex.: 66.8" /> <br />
+              <input type="text" placeholder="Ex.: 66.8" /> <br />
             </div>
           </div>
-          <button type='submit' onclick="CalculoIMC()">CALCULAR</button>
+          <button>CALCULAR</button>
+          <div>
             <p>Seu IMC é:</p>
-            <div class="espacamento">
-              <span id="resultado"></span>
-            </div>
+            <p class="resultado">resultado</p>
+          </div>
+        </form>
+
         <img alt="Tabela do calculo de IMC" />
       </div>
     </main>
-    <script src="/java.js"></script>
   </body>
 </html>

@@ -81,16 +81,27 @@ button {
   border: none;
   border-radius: 2px;
   cursor: pointer;
+  padding-bottom: 20px;
 }
 button:hover {
-  background-color: rgb(205, 218, 35);
+  background-color:#FFBF00;
 }
 button:active {
   background-color: rgb(67, 238, 0);
 }
 
-.resultado{
-  background-color: azure;
-  margin: 0 120px;
+#resultado{
+  background-color: rgb(254, 254, 254);
+  margin: 50px 300px;
+  padding: 15px 0;
   border-radius: 30px;
+  color: black;
+  background-attachment: fixed;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+/* Esse espaçamento é a div do resultado */
+.espacamento{
+  padding: 40px;
+
 }
