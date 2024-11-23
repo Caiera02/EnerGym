@@ -5,7 +5,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     const password = document.getElementById('password').value;
 
     // Fetch os dados do JSON
-    fetch('teste.json')
+    fetch('login.json')
         .then(response => response.json())
         .then(users => {
             const user = users.find(user => user.usuario === username && user.pwd === password);
