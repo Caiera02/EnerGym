@@ -32,26 +32,25 @@
         </p>
       </div>
       <div class="calc">
-        <form action="">
+        
           <div class="flex">
             <div class="elementoFlex">
               <label for="">Altura</label> <br />
-              <input type=" text" placeholder="Ex.: 1.70" />
+              <input type="number" id="altura" placeholder="Ex.: 1.70" />
             </div>
             <div class="elementoFlex">
               <label for="">Digite seu nome</label> <br />
-              <input type="text" placeholder="Ex.: 66.8" /> <br />
+              <input type="text" id="peso" placeholder="Ex.: 66.8" /> <br />
             </div>
           </div>
-          <button>CALCULAR</button>
-          <div>
+          <button type='submit' onclick="CalculoIMC()">CALCULAR</button>
             <p>Seu IMC é:</p>
-            <p class="resultado">resultado</p>
-          </div>
-        </form>
-
+            <div class="espacamento">
+              <span id="resultado"></span>
+            </div>
         <img alt="Tabela do calculo de IMC" />
       </div>
     </main>
+    <script src="/java.js"></script>
   </body>
 </html>
