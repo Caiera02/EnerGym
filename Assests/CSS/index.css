@@ -110,33 +110,63 @@ li {
     margin-left: 70%;
 }
 
-@media (max-width: 700px) {
-    body {
-        max-width: 700px;
-    }
-
-    #capa {
-        display: flex;
-        box-sizing: border-box;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-between;
-    }
-
-    #text{
-        display: flex;
-        box-sizing: border-box;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-between;
-    }
-
-    button {
-        width: 30%;
+@media (max-width: 768px) {
+    #divright button {
+        float: none;
+        margin: 10px auto;
+        /* display: block; */
     }
 
     #logo {
+        width: 100px;
+        margin: 10px auto;
+        float: left;
         display: none;
     }
 
+    #capa {
+        height: auto;
+        text-align: center;
+        padding: 20px;
+    }
+
+    #text {
+        font-size: 40px;
+        text-align: right;
+    }
+
+    #fundo {
+        height: auto;
+        padding: 20px;
+    }
+
+    #texto {
+        float: none;
+        margin: 20px auto;
+        max-width: 90%;
+        text-align: center;
+    }
+
+    #form-container {
+        float: none;
+        margin: 20px auto;
+        max-width: 90%;
+    }
+
+    footer {
+        max-width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    footer .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        margin: 10px 0;
+        text-align: center;
+    }
 }
