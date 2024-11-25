@@ -1,7 +1,7 @@
 /* Estilo geral do body */
 body {
     background-color: black;
-    color: #FFCC00;
+    color: #f9bb00;
     /* Define a cor do texto principal como dourado */
     font-family: Arial, sans-serif;
     /* Define a fonte principal */
@@ -50,7 +50,7 @@ body {
 .conteudo {
     padding: 20px;
     font-family: Arial, sans-serif;
-    color: white;
+    color: #FFFFFD;
     text-align: center;
     background: rgba(0, 0, 0, 0.5);
     /* Fundo semitransparente para destacar o texto */
@@ -64,31 +64,21 @@ h2,
 h3 {
     text-align: center;
     /* Centraliza o texto dos títulos */
-    color: #FFCC00;
+    color: #f9bb00;
     /* Define a cor do texto como dourado */
     margin-bottom: 20px;
     /* Adiciona espaço abaixo dos títulos */
 }
 
-/* Estilo dos cards */
-.card {
-    min-height: 400px;
-    /* Altura mínima do card */
-    width: 18rem;
-    /* Largura fixa do card */
-    background-color: #fff;
-    /* Fundo branco */
-    border: 1px solid #ddd;
-    /* Borda leve */
-    border-radius: 8px;
-    /* Bordas arredondadas */
-    padding: 20px;
-    /* Espaçamento interno do card */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Sombra para dar profundidade */
-    text-align: center;
-    /* Centraliza o texto dentro do card */
+.section-title {
+    border: 2px solid #f9bb00;
+    border-radius: 5%;
+    width: 30%;
+    margin: 20px auto; /* Adiciona espaçamento externo (20px em cima e embaixo, auto para centralizar) */
+    padding: 10px; /* Adiciona espaçamento interno */
 }
+/* Estilo dos cards */
+
 
 .card img {
     max-width: 100%;
@@ -99,6 +89,11 @@ h3 {
     /* Bordas levemente arredondadas na imagem */
 }
 
+.card-img-top{
+    width:  100%;
+    height: 70%;
+}
+
 /* Estilo da seção de planos dentro do card */
 .card-body {
     padding: 20px;
@@ -106,7 +101,7 @@ h3 {
 }
 
 .card-title {
-    color: #FFCC00;
+    color: #f9bb00;
     /* Cor dourada para o título do plano */
     font-size: 1.5rem;
     /* Tamanho da fonte do título */
@@ -168,7 +163,7 @@ h3 {
 
 
 
-*/ #capa {
+#capa {
     display: flex;
     /* Exibe o conteúdo em linha */
     justify-content: space-between;
@@ -186,15 +181,8 @@ h3 {
     /* Espaçamento entre os elementos */
 }
 
-#logo {
-    width: 150px;
-    /* Largura fixa para o logo */
-    height: auto;
-    /* Altura proporcional ao logo */
-}
-
 #text {
-    color: white;
+    color: #FFFFFD;
     /* Texto branco */
     font-size: 1.5rem;
     /* Tamanho da fonte */
@@ -211,9 +199,9 @@ h3 {
 button {
     background-color: transparent;
     /* Fundo transparente */
-    color: white;
+    color: #FFFFFD;
     /* Texto branco */
-    border: 2px solid white;
+    border: 2px solid #FFFFFD;
     /* Borda branca */
     padding: 10px 20px;
     /* Espaçamento interno do botão */
@@ -222,7 +210,7 @@ button {
 }
 
 button:hover {
-    background-color: white;
+    background-color: #FFFFFD;
     /* Fundo branco no hover */
     color: #1e1e1e;
     /* Texto escuro no hover */
@@ -233,79 +221,13 @@ button:focus {
     /* Remove o contorno padrão ao focar */
 }
 
-/* Estilo do rodapé */
 footer {
-    background-color: #1e1e1e;
-    /* Fundo escuro para o rodapé */
-    color: white;
-    /* Texto branco */
-    padding: 20px 0;
-    /* Espaçamento vertical */
-    font-size: 1rem;
-    /* Tamanho da fonte */
-}
-
-footer .row {
-    display: flex;
-    /* Exibe as colunas em linha */
-    justify-content: space-between;
-    /* Distribui as colunas nas extremidades */
-    padding: 0 20px;
-    /* Espaçamento horizontal */
-}
-
-footer .col {
-    width: 45%;
-    /* Largura das colunas */
-}
-
-footer ul {
-    list-style: none;
-    /* Remove os marcadores da lista */
-    padding: 0;
-    /* Remove o padding padrão */
-}
-
-footer ul li {
-    margin-bottom: 10px;
-    /* Espaço entre os itens da lista */
-}
-
-footer img {
-    width: 30px;
-    /* Define a largura das imagens dos ícones sociais */
-    margin: 0 10px;
-    /* Espaçamento horizontal entre os ícones */
-    transition: transform 0.3s ease;
-    /* Efeito de transição ao aplicar o hover */
-}
-
-footer img:hover {
-    transform: scale(1.1);
-    /* Aumenta ligeiramente o tamanho no hover */
-}
-
-footer p {
-    text-align: center;
-    /* Centraliza o texto */
-    margin-top: 20px;
-    /* Espaço acima do texto */
-    font-size: 0.9rem;
-    /* Tamanho menor para o texto de direitos autorais */
-}
-
-footer .col a {
-    color: white;
-    /* Links brancos no rodapé */
-    text-decoration: none;
-    /* Remove o sublinhado dos links */
-    transition: color 0.3s ease;
-    /* Transição de cor no hover */
-}
-
-footer .col a:hover {
-    color: #ffcc00;
-    /* Cor dourada para o hover nos links */
+    border: 2px solid black;
+    background-color: #FFBF00;
+    max-width: 1390px;
+    height: 15rem;
+    margin-top: 2%;
+    padding: 2%;
 }
 
 /* Estilos adicionais para o cabeçalho */
@@ -314,7 +236,7 @@ footer .col a:hover {
     /* Exibe os elementos em linha */
     align-items: center;
     /* Alinha verticalmente os elementos */
-    justify-content: space-between;
+    /* justify-content: space-between; */
     /* Distribui o conteúdo nas extremidades */
     max-width: 1200px;
     /* Define a largura máxima */
@@ -332,12 +254,12 @@ footer .col a:hover {
 #nav-container {
     display: flex;
     /* Exibe os links de navegação em linha */
-    gap: 20px;
+    gap: 100px;
     /* Espaçamento entre os links */
 }
 
 #nav-container a {
-    color: white;
+    color: #f9bb00;
     /* Cor branca para os links de navegação */
     font-size: 1rem;
     /* Tamanho da fonte */
@@ -348,9 +270,15 @@ footer .col a:hover {
 }
 
 #nav-container a:hover {
-    color: #ffcc00;
-    /* Cor dourada para o hover dos links */
+    color: black;
+    /* Cor azul para o hover dos links */
 }
+
+.centralizada {
+    width: 50%; /* Define uma largura */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    text-align: center;
+  }
 
 #button-container {
     display: flex;
@@ -371,11 +299,11 @@ footer .col a:hover {
     /* Negrito para o texto do botão */
     text-decoration: none;
     /* Remove o sublinhado */
-    color: white;
+    color: #FFFFFD;
     /* Texto branco */
     text-align: center;
     /* Centraliza o texto */
-    border: 2px solid white;
+    border: 2px solid #f9bb00;
     /* Borda branca */
     border-radius: 5px;
     /* Bordas arredondadas */
@@ -384,8 +312,72 @@ footer .col a:hover {
 }
 
 .btn:hover {
-    background-color: #ffcc00;
+    background-color: #f9bb00;
     /* Fundo branco no hover */
-    color: white;
+    color: #FFFFFD;
     /* Texto escuro no hover */
+}
+
+#divright button {
+    float: right;
+    margin-right: 10%;
+    margin-left: 20px;
+    margin-top: 2%;
+
+}
+
+.Vira {
+    min-height: 400px;
+    /* Altura mínima do card */
+    width: 18rem;
+    /* Largura fixa do card */
+    background-color: #fff;
+    /* Fundo branco */
+    border: 1px solid #ddd;
+    /* Borda leve */
+    border-radius: 8px;
+    /* Bordas arredondadas */
+    padding: 20px;
+    /* Espaçamento interno do card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra para dar profundidade */
+    text-align: center;
+    /* Centraliza o texto dentro do card */
+}
+
+.Vira:hover .Flip{
+    transform: rotateY(180deg);
+
+}
+
+.Flip {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transform-style: preserve-3d;
+}
+
+.Frente, .Verso {
+position: absolute;
+width: 100%;
+height: 100%;
+border-radius: 20px;
+box-shadow: 0px opx 10px #f9bb00a9;
+backface-visibility: hidden;
+}
+
+.Frente{
+    background-color: #f9bb00;
+    background-size: cover;
+}
+
+.Verso{
+    background-color: #FFFFFD;
+    transform: rotateY(180deg);
+}
+
+.SobreNos {
+    text-align: center;
+
 }
