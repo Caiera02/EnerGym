@@ -22,19 +22,23 @@ body{
     }
 
     header a{ 
-        margin:20px 30px;
+        font-size: 0.85rem;
+        color: #FFBF00;
         width: 0 auto ;
+        margin:20px 30px;
         min-width:max-content;
-        padding: 20px;
-        height: 40px;
-        border: 3px solid #FFBF00;
+        padding: 12px;
+        height: 34px;
         background-color: transparent;
-        border-radius: 20px;
+        border: 1px solid #FFBF00;
+        border-radius: 5px;
         justify-content: center;
         text-decoration: none;
     }
     header a:hover{
         background-color: #FFBF00;
+        color: #000000;
+        transition-duration: 0.2s;
     }
     input, .slide {
         display: none;
@@ -147,8 +151,8 @@ body{
         transform: translateX(0);
         box-shadow: 2px 0 10px rgb(255, 255, 255);
     }
-/* Sidebar end --*/
 }
+/* Sidebar end --*/
 /* --Main content start */
 
 /* Titles */
