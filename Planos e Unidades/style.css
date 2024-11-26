@@ -317,6 +317,7 @@ footer {
     color: #FFFFFD;
     /* Texto escuro no hover */
 }
+<<<<<<< HEAD
 
 #divright button {
     float: right;
@@ -381,3 +382,9 @@ backface-visibility: hidden;
     text-align: center;
 
 }
+=======
+.centralizacao{
+    margin: 0 auto;
+    justify-content:center;
+}
+>>>>>>> 5a8f518e5e0e8e838fdcc40749dabedc501581df
