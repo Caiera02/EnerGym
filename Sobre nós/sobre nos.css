@@ -36,6 +36,9 @@
     font-size: 28px; /* Define o tamanho da fonte do título */
     color: #000; /* Define a cor do título como preto */
     text-align: center; /* Centraliza o texto dentro do contêiner */
+    border: solid 2px black;
+    padding: 10px;
+    border-radius: 40px;
 }
 
 /* 
@@ -168,4 +171,9 @@ form input[type="submit"]:hover {
     justify-content: center; /* Centraliza o formulário horizontalmente */
     align-items: center; /* Centraliza o formulário verticalmente */
     height: 100%; /* Faz o contêiner ocupar toda a altura */
+}
+
+#text {
+    font-size: 21px;
+    color: #FFFFFD;
 }
