@@ -20,13 +20,15 @@ body{
         display: flex;
         align-items: center;
     }
-
     header a{ 
         font-size: 0.85rem;
         color: #FFBF00;
         width: 0 auto ;
-        margin:20px 30px;
+        margin-top: 2%;
         min-width:max-content;
+        margin-left: 20px;
+        margin-right: 10%;
+
         padding: 12px;
         height: 34px;
         background-color: transparent;

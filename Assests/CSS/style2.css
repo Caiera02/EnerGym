@@ -45,6 +45,7 @@ button {
 /* Estilização de elementos */
 
 h2 {
+  clear:both;
   font-size: 2em;
   text-align: center;
   padding: 20px;
@@ -115,4 +116,21 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 input[type="number"] {
   -moz-appearance: textfield;
+}
+
+
+
+
+#divright button {
+  float: right;
+  margin-right: 10%;
+  margin-left: 20px;
+  margin-top: 2%;
+}
+
+#logo {
+  width: 150px;
+  float: left;
+  margin-top: 2%;
+  margin-left: 2%;
 }
