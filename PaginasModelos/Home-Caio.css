@@ -1,258 +1,31 @@
-* {
-    margin: 0;
-}
-
-#divright button {
-    float: right;
-    margin-right: 10%;
-    margin-left: 20px;
-    margin-top: 2%;
-
-}
-
-#logo {
-    width: 150px;
-    float: left;
-    margin-top: 2%;
-    margin-left: 2%;
-}
-
-#capa {
-    background-image: url(../IMG/capa3.png);
-    color: white;
-    width: 100%;
-    height: 40rem;
-}
-
-#text {
-    margin-right: 2%;
-    text-transform: uppercase;
-    font-size: 80px;
-    color: #FFBF00 ;
-    text-align: right;
-}
-
-#fundo {
-    background-image: url(../IMG/image.png);
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    width: 100%;
-    height: 45rem;  
-}
-
-#texto {
-    border-radius: 2%;
-    background-image: url(../IMG/fundo_destorcido.png);
-    float: left;
-    margin-top: 5%;
-    margin-left: 2%;
-    max-width: 30%;
-    text-align: center;
-}
-
-#btnCalculador {
-    max-width: 190px;
-    border-radius: 10px;
-    text-align: center;
-    margin-bottom: 4%;
-    background-color: #73FF00;
-
-}
-
-#btnCalculador:hover {
-    background: linear-gradient(200deg, #73FF00, #FFBF00);
-    box-shadow: 1px 2px 8px black;
-
-}
-
-#form-container {
-    display: none;
-    /* Esconde o formulário inicialmente */
-    background-image: url(../IMG/fundo_destorcido.png);
-    /* background: white; */
-    border-radius: 2%;
-    float: right;
-    margin-top: 20%;
-    margin-right: 20%;
-    max-width: 30%;
-    padding: 30px;
-    text-align: center;
-
-}
-
-#fundo2 {
-    background-image: url(../IMG/fundo\ home\ .png);
-    max-width: 100%;
-    height: 50rem;
-    margin-bottom: 1%;
-}
-
-.container {
-    position: relative; /* Define o container como relativo para posicionar o texto */
-    width: fit-content; /* Ajusta ao tamanho da imagem */
-  }
-
-  .texto-centralizado {
-    position: absolute; /* Permite posicionar o texto sobre a imagem */
-    top: 12%; /* Move o texto verticalmente para o centro */
-    left: 50%; /* Move o texto horizontalmente para o centro */
-    transform: translate(-50%, -50%); /* Ajusta o ponto de referência para o centro */
-    color: #FFBF00; /* Cor do texto */
-    font-size: 2rem; /* Ajuste o tamanho do texto conforme necessário */
-    text-align: center; /* Alinha o texto no centro */
-    font-weight: bold; /* Torna o texto em negrito */
-    background: rgba(0, 0, 0, 0.5); /* Fundo transparente escuro, opcional */
-    padding: 10px; /* Adiciona espaçamento interno */
-    border-radius: 5px; /* Cantos arredondados, opcional */
-  }
-
-  .texto-centralizado1 {
-    position: absolute; /* Permite posicionar o texto sobre a imagem */
-    top: 29%; /* Move o texto verticalmente para o centro */
-    left: 50%; /* Move o texto horizontalmente para o centro */
-    transform: translate(-50%, -50%); /* Ajusta o ponto de referência para o centro */
-    color: #FFBF00; /* Cor do texto */
-    font-size: 2rem; /* Ajuste o tamanho do texto conforme necessário */
-    text-align: center; /* Alinha o texto no centro */
-    font-weight: bold; /* Torna o texto em negrito */
-    background: rgba(0, 0, 0, 0.5); /* Fundo transparente escuro, opcional */
-    padding: 10px; /* Adiciona espaçamento interno */
-    border-radius: 5px; /* Cantos arredondados, opcional */
-  }
-  .button-centralizado {
-    position: absolute; /* Permite posicionar o texto sobre a imagem */
-    top: 60%; /* Move o texto verticalmente para o centro */
-    left: 50%; /* Move o texto horizontalmente para o centro */
-    transform: translate(-50%, -50%); /* Ajusta o ponto de referência para o centro */
-    color: black; /* Cor do texto */
-    font-size: 2rem; /* Ajuste o tamanho do texto conforme necessário */
-    text-align: center; /* Alinha o texto no centro */
-    font-weight: bold; /* Torna o texto em negrito */
-    background: #ffbf00; /* Fundo transparente escuro, opcional */
-    padding: 10px; /* Adiciona espaçamento interno */
-    border-radius: 5px; /* Cantos arredondados, opcional */
-  }
-
-  .button-centralizado:hover{
-    background: rgba(0, 0, 0, 0.5);
-    color: #ffbf00;
-  }
-
-/* img{ 
-    margin-left: 32%;
-    max-width: 30rem;
-    border-radius: 10%;
-} */
-
-span {
-    background-color: black;
-    
-}
-
 footer {
-    border: 2px solid black;
-    background-color: #FFBF00;
-    max-width: 1390px;
-    height: 15rem;
-    margin-top: 2%;
-    padding: 2%;
+  border: 2px solid black;
+  background-color: #ffbf00;
+  max-width: 1390px;
+  height: 15rem;
+  margin-top: 2%;
+  padding: 2%;
 }
 
 li {
-    margin-left: 70%;
+  margin-left: 70%;
 }
 
 @media (max-width: 768px) {
-    #divright button {
-        float: none;
-        margin: 10px auto;
-        /* display: block; */
-    }
+  footer {
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+  }
 
-    #logo {
-        width: 100px;
-        margin: 10px auto;
-        float: left;
-        display: none;
-    }
+  footer .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    #capa {
-        height: auto;
-        text-align: center;
-        padding: 20px;
-    }
-
-    #text {
-        font-size: 40px;
-        text-align: right;
-    }
-
-    #fundo {
-        height: auto;
-        padding: 20px;
-    }
-
-    #texto {
-        float: none;
-        margin: 20px auto;
-        max-width: 90%;
-        text-align: center;
-    }
-    .texto-centralizado{
-        position: absolute; /* Permite posicionar o texto sobre a imagem */
-    top: 20%; /* Move o texto verticalmente para o centro */
-    left: 50%; /* Move o texto horizontalmente para o centro */
-    transform: translate(-50%, -50%); /* Ajusta o ponto de referência para o centro */
-    color: #FFBF00; /* Cor do texto */
-    font-size: 25px; /* Ajuste o tamanho do texto conforme necessário */
-    text-align: center; /* Alinha o texto no centro */
-    font-weight: bold; /* Torna o texto em negrito */
-    background: rgba(0, 0, 0, 0.5); /* Fundo transparente escuro, opcional */
-    border-radius: 5px;
-        
-    }
-
-    .texto-centralizado1{
-        display: none;
-    }
-
-    .button-centralizado{
-        position: absolute; /* Permite posicionar o texto sobre a imagem */
-        top: 60%; /* Move o texto verticalmente para o centro */
-        left: 50%; /* Move o texto horizontalmente para o centro */
-        transform: translate(-50%, -50%); /* Ajusta o ponto de referência para o centro */
-        color: black; /* Cor do texto */
-        font-size: 2rem; /* Ajuste o tamanho do texto conforme necessário */
-        text-align: center; /* Alinha o texto no centro */
-        font-weight: bold; /* Torna o texto em negrito */
-        background: #ffbf00; /* Fundo transparente escuro, opcional */
-      }
-      .button-centralizado:hover{
-        background: rgba(0, 0, 0, 0.5);
-        color: #ffbf00;
-      }
-
-    #form-container {
-        float: none;
-        margin: 20px auto;
-        max-width: 90%;
-    }
-
-    footer {
-        max-width: 100%;
-        height: auto;
-        text-align: center;
-    }
-
-    footer .row {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    li {
-        margin: 10px 0;
-        text-align: center;
-    }
+  li {
+    margin: 10px 0;
+    text-align: center;
+  }
 }
