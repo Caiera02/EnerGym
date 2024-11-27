@@ -2,178 +2,206 @@
    Reseta os estilos padrão e define configurações globais para o site.
 */
 * {
-    margin: 0; /* Remove todas as margens padrão */
-    padding: 0; /* Remove todos os preenchimentos padrão */
-    box-sizing: border-box; /* Inclui bordas e preenchimentos no cálculo de largura e altura */
-    font-family: 'Outfit', sans-serif; /* Define a fonte padrão para o site */
+  margin: 0; /* Remove todas as margens padrão */
+  padding: 0; /* Remove todos os preenchimentos padrão */
+  box-sizing: border-box; /* Inclui bordas e preenchimentos no cálculo de largura e altura */
+  font-family: "Outfit", sans-serif; /* Define a fonte padrão para o site */
 }
 
 /* 
    Estilização da seção amarela com um degradê e alinhamento centralizado.
 */
 .Amarelo {
-    display: flex; /* Usa Flexbox para organização interna */
-    flex-direction: column; /* Alinha os itens verticalmente */
-    align-items: center; /* Centraliza os itens horizontalmente */
-    justify-content: flex-start; /* Alinha os itens ao topo */
-    background: linear-gradient(to bottom, #f9bb00, #000000e0); /* Cria um degradê do amarelo para o preto */
-    height: 50%; /* Define a altura como metade da tela */
-    width: 100%; /* Ocupa toda a largura da tela */
-    padding: 20px 0; /* Adiciona espaço interno vertical */
+  display: flex; /* Usa Flexbox para organização interna */
+  flex-direction: column; /* Alinha os itens verticalmente */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  justify-content: flex-start; /* Alinha os itens ao topo */
+  background: linear-gradient(
+    to bottom,
+    #f9bb00,
+    #000000e0
+  ); /* Cria um degradê do amarelo para o preto */
+  height: 50%; /* Define a altura como metade da tela */
+  width: 100%; /* Ocupa toda a largura da tela */
+  padding: 20px 0; /* Adiciona espaço interno vertical */
 }
 
 /* 
    Estilização do contêiner "Sobre Nós".
 */
 .SobreNos {
-    display: flex; /* Usa Flexbox para alinhar o título */
-    justify-content: center; /* Centraliza o título horizontalmente */
-    width: 100%; /* Faz o contêiner ocupar toda a largura */
-    margin-bottom: 20px; /* Adiciona espaçamento inferior */
+  display: flex; /* Usa Flexbox para alinhar o título */
+  justify-content: center; /* Centraliza o título horizontalmente */
+  width: 100%; /* Faz o contêiner ocupar toda a largura */
+  margin-bottom: 20px; /* Adiciona espaçamento inferior */
 }
 
 .SobreNos h1 {
-    font-size: 28px; /* Define o tamanho da fonte do título */
-    color: #000; /* Define a cor do título como preto */
-    text-align: center; /* Centraliza o texto dentro do contêiner */
-    border: solid 2px black;
-    padding: 10px;
-    border-radius: 40px;
+  font-size: 28px; /* Define o tamanho da fonte do título */
+  color: #000; /* Define a cor do título como preto */
+  text-align: center; /* Centraliza o texto dentro do contêiner */
+  border: solid 2px black;
+  padding: 10px;
+  border-radius: 40px;
 }
 
 /* 
    Estilização do conteúdo dentro da seção amarela.
 */
 .Amarelo .content {
-    display: flex; /* Organiza os itens internos horizontalmente com Flexbox */
-    justify-content: flex-start; /* Alinha os itens ao início do eixo principal */
-    align-items: flex-start; /* Alinha os itens ao topo no eixo cruzado */
-    width: 100%; /* Faz o contêiner ocupar toda a largura */
-    max-width: 1280px; /* Define a largura máxima do contêiner */
+  display: flex; /* Organiza os itens internos horizontalmente com Flexbox */
+  justify-content: flex-start; /* Alinha os itens ao início do eixo principal */
+  align-items: flex-start; /* Alinha os itens ao topo no eixo cruzado */
+  width: 100%; /* Faz o contêiner ocupar toda a largura */
+  max-width: 1280px; /* Define a largura máxima do contêiner */
 }
 
 .Amarelo .content img {
-    max-width: 50%; /* Limita a largura da imagem a 50% do contêiner */
-    height: auto; /* Mantém a proporção original da imagem */
-    margin-right: 20px; /* Adiciona espaço entre a imagem e o texto */
+  max-width: 50%; /* Limita a largura da imagem a 50% do contêiner */
+  height: auto; /* Mantém a proporção original da imagem */
+  margin-right: 20px; /* Adiciona espaço entre a imagem e o texto */
 }
 
 .Amarelo .content p {
-    flex-grow: 1; /* Faz o parágrafo ocupar o espaço restante */
-    font-size: 16px; /* Define o tamanho da fonte */
-    color: #333; /* Define a cor do texto como cinza escuro */
-    line-height: 1.6; /* Define o espaçamento entre as linhas */
+  flex-grow: 1; /* Faz o parágrafo ocupar o espaço restante */
+  font-size: 16px; /* Define o tamanho da fonte */
+  color: #333; /* Define a cor do texto como cinza escuro */
+  line-height: 1.6; /* Define o espaçamento entre as linhas */
 }
 
 /* 
    Estilização da seção preta com um degradê invertido.
 */
 .Preto {
-    background: linear-gradient(to top, #f9bb00, #000000e0); /* Cria um degradê do preto para o amarelo */
-    height: 50%; /* Define a altura como metade da tela */
-    width: 100%; /* Faz o contêiner ocupar toda a largura */
+  background: linear-gradient(
+    to top,
+    #f9bb00,
+    #000000e0
+  ); /* Cria um degradê do preto para o amarelo */
+  height: 50%; /* Define a altura como metade da tela */
+  width: 100%; /* Faz o contêiner ocupar toda a largura */
 }
 
 /* 
    Estilização geral de contêineres.
 */
 .container {
-    max-width: 1280px; /* Limita a largura máxima */
-    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
-    padding: 6%; /* Adiciona espaçamento interno em porcentagem */
+  max-width: 1280px; /* Limita a largura máxima */
+  margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+  padding: 6%; /* Adiciona espaçamento interno em porcentagem */
 }
 
 /* 
    Estilização do formulário.
 */
 form {
-    background: #f9bb00; /* Define o fundo do formulário como amarelo */
-    max-width: 500px; /* Define a largura máxima do formulário */
-    padding: 40px; /* Adiciona espaçamento interno */
-    border-radius: 20px; /* Arredonda os cantos do formulário */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra suave ao formulário */
+  background: #f9bb00; /* Define o fundo do formulário como amarelo */
+  max-width: 500px; /* Define a largura máxima do formulário */
+  padding: 40px; /* Adiciona espaçamento interno */
+  border-radius: 20px; /* Arredonda os cantos do formulário */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra suave ao formulário */
 }
 
 form h1 {
-    text-align: center; /* Centraliza o título do formulário */
-    margin-bottom: 20px; /* Adiciona espaçamento inferior */
-    color: #FFFFFD; /* Define a cor do texto como branco */
-    font-size: 22pt; /* Define o tamanho da fonte */
+  text-align: center; /* Centraliza o título do formulário */
+  margin-bottom: 20px; /* Adiciona espaçamento inferior */
+  color: #fffffd; /* Define a cor do texto como branco */
+  font-size: 22pt; /* Define o tamanho da fonte */
 }
 
 form p {
-    text-align: center; /* Centraliza o parágrafo */
-    margin-bottom: 25px; /* Adiciona espaçamento inferior */
+  text-align: center; /* Centraliza o parágrafo */
+  margin-bottom: 25px; /* Adiciona espaçamento inferior */
 }
 
 /* 
    Estilização dos campos de entrada do formulário.
 */
 form .input-single {
-    position: relative; /* Necessário para o posicionamento do rótulo */
-    margin-bottom: 20px; /* Adiciona espaçamento inferior */
+  position: relative; /* Necessário para o posicionamento do rótulo */
+  margin-bottom: 20px; /* Adiciona espaçamento inferior */
 }
 
 form .input-single label {
-    position: absolute; /* Posiciona o rótulo dentro do campo */
-    left: 0; /* Alinha à esquerda */
-    bottom: 5px; /* Alinha ao fundo do campo */
-    cursor: text; /* Muda o cursor para indicar interatividade */
-    transition: all 0.5s; /* Animações suaves para movimentação e cor */
-    color: #000000; /* Define a cor padrão do rótulo como preto */
+  position: absolute; /* Posiciona o rótulo dentro do campo */
+  left: 0; /* Alinha à esquerda */
+  bottom: 5px; /* Alinha ao fundo do campo */
+  cursor: text; /* Muda o cursor para indicar interatividade */
+  transition: all 0.5s; /* Animações suaves para movimentação e cor */
+  color: #000000; /* Define a cor padrão do rótulo como preto */
 }
 
 form .input-single .input {
-    width: 100%; /* Faz o campo ocupar toda a largura disponível */
-    border: 0; /* Remove as bordas padrão */
-    border-bottom: 2px solid #000000; /* Adiciona uma borda inferior preta */
-    padding: 5px; /* Adiciona espaçamento interno */
-    outline: 0; /* Remove o destaque padrão ao focar no campo */
-    font-size: 16px; /* Define o tamanho da fonte */
+  width: 100%; /* Faz o campo ocupar toda a largura disponível */
+  border: 0; /* Remove as bordas padrão */
+  border-bottom: 2px solid #000000; /* Adiciona uma borda inferior preta */
+  padding: 5px; /* Adiciona espaçamento interno */
+  outline: 0; /* Remove o destaque padrão ao focar no campo */
+  font-size: 16px; /* Define o tamanho da fonte */
 }
 
 form .input-single .input:focus {
-    border-bottom: 2px solid #000000; /* Altera a borda inferior ao focar */
+  border-bottom: 2px solid #000000; /* Altera a borda inferior ao focar */
 }
 
-form .input-single .input:focus~label,
-form .input-single .input:valid~label {
-    transform: translateY(-20px); /* Move o rótulo para cima */
-    font-size: 12px; /* Reduz o tamanho do rótulo */
-    color: #2D5966; /* Altera a cor do rótulo */
+form .input-single .input:focus ~ label,
+form .input-single .input:valid ~ label {
+  transform: translateY(-20px); /* Move o rótulo para cima */
+  font-size: 12px; /* Reduz o tamanho do rótulo */
+  color: #2d5966; /* Altera a cor do rótulo */
 }
 
 /* 
    Estilização para botões de envio.
 */
 form input[type="submit"] {
-    padding: 12px 50px; /* Define o espaçamento interno do botão */
-    border: 0; /* Remove as bordas padrão */
-    border-radius: 10px; /* Arredonda os cantos do botão */
-    background-color: #FFFFFD; /* Define o fundo como branco */
-    color: #000000; /* Define o texto como preto */
-    font-size: 14pt; /* Define o tamanho da fonte */
-    cursor: pointer; /* Altera o cursor para indicar que é clicável */
-    transition: background-color 0.3s; /* Adiciona uma transição suave no fundo */
+  padding: 12px 50px; /* Define o espaçamento interno do botão */
+  border: 0; /* Remove as bordas padrão */
+  border-radius: 10px; /* Arredonda os cantos do botão */
+  background-color: #fffffd; /* Define o fundo como branco */
+  color: #000000; /* Define o texto como preto */
+  font-size: 14pt; /* Define o tamanho da fonte */
+  cursor: pointer; /* Altera o cursor para indicar que é clicável */
+  transition: background-color 0.3s; /* Adiciona uma transição suave no fundo */
 }
 
 form input[type="submit"]:hover {
-    background-color: #FFFFFD; /* Mantém o fundo branco ao passar o mouse */
-    color: #f9bb00; /* Altera a cor do texto para amarelo */
-    border: 2px solid #000000; /* Adiciona uma borda preta */
+  background-color: #fffffd; /* Mantém o fundo branco ao passar o mouse */
+  color: #f9bb00; /* Altera a cor do texto para amarelo */
+  border: 2px solid #000000; /* Adiciona uma borda preta */
 }
 
 /* 
    Estilização do contêiner do formulário.
 */
 .form-container {
-    display: flex; /* Usa Flexbox para organização interna */
-    justify-content: center; /* Centraliza o formulário horizontalmente */
-    align-items: center; /* Centraliza o formulário verticalmente */
-    height: 100%; /* Faz o contêiner ocupar toda a altura */
+  display: flex; /* Usa Flexbox para organização interna */
+  justify-content: center; /* Centraliza o formulário horizontalmente */
+  align-items: center; /* Centraliza o formulário verticalmente */
+  height: 100%; /* Faz o contêiner ocupar toda a altura */
 }
 
 #text {
-    font-size: 21px;
-    color: #FFFFFD;
+  color: #fffffd;
+}
+
+footer {
+  border: 2px solid black;
+  background-color: #ffbf00;
+  max-width: 1390px;
+  height: 15rem;
+  margin-top: 2%;
+  padding: 2%;
+}
+
+footer {
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+footer .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

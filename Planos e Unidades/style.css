@@ -98,6 +98,7 @@ h3 {
 .card-body {
     padding: 20px;
     /* Espaçamento interno na área do conteúdo do card */
+    height: auto;
 }
 
 .card-title {
@@ -107,6 +108,10 @@ h3 {
     /* Tamanho da fonte do título */
     margin-bottom: 15px;
     /* Espaço abaixo do título */
+}
+
+.Unidades {
+    height: 550px;
 }
 
 /* Lista de recursos do plano */
@@ -317,7 +322,6 @@ footer {
     color: #FFFFFD;
     /* Texto escuro no hover */
 }
-<<<<<<< HEAD
 
 #divright button {
     float: right;
@@ -382,9 +386,26 @@ backface-visibility: hidden;
     text-align: center;
 
 }
-=======
-.centralizacao{
-    margin: 0 auto;
-    justify-content:center;
+
+footer {
+    border: 2px solid black;
+    background-color: #FFBF00;
+    max-width: 1390px;
+    height: 15rem;
+    margin-top: 2%;
+    padding: 2%;
 }
->>>>>>> 5a8f518e5e0e8e838fdcc40749dabedc501581df
+
+footer {
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+footer .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
