@@ -43,6 +43,7 @@ button {
 
 
 /* Estilização de elementos */
+
 h2 {
   font-size: 2em;
   text-align: center;
@@ -104,5 +105,14 @@ button:active {
 /* Esse espaçamento é a div do resultado */
 .espacamento{
   padding: 40px 0;
+}
 
+/* Retirando os botões pra diminuir de aumentar o número */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
 }
