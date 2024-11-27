@@ -119,7 +119,7 @@ input[type="number"] {
 }
 
 
-
+/* Header */
 
 #divright button {
   float: right;
@@ -133,4 +133,34 @@ input[type="number"] {
   float: left;
   margin-top: 2%;
   margin-left: 2%;
+}
+
+/* Footer */
+
+footer {
+  border: 2px solid rgb(0, 0, 0);
+  background-color: #ffbf00;
+  max-width: 1390px;
+
+  margin-top: 2%;
+  padding: 2%;
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+
+}
+
+footer .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+li {
+  margin-left: 70%;
+}
+.col li {
+  margin: 10px 0;
+  text-align: center;
+  
 }
