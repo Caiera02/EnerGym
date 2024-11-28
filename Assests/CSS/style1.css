@@ -10,26 +10,15 @@ body {
   background-color: #000000;
 }
 @media (min-width: 842px) {
-dsadsadsa Fazer a header
- /* .flex {
-    padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  } */
+  .flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
-  .flexitem {
-  }
+  
   input,
   .slide {
     display: none;
-  }
-
-  #logo {
-    width: 150px;
-    float: left;
-    margin-top: 2%;
-    margin-left: 2%;
   }
 }
 
