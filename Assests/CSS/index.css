@@ -66,10 +66,8 @@
 } */
 
 #form-container {
-  display: none;
-  /* Esconde o formulário inicialmente */
-  background-image: url(../IMG/fundo_destorcido.png);
-  /* background: white; */
+  display: none; /* Esconde o formulário inicialmente */
+  background-image: url(../IMG/fundo_destorcido.png);/* background: white; */
   border-radius: 2%;
   float: right;
   margin-top: 20%;
@@ -88,16 +86,14 @@
 .container {
   position: relative; /* Define o container como relativo para posicionar o texto */
   width: fit-content; /* Ajusta ao tamanho da imagem */
+  margin-bottom: 5%;
 }
 
 .texto-centralizado {
   position: absolute;
   top: 12%; /* Move o texto verticalmente para o centro */
   left: 50%; /* Move o texto horizontalmente para o centro */
-  transform: translate(
-    -50%,
-    -50%
-  ); /* Ajusta o ponto de referência para o centro */
+  transform: translate(-50%,-50%); /* Ajusta o ponto de referência para o centro */
   color: #ffbf00; /* Cor do texto */
   font-size: 2rem; /* Ajuste o tamanho do texto conforme necessário */
   text-align: center; /* Alinha o texto no centro */
@@ -120,6 +116,7 @@
   padding: 10px;
   border-radius: 5px;
 }
+
 .button-centralizado {
   position: absolute;
   top: 60%;
@@ -160,7 +157,7 @@ footer {
   background-color: #ffbf00;
   max-width: 1390px;
   height: 15rem;
-  margin-top: 2%;
+  margin-top: 5%;
   padding: 2%;
 }
 

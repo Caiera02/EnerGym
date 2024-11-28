@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Login</title>
     <link rel="stylesheet" href="Assests/CSS/login.css">
 </head>
-
 <body>
-
-    <p>Área do Aluno</p>
-
     <div class="login-container">
-        <h2>Login</h2>
+        
+        <h2>CADASTRO</h2>
+
         <form id="loginForm">
             <div class="input-field">
-                <label for="username">Matricula:</label>
-                <input type="text" id="username" name="username" required>
+                <label for="username">Nome:</label>
+                <input type="text" id="username" name="username" placeholder="Digite seu nome completo" required>
             </div>
+
+            <div class="input-field">
+                <label for="password">E-mail:</label>
+                <input type="password" id="password" name="password" placeholder="seuemail@gmail.com" required>
+            </div>
+
             <div class="input-field">
                 <label for="password">Senha:</label>
-                <input type="password" id="password" name="password" required>
+                <input type="password" id="password" name="password" placeholder="Senha" required>
             </div>
+
             <div id="error-msg" class="error"></div>
 
-            <button type="submit">Entrar</button>
+            <button type="submit">Cadastar</button>
         </form>
-        <button id="cad"><a href="registro.html"> Cadastra-se</a></button>
 
     </div>
 
-
 </body>
 <script src="Assests/Javascript/script.js"></script>
-
 </html>
