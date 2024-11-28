@@ -2,410 +2,137 @@
 body {
     background-color: black;
     color: #f9bb00;
-    /* Define a cor do texto principal como dourado */
     font-family: Arial, sans-serif;
-    /* Define a fonte principal */
     margin: 0;
-    /* Remove a margem padrão */
     padding: 0;
-    /* Remove o padding padrão */
     box-sizing: border-box;
-    /* Garante que padding e border sejam incluídos nas dimensões totais dos elementos */
 }
 
+/* =======================
+   ESTILO DO HEADER
+======================== */
+
+/* Estilos para o header, com fundo personalizado e disposição de flex */
 .header {
-    width: 100%;
-    /* Largura total */
-    height: 700px;
-    /* Altura fixa ou ajustável */
-    background-image: url('./IMG/ENERGYM\ ACADEMIA.jpg');
-    /* Substitua pelo caminho da sua imagem */
-    background-size: cover;
-    /* Faz a imagem preencher o fundo */
-    background-repeat: no-repeat;
-    /* Impede a repetição da imagem */
-    background-attachment: fixed;
-    /* Faz a imagem ficar estática */
-    background-position: center;
-    /* Centraliza a imagem */
-}
-
-.fundo {
-    width: 100%;
-    /* Largura total */
-    height: 400px;
-    /* Altura fixa ou ajustável */
-    background-image: url('./IMG/ENERGYM\ ACADEMIA.jpg');
-    /* Substitua pelo caminho da sua imagem */
-    background-size: cover;
-    /* Faz a imagem preencher o fundo */
-    background-repeat: no-repeat;
-    /* Impede a repetição da imagem */
-    background-attachment: fixed;
-    /* Faz a imagem ficar estática */
-    background-position: center;
-    /* Centraliza a imagem */
-}
-
-.conteudo {
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    color: #FFFFFD;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.5);
-    /* Fundo semitransparente para destacar o texto */
-    height: 100%;
-    /* Faz o texto ocupar a altura da div */
-}
-
-/* Estilo dos títulos e subtítulos */
-h2,
-.section-title,
-h3 {
-    text-align: center;
-    /* Centraliza o texto dos títulos */
-    color: #f9bb00;
-    /* Define a cor do texto como dourado */
-    margin-bottom: 20px;
-    /* Adiciona espaço abaixo dos títulos */
-}
-
-.section-title {
-    border: 2px solid #f9bb00;
-    border-radius: 5%;
-    width: 30%;
-    margin: 20px auto; /* Adiciona espaçamento externo (20px em cima e embaixo, auto para centralizar) */
-    padding: 10px; /* Adiciona espaçamento interno */
-}
-/* Estilo dos cards */
-
-
-.card img {
-    max-width: 100%;
-    /* Garante que a imagem não ultrapasse a largura do card */
-    height: auto;
-    /* Ajusta a altura da imagem proporcionalmente */
-    border-radius: 5px;
-    /* Bordas levemente arredondadas na imagem */
-}
-
-.card-img-top{
-    width:  100%;
-    height: 70%;
-}
-
-/* Estilo da seção de planos dentro do card */
-.card-body {
-    padding: 20px;
-    /* Espaçamento interno na área do conteúdo do card */
-    height: auto;
-}
-
-.card-title {
-    color: #f9bb00;
-    /* Cor dourada para o título do plano */
-    font-size: 1.5rem;
-    /* Tamanho da fonte do título */
-    margin-bottom: 15px;
-    /* Espaço abaixo do título */
-}
-
-.Unidades {
-    height: 550px;
-}
-
-/* Lista de recursos do plano */
-.features {
-    list-style-type: none;
-    /* Remove os marcadores padrão da lista */
-    margin: 20px 0;
-    /* Margem vertical ao redor da lista */
-    padding: 0;
-    /* Remove o padding padrão */
-}
-
-.features li {
-    display: flex;
-    /* Exibe os itens em linha */
-    justify-content: space-between;
-    /* Distribui o texto e o ícone nas extremidades */
-    padding: 8px 0;
-    /* Espaçamento interno vertical */
-    border-top: 1px solid #ddd;
-    /* Linha de separação entre os itens */
-    font-size: 1rem;
-    /* Tamanho da fonte */
-}
-
-.features li span {
-    color: #28a745;
-    /* Verde para o ícone de "check" */
-}
-
-.features li span:not(:last-child) {
-    color: #dc3545;
-    /* Vermelho para o ícone de "X" */
-}
-
-/* Estilo da seção de preços */
-.price {
-    font-size: 0.9em;
-    /* Tamanho da fonte do texto "A partir de" */
-    color: #666;
-    /* Cor cinza */
-    margin-top: 20px;
-    /* Espaço acima do preço */
-}
-
-.price-value {
-    font-size: 1.5em;
-    /* Tamanho maior para o valor do preço */
-    font-weight: bold;
-    /* Negrito para destacar o valor */
-    color: #FF6600;
-    /* Cor laranja para o valor */
-}
-
-
-
-#capa {
-    display: flex;
-    /* Exibe o conteúdo em linha */
-    justify-content: space-between;
-    /* Distribui o conteúdo nas extremidades */
-    align-items: center;
-    /* Centraliza o conteúdo verticalmente */
-    padding: 0 20px;
-    /* Espaçamento horizontal */
-}
-
-#divright {
-    display: flex;
-    /* Exibe os elementos em linha */
-    gap: 15px;
-    /* Espaçamento entre os elementos */
-}
-
-#text {
-    color: #FFFFFD;
-    /* Texto branco */
-    font-size: 1.5rem;
-    /* Tamanho da fonte */
-    text-align: right;
-    /* Alinha o texto à direita */
-}
-
-#text p {
-    margin: 0;
-    /* Remove a margem padrão */
-}
-
-/* Estilo dos botões */
-button {
-    background-color: transparent;
-    /* Fundo transparente */
-    color: #FFFFFD;
-    /* Texto branco */
-    border: 2px solid #FFFFFD;
-    /* Borda branca */
-    padding: 10px 20px;
-    /* Espaçamento interno do botão */
-    transition: background-color 0.3s ease, color 0.3s ease;
-    /* Efeito de transição no hover */
-}
-
-button:hover {
-    background-color: #FFFFFD;
-    /* Fundo branco no hover */
-    color: #1e1e1e;
-    /* Texto escuro no hover */
-}
-
-button:focus {
-    outline: none;
-    /* Remove o contorno padrão ao focar */
-}
-
-footer {
-    border: 2px solid black;
-    background-color: #FFBF00;
-    max-width: 1390px;
-    height: 15rem;
-    margin-top: 2%;
-    padding: 2%;
-}
-
-/* Estilos adicionais para o cabeçalho */
-#header-container {
-    display: flex;
-    /* Exibe os elementos em linha */
-    align-items: center;
-    /* Alinha verticalmente os elementos */
-    /* justify-content: space-between; */
-    /* Distribui o conteúdo nas extremidades */
-    max-width: 1200px;
-    /* Define a largura máxima */
-    margin: 0 auto;
-    /* Centraliza o container */
-}
-
-#logo-container img {
-    width: 100px;
-    /* Largura do logo */
-    height: auto;
-    /* Altura proporcional */
-}
-
-#nav-container {
-    display: flex;
-    /* Exibe os links de navegação em linha */
-    gap: 100px;
-    /* Espaçamento entre os links */
-}
-
-#nav-container a {
-    color: #f9bb00;
-    /* Cor branca para os links de navegação */
-    font-size: 1rem;
-    /* Tamanho da fonte */
-    text-decoration: none;
-    /* Remove o sublinhado dos links */
-    transition: color 0.3s ease;
-    /* Transição de cor no hover */
-}
-
-#nav-container a:hover {
-    color: black;
-    /* Cor azul para o hover dos links */
-}
-
-.centralizada {
-    width: 50%; /* Define uma largura */
-    margin: 0 auto; /* Centraliza horizontalmente */
-    text-align: center;
+    width: 100%; /* Define a largura do header como 100% da tela */
+    background-image: url('./IMG/ENERGYM ACADEMIA.jpg'); /* Imagem de fundo */
+    background-size: cover; /* Faz com que a imagem cubra toda a área */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-attachment: fixed; /* Fixa a imagem enquanto rola a página */
+    background-position: center; /* Centraliza a imagem de fundo */
+    display: flex; /* Usando flexbox para organizar o conteúdo dentro do header */
+    flex-direction: column; /* Organiza os itens do header em coluna */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    position: relative; /* Para possibilitar o posicionamento dos elementos dentro */
+  }
+  
+  /* Botões dentro do div #divright, flutuando para a direita */
+  #divright button {
+    float: right; /* Faz com que o botão fique à direita */
+    margin-right: 10%; /* Espaço à direita do botão */
+    margin-left: 20px; /* Espaço à esquerda */
+    margin-top: 5%; /* Espaço no topo */
+  }
+  
+  /* =======================
+     ESTILO DE NAVEGAÇÃO
+  ======================== */
+  
+  /* Container que envolve os links de navegação */
+  #nav-container {
+    display: flex; /* Usa flexbox para organizar os itens */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    gap: 20px; /* Espaço entre os links */
+  }
+  
+  /* Estilo dos links de navegação */
+  #nav-container a {
+    color: #f9bb00; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    border: 2px solid #f9bb00; /* Adiciona borda amarela ao redor */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Cantos arredondados */
+    transition: all 0.3s ease; /* Transição suave para os efeitos */
+  }
+  
+  /* Efeito ao passar o mouse sobre os links */
+  #nav-container a:hover {
+    color: #000; /* Muda a cor do texto para preto */
+    background-color: #f9bb00; /* Muda o fundo para amarelo */
+    border-color: #000; /* Muda a cor da borda para preto */
+  }
+  
+  /* =======================
+     ESTILO DOS TÍTULOS
+  ======================== */
+  
+  /* Centraliza os títulos na página */
+  .centralizada {
+    text-align: center; /* Centraliza o texto */
+    margin-top: 1em; /* Espaçamento no topo */
+  }
+  
+  /* Estilo do título principal */
+  .titulo-principal {
+    font-size: 12rem; /* Define o tamanho da fonte */
+    font-weight: bold; /* Deixa a fonte em negrito */
+    color: #f9bb00; /* Cor do texto */
+  }
+  
+  /* Estilo do subtítulo */
+  .subtitulo {
+    font-size: 12rem; /* Tamanho do subtítulo */
+    font-weight: bold; /* Deixa o subtítulo em negrito */
+    color: #fff; /* Cor branca */
   }
 
-#button-container {
-    display: flex;
-    /* Exibe os botões em linha */
-    align-items: center;
-    /* Alinha os botões verticalmente */
-    gap: 10px;
-    /* Espaçamento entre os botões */
-}
+/* =======================
+   ESTILO DO RODAPÉ
+======================== */
 
-/* Estilo dos botões no cabeçalho */
-.btn {
-    padding: 8px 16px;
-    /* Espaçamento interno dos botões */
-    font-size: 0.9rem;
-    /* Tamanho da fonte */
-    font-weight: bold;
-    /* Negrito para o texto do botão */
-    text-decoration: none;
-    /* Remove o sublinhado */
-    color: #FFFFFD;
-    /* Texto branco */
-    text-align: center;
-    /* Centraliza o texto */
-    border: 2px solid #f9bb00;
-    /* Borda branca */
-    border-radius: 5px;
-    /* Bordas arredondadas */
-    transition: background-color 0.3s ease, color 0.3s ease;
-    /* Transição de cor no hover */
-}
-
-.btn:hover {
-    background-color: #f9bb00;
-    /* Fundo branco no hover */
-    color: #FFFFFD;
-    /* Texto escuro no hover */
-}
-
-#divright button {
-    float: right;
-    margin-right: 10%;
-    margin-left: 20px;
-    margin-top: 2%;
-
-}
-
-.Vira {
-    min-height: 400px;
-    /* Altura mínima do card */
-    width: 18rem;
-    /* Largura fixa do card */
-    background-color: #fff;
-    /* Fundo branco */
-    border: 1px solid #ddd;
-    /* Borda leve */
-    border-radius: 8px;
-    /* Bordas arredondadas */
-    padding: 20px;
-    /* Espaçamento interno do card */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Sombra para dar profundidade */
-    text-align: center;
-    /* Centraliza o texto dentro do card */
-}
-
-.Vira:hover .Flip{
-    transform: rotateY(180deg);
-
-}
-
-.Flip {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    transform-style: preserve-3d;
-}
-
-.Frente, .Verso {
-position: absolute;
-width: 100%;
-height: 100%;
-border-radius: 20px;
-box-shadow: 0px opx 10px #f9bb00a9;
-backface-visibility: hidden;
-}
-
-.Frente{
-    background-color: #f9bb00;
-    background-size: cover;
-}
-
-.Verso{
-    background-color: #FFFFFD;
-    transform: rotateY(180deg);
-}
-
-.SobreNos {
-    text-align: center;
-
-}
-
+/* Estilo geral do rodapé */
 footer {
-    border: 2px solid black;
-    background-color: #FFBF00;
-    max-width: 1390px;
-    height: 15rem;
-    margin-top: 2%;
-    padding: 2%;
-}
-
-footer {
-    max-width: 100%;
-    height: auto;
-    text-align: center;
-}
-
-footer .row {
+    border: 2px solid black; /* Borda preta */
+    background-color: #ffbf00; /* Fundo amarelo */
+    max-width: 1390px; /* Largura máxima do rodapé */
+    height: 15rem; /* Altura do rodapé */
+    margin-top: 5%; /* Espaço superior */
+    padding: 2%; /* Espaçamento interno */
+  }
+  
+  /* Flexbox para o layout do rodapé */
+  footer .row {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
+    justify-content: space-between; /* Espaço entre os itens */
+  }
+  
+  /* Estilo das listas no rodapé */
+  li {
+    margin-left: 70%; /* Espaço à esquerda */
+  }
+  
+  /* =======================
+     AJUSTES RESPONSIVOS
+  ======================== */
+  
+  /* Para telas menores que 768px */
+  @media (max-width: 768px) {
+    footer {
+      max-width: 100%; /* Remove a largura máxima */
+      height: auto; /* Ajusta a altura automaticamente */
+      text-align: center; /* Centraliza o texto */
+    }
+  
+    footer .row {
+      display: flex;
+      flex-direction: column; /* Organiza os itens em coluna */
+      align-items: center; /* Centraliza os itens */
+    }
+  
+    li {
+      margin: 10px 0; /* Espaço entre os itens da lista */
+      text-align: center; /* Centraliza os itens da lista */
+    }
+  }
+  

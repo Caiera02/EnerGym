@@ -1,207 +1,225 @@
-/* 
-   Reseta os estilos padrão e define configurações globais para o site.
-*/
+/* =======================
+   RESET DE ESTILOS PADRÃO
+======================== */
+
+/* Reset de margens, padding e definição de box-sizing para todos os elementos */
 * {
-  margin: 0; /* Remove todas as margens padrão */
-  padding: 0; /* Remove todos os preenchimentos padrão */
-  box-sizing: border-box; /* Inclui bordas e preenchimentos no cálculo de largura e altura */
-  font-family: "Outfit", sans-serif; /* Define a fonte padrão para o site */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Faz com que padding e borda não afetem o tamanho total do elemento */
+  font-family: "Outfit", sans-serif; /* Define a fonte padrão para a página */
 }
 
-/* 
-   Estilização da seção amarela com um degradê e alinhamento centralizado.
-*/
+/* =======================
+   ESTILO DO HEADER
+======================== */
+
+/* Estilos para o header, com fundo personalizado e disposição de flex */
+.header {
+  width: 100%; /* Define a largura do header como 100% da tela */
+  background-image: url('./IMG/ENERGYM ACADEMIA.jpg'); /* Imagem de fundo */
+  background-size: cover; /* Faz com que a imagem cubra toda a área */
+  background-repeat: no-repeat; /* Impede a repetição da imagem */
+  background-attachment: fixed; /* Fixa a imagem enquanto rola a página */
+  background-position: center; /* Centraliza a imagem de fundo */
+  display: flex; /* Usando flexbox para organizar o conteúdo dentro do header */
+  flex-direction: column; /* Organiza os itens do header em coluna */
+  justify-content: center; /* Centraliza o conteúdo verticalmente */
+  position: relative; /* Para possibilitar o posicionamento dos elementos dentro */
+}
+
+/* Botões dentro do div #divright, flutuando para a direita */
+#divright button {
+  float: right; /* Faz com que o botão fique à direita */
+  margin-right: 10%; /* Espaço à direita do botão */
+  margin-left: 20px; /* Espaço à esquerda */
+  margin-top: 5%; /* Espaço no topo */
+}
+
+/* =======================
+   ESTILO DE NAVEGAÇÃO
+======================== */
+
+/* Container que envolve os links de navegação */
+#nav-container {
+  display: flex; /* Usa flexbox para organizar os itens */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  align-items: center; /* Centraliza os itens verticalmente */
+  gap: 20px; /* Espaço entre os links */
+}
+
+/* Estilo dos links de navegação */
+#nav-container a {
+  color: #f9bb00; /* Cor do texto */
+  text-decoration: none; /* Remove o sublinhado dos links */
+  border: 2px solid #f9bb00; /* Adiciona borda amarela ao redor */
+  padding: 10px 20px; /* Espaçamento interno */
+  border-radius: 5px; /* Cantos arredondados */
+  transition: all 0.3s ease; /* Transição suave para os efeitos */
+}
+
+/* Efeito ao passar o mouse sobre os links */
+#nav-container a:hover {
+  color: #000; /* Muda a cor do texto para preto */
+  background-color: #f9bb00; /* Muda o fundo para amarelo */
+  border-color: #000; /* Muda a cor da borda para preto */
+}
+
+/* =======================
+   ESTILO DOS TÍTULOS
+======================== */
+
+/* Centraliza os títulos na página */
+.centralizada {
+  text-align: center; /* Centraliza o texto */
+  margin-top: 1em; /* Espaçamento no topo */
+}
+
+/* Estilo do título principal */
+.titulo-principal {
+  font-size: 12rem; /* Define o tamanho da fonte */
+  font-weight: bold; /* Deixa a fonte em negrito */
+  color: #f9bb00; /* Cor do texto */
+}
+
+/* Estilo do subtítulo */
+.subtitulo {
+  font-size: 12rem; /* Tamanho do subtítulo */
+  font-weight: bold; /* Deixa o subtítulo em negrito */
+  color: #fff; /* Cor branca */
+}
+
+/* =======================
+   SEÇÃO AMARELA
+======================== */
+
+/* Seção com fundo degradê amarelo para chamar a atenção */
 .Amarelo {
-  display: flex; /* Usa Flexbox para organização interna */
-  flex-direction: column; /* Alinha os itens verticalmente */
+  display: flex; /* Usa flexbox para disposição do conteúdo */
+  flex-direction: column; /* Organiza os itens em coluna */
   align-items: center; /* Centraliza os itens horizontalmente */
   justify-content: flex-start; /* Alinha os itens ao topo */
-  background: linear-gradient(
-    to bottom,
-    #f9bb00,
-    #000000e0
-  ); /* Cria um degradê do amarelo para o preto */
-  height: 50%; /* Define a altura como metade da tela */
-  width: 100%; /* Ocupa toda a largura da tela */
-  padding: 20px 0; /* Adiciona espaço interno vertical */
+  background: linear-gradient(to bottom, #f9bb00, #000000e0); /* Fundo degradê */
+  padding: 20px 0; /* Espaçamento interno da seção */
 }
 
-/* 
-   Estilização do contêiner "Sobre Nós".
-*/
-.SobreNos {
-  display: flex; /* Usa Flexbox para alinhar o título */
-  justify-content: center; /* Centraliza o título horizontalmente */
-  width: 100%; /* Faz o contêiner ocupar toda a largura */
-  margin-bottom: 20px; /* Adiciona espaçamento inferior */
-}
-
+/* Estilo para o título dentro da seção 'SobreNos' */
 .SobreNos h1 {
-  font-size: 28px; /* Define o tamanho da fonte do título */
-  color: #000; /* Define a cor do título como preto */
-  text-align: center; /* Centraliza o texto dentro do contêiner */
-  border: solid 2px black;
-  padding: 10px;
-  border-radius: 40px;
+  font-size: 28px; /* Tamanho da fonte */
+  color: #000; /* Cor do texto */
+  text-align: center; /* Centraliza o texto */
+  border: solid 2px black; /* Borda preta */
+  padding: 10px; /* Espaçamento interno */
+  border-radius: 40px; /* Cantos arredondados */
 }
 
-/* 
-   Estilização do conteúdo dentro da seção amarela.
-*/
-.Amarelo .content {
-  display: flex; /* Organiza os itens internos horizontalmente com Flexbox */
-  justify-content: flex-start; /* Alinha os itens ao início do eixo principal */
-  align-items: flex-start; /* Alinha os itens ao topo no eixo cruzado */
-  width: 100%; /* Faz o contêiner ocupar toda a largura */
-  max-width: 1280px; /* Define a largura máxima do contêiner */
-}
+/* =======================
+   ESTILO DO FORMULÁRIO
+======================== */
 
-.Amarelo .content img {
-  max-width: 50%; /* Limita a largura da imagem a 50% do contêiner */
-  height: auto; /* Mantém a proporção original da imagem */
-  margin-right: 20px; /* Adiciona espaço entre a imagem e o texto */
-}
-
-.Amarelo .content p {
-  flex-grow: 1; /* Faz o parágrafo ocupar o espaço restante */
-  font-size: 16px; /* Define o tamanho da fonte */
-  color: #333; /* Define a cor do texto como cinza escuro */
-  line-height: 1.6; /* Define o espaçamento entre as linhas */
-}
-
-/* 
-   Estilização da seção preta com um degradê invertido.
-*/
-.Preto {
-  background: linear-gradient(
-    to top,
-    #f9bb00,
-    #000000e0
-  ); /* Cria um degradê do preto para o amarelo */
-  height: 50%; /* Define a altura como metade da tela */
-  width: 100%; /* Faz o contêiner ocupar toda a largura */
-}
-
-/* 
-   Estilização geral de contêineres.
-*/
-.container {
-  max-width: 1280px; /* Limita a largura máxima */
-  margin: 0 auto; /* Centraliza o contêiner horizontalmente */
-  padding: 6%; /* Adiciona espaçamento interno em porcentagem */
-}
-
-/* 
-   Estilização do formulário.
-*/
-form {
-  background: #f9bb00; /* Define o fundo do formulário como amarelo */
-  max-width: 500px; /* Define a largura máxima do formulário */
-  padding: 40px; /* Adiciona espaçamento interno */
-  border-radius: 20px; /* Arredonda os cantos do formulário */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra suave ao formulário */
-}
-
-form h1 {
-  text-align: center; /* Centraliza o título do formulário */
-  margin-bottom: 20px; /* Adiciona espaçamento inferior */
-  color: #fffffd; /* Define a cor do texto como branco */
-  font-size: 22pt; /* Define o tamanho da fonte */
-}
-
-form p {
-  text-align: center; /* Centraliza o parágrafo */
-  margin-bottom: 25px; /* Adiciona espaçamento inferior */
-}
-
-/* 
-   Estilização dos campos de entrada do formulário.
-*/
-form .input-single {
-  position: relative; /* Necessário para o posicionamento do rótulo */
-  margin-bottom: 20px; /* Adiciona espaçamento inferior */
-}
-
-form .input-single label {
-  position: absolute; /* Posiciona o rótulo dentro do campo */
-  left: 0; /* Alinha à esquerda */
-  bottom: 5px; /* Alinha ao fundo do campo */
-  cursor: text; /* Muda o cursor para indicar interatividade */
-  transition: all 0.5s; /* Animações suaves para movimentação e cor */
-  color: #000000; /* Define a cor padrão do rótulo como preto */
-}
-
-form .input-single .input {
-  width: 100%; /* Faz o campo ocupar toda a largura disponível */
-  border: 0; /* Remove as bordas padrão */
-  border-bottom: 2px solid #000000; /* Adiciona uma borda inferior preta */
-  padding: 5px; /* Adiciona espaçamento interno */
-  outline: 0; /* Remove o destaque padrão ao focar no campo */
-  font-size: 16px; /* Define o tamanho da fonte */
-}
-
-form .input-single .input:focus {
-  border-bottom: 2px solid #000000; /* Altera a borda inferior ao focar */
-}
-
-form .input-single .input:focus ~ label,
-form .input-single .input:valid ~ label {
-  transform: translateY(-20px); /* Move o rótulo para cima */
-  font-size: 12px; /* Reduz o tamanho do rótulo */
-  color: #2d5966; /* Altera a cor do rótulo */
-}
-
-/* 
-   Estilização para botões de envio.
-*/
-form input[type="submit"] {
-  padding: 12px 50px; /* Define o espaçamento interno do botão */
-  border: 0; /* Remove as bordas padrão */
-  border-radius: 10px; /* Arredonda os cantos do botão */
-  background-color: #fffffd; /* Define o fundo como branco */
-  color: #000000; /* Define o texto como preto */
-  font-size: 14pt; /* Define o tamanho da fonte */
-  cursor: pointer; /* Altera o cursor para indicar que é clicável */
-  transition: background-color 0.3s; /* Adiciona uma transição suave no fundo */
-}
-
-form input[type="submit"]:hover {
-  background-color: #fffffd; /* Mantém o fundo branco ao passar o mouse */
-  color: #f9bb00; /* Altera a cor do texto para amarelo */
-  border: 2px solid #000000; /* Adiciona uma borda preta */
-}
-
-/* 
-   Estilização do contêiner do formulário.
-*/
+/* Container que envolve o formulário, garantindo centralização */
 .form-container {
-  display: flex; /* Usa Flexbox para organização interna */
-  justify-content: center; /* Centraliza o formulário horizontalmente */
-  align-items: center; /* Centraliza o formulário verticalmente */
-  height: 100%; /* Faz o contêiner ocupar toda a altura */
+  display: flex; /* Flexbox para centralizar o conteúdo */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  min-height: 100vh; /* Garante que ocupe 100% da altura da tela */
+  padding: 20px; /* Espaçamento interno */
 }
 
-#text {
-  color: #fffffd;
+/* Estilo do formulário */
+form {
+  background: #f9bb00; /* Fundo amarelo */
+  max-width: 500px; /* Largura máxima do formulário */
+  width: 100%; /* Largura 100% do container */
+  padding: 40px; /* Espaçamento interno */
+  border-radius: 20px; /* Cantos arredondados */
+  text-align: center; /* Centraliza o texto no formulário */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave ao redor do formulário */
 }
 
+/* Estilo dos inputs */
+.input-single {
+  margin-bottom: 20px; /* Espaçamento entre os campos */
+  text-align: left; /* Alinha o texto à esquerda */
+}
+
+.input {
+  width: 100%; /* Largura total do input */
+  padding: 10px; /* Espaçamento interno */
+  border: 1px solid #ccc; /* Borda suave */
+  border-radius: 5px; /* Cantos arredondados */
+}
+
+/* Estilo dos radios e checkboxes */
+.sexo,
+input[type="checkbox"] {
+  margin-right: 10px; /* Espaço à direita dos checkboxes */
+}
+
+/* Estilo do botão de envio */
+.btn input[type="submit"] {
+  width: auto; /* Largura automática */
+  padding: 12px 50px; /* Tamanho do botão */
+  margin-top: 20px; /* Espaço acima do botão */
+  border: 2px solid #000; /* Borda preta */
+  background-color: #000; /* Fundo preto */
+  color: #f9bb00; /* Cor do texto */
+  border-radius: 5px; /* Cantos arredondados */
+  transition: all 0.3s ease; /* Transição suave */
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+.btn input[type="submit"]:hover {
+  background-color: #f9bb00; /* Fundo amarelo */
+  color: #000; /* Cor do texto preta */
+  border-color: #000; /* Borda preta */
+}
+
+/* =======================
+   ESTILO DO RODAPÉ
+======================== */
+
+/* Estilo geral do rodapé */
 footer {
-  border: 2px solid black;
-  background-color: #ffbf00;
-  max-width: 1390px;
-  height: 15rem;
-  margin-top: 2%;
-  padding: 2%;
+  border: 2px solid black; /* Borda preta */
+  background-color: #ffbf00; /* Fundo amarelo */
+  max-width: 1390px; /* Largura máxima do rodapé */
+  height: 15rem; /* Altura do rodapé */
+  margin-top: 5%; /* Espaço superior */
+  padding: 2%; /* Espaçamento interno */
 }
 
-footer {
-  max-width: 100%;
-  height: auto;
-  text-align: center;
-}
-
+/* Flexbox para o layout do rodapé */
 footer .row {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between; /* Espaço entre os itens */
+}
+
+/* Estilo das listas no rodapé */
+li {
+  margin-left: 70%; /* Espaço à esquerda */
+}
+
+/* =======================
+   AJUSTES RESPONSIVOS
+======================== */
+
+/* Para telas menores que 768px */
+@media (max-width: 768px) {
+  footer {
+    max-width: 100%; /* Remove a largura máxima */
+    height: auto; /* Ajusta a altura automaticamente */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  footer .row {
+    display: flex;
+    flex-direction: column; /* Organiza os itens em coluna */
+    align-items: center; /* Centraliza os itens */
+  }
+
+  li {
+    margin: 10px 0; /* Espaço entre os itens da lista */
+    text-align: center; /* Centraliza os itens da lista */
+  }
 }
