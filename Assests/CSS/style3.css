@@ -9,35 +9,20 @@
 body {
   background-color: #000000;
 }
-@media (min-width: 726px) {
-  .flexHeader {
+@media (min-width: 842px) {
+  .flex{
     display: flex;
-    justify-content: end;
-  }
-  .flexHeader a {
-    display: flex;
+    justify-content: space-between;
     align-items: center;
   }
+  
   input,
   .slide {
     display: none;
   }
-  #divright button {
-    float: right;
-    margin-right: 10%;
-    margin-left: 20px;
-    margin-top: 2%;
-  }
-
-  #logo {
-    width: 150px;
-    float: left;
-    margin-top: 2%;
-    margin-left: 2%;
-  }
 }
 
-@media (max-width: 725px) {
+@media (max-width: 842px) {
   header nav {
     display: none;
   }
@@ -183,6 +168,7 @@ h3 {
   padding: 30px 100px;
   flex-wrap: wrap;
   justify-content: center;
+  max-width: 800px;
 }
 
 section {
@@ -196,4 +182,61 @@ section {
   height: 360px;
   flex: 1 1 200px;
   margin: 20px;
+}
+.tituloSection{
+  font-weight: 800;
+}
+section p{
+  text-align: center;
+  color: #000000;
+  font-weight: 600;
+}
+section button{
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Footer Caio*/
+
+/* Cor da fonte footer */
+footer div.row div.col p,
+footer p {
+  color: black;
+}
+
+footer {
+  border: 2px solid black;
+  background-color: #ffbf00;
+  width: 0 auto;
+  height: 15rem;
+  margin-top: 2%;
+  padding: 2%;
+}
+
+footer li {
+  color: black;
+  margin-left: 70%;
+}
+
+@media (max-width: 768px) {
+  footer {
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  footer .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer li {
+    margin: 10px 0;
+    text-align: center;
+  }
 }

@@ -9,6 +9,127 @@
 body{
     background-color: #000000 ;
 }
+
+@media (min-width: 842px) {
+  .flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  label input,
+  .slide {
+    display: none;
+  }
+}
+
+@media (max-width: 842px) {
+  header nav {
+    display: none;
+  }
+
+  /* Sidebar start */
+  .slide {
+    margin: -18px 0px 0px 0px;
+    height: 100vh;
+    width: 190px;
+    position: fixed;
+    background-color: #ffbf00;
+    transition: 0.3s ease;
+    transform: translateX(-190px);
+  }
+  label h2 {
+    color: rgb(254, 254, 254);
+    font-weight: 800;
+    text-align: right;
+    padding: 25px 0px;
+    padding-right: 30px;
+    pointer-events: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  label div img {
+    width: 100%;
+  }
+  label div ul li {
+    list-style: none;
+  }
+  label div ul li a {
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    padding: 5px 20px;
+    display: block;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.25s ease-out;
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+  }
+  label div ul li:hover a {
+    color: #fff;
+    background-color: rgb(0, 0, 0);
+  }
+  label input {
+    display: none;
+    visibility: hidden;
+    appearance: none;
+  }
+  .toggle {
+    position: fixed;
+    height: 30px;
+    width: 30px;
+    top: 25px;
+    left: 20px;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  .toggle .common {
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background-color: #000000;
+    border-radius: 50px;
+    transition: 0.3s ease;
+  }
+  .toggle .top_line {
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .toggle .middle_line {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .toggle .bottom_line {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  label input:checked ~ .toggle .top_line {
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(45deg);
+  }
+  label input:checked ~ .toggle .bottom_line {
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(-45deg);
+  }
+  label input:checked ~ .toggle .middle_line {
+    opacity: 0;
+    transform: translate(30px);
+  }
+  label input:checked ~ .slide {
+    transform: translateX(0);
+    box-shadow: 2px 0 10px rgb(255, 255, 255);
+  }
+}
+/* Sidebar end --*/
+
 .container {
   max-width: 120vh;
   margin: 0 auto;
@@ -24,7 +145,7 @@ h3, .calc{
   justify-content: center;
 
 }
-.flex{
+.flexButton{
     display: flex;
     justify-content: center;
 }
@@ -33,7 +154,7 @@ h3, .calc{
   margin:5px
 }
 
-button {
+main button {
   display: block;
   margin: 20px auto;
   padding: 10px 80px;
@@ -61,6 +182,7 @@ h3 {
   text-align: center;
   padding: 25px;
   color: #FFBF00;
+
 }
 .calc {
   font-size: 1.3em;
@@ -71,14 +193,14 @@ h3 {
   font-size: 1.2em;
   padding: 10px;
 }
-input {
+main input {
   color: #000000;
   padding: 10px;
   width: 100%;
   font-size: 1rem;
   border-radius: 30px;
 }
-button {
+main button {
   background-color: rgb(240, 236, 43);
   color: rgb(0, 0, 0);
   border: none;
@@ -86,10 +208,10 @@ button {
   cursor: pointer;
   padding-bottom: 20px;
 }
-button:hover {
+main button:hover {
   background-color:#FFBF00;
 }
-button:active {
+main button:active {
   background-color: rgb(67, 238, 0);
 }
 
@@ -119,28 +241,12 @@ input[type="number"] {
 }
 
 
-/* Header */
-/* Precisa usar o clear:both no h2 se ficar um em cima do outro */
-
-#divright button {
-  float: right;
-  margin-right: 10%;
-  margin-left: 20px;
-  margin-top: 2%;
-}
-
-#logo {
-  width: 150px;
-  float: left;
-  margin-top: 2%;
-  margin-left: 2%;
-}
-
 /* Footer */
 
 /* Cor da fonte footer */
-footer div.row div.col p, footer p {
-  color:black;
+footer div.row div.col p,
+footer p {
+  color: black;
 }
 
 footer {
@@ -153,7 +259,7 @@ footer {
 }
 
 footer li {
-  color:black;
+  color: black;
   margin-left: 70%;
 }
 
