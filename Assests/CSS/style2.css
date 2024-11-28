@@ -138,6 +138,11 @@ input[type="number"] {
 
 /* Footer */
 
+/* Cor da fonte footer */
+footer div.row div.col p, footer p {
+  color:black;
+}
+
 footer {
   border: 2px solid black;
   background-color: #ffbf00;
@@ -147,7 +152,8 @@ footer {
   padding: 2%;
 }
 
-li {
+footer li {
+  color:black;
   margin-left: 70%;
 }
 
@@ -164,7 +170,7 @@ li {
     align-items: center;
   }
 
-  li {
+  footer li {
     margin: 10px 0;
     text-align: center;
   }

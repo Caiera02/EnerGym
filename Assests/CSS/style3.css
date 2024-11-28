@@ -1,44 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kdam+Thmor+Pro&family=Marcellus&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+body {
+  background-color: #000000;
+}
 @media (min-width: 726px) {
   .flexHeader {
     display: flex;
     justify-content: end;
   }
-
   .flexHeader a {
     display: flex;
     align-items: center;
-  }
-
-  header a {
-    font-size: 0.85rem;
-    color: #ffbf00;
-    width: 0 auto;
-    margin: 20px 30px;
-    min-width: max-content;
-    padding: 12px;
-    height: 34px;
-    background-color: transparent;
-    border: 1px solid #ffbf00;
-    border-radius: 5px;
-    justify-content: center;
-    text-decoration: none;
-  }
-  header a:hover {
-    background-color: #ffbf00;
-    color: #000000;
-    transition-duration: 0.2s;
   }
   input,
   .slide {
     display: none;
   }
+  #divright button {
+    float: right;
+    margin-right: 10%;
+    margin-left: 20px;
+    margin-top: 2%;
+  }
+
+  #logo {
+    width: 150px;
+    float: left;
+    margin-top: 2%;
+    margin-left: 2%;
+  }
 }
+
 @media (max-width: 725px) {
-  header a {
+  header nav {
     display: none;
   }
+
   /* Sidebar start */
   .slide {
+    margin: -18px 0px 0px 0px;
     height: 100vh;
     width: 190px;
     position: fixed;
@@ -46,22 +52,22 @@
     transition: 0.3s ease;
     transform: translateX(-190px);
   }
-  h1 {
+  label h2 {
     color: rgb(254, 254, 254);
     font-weight: 800;
     text-align: right;
-    padding: 10px 0px;
+    padding: 25px 0px;
     padding-right: 30px;
     pointer-events: none;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
-  img {
+  label div img {
     width: 100%;
   }
-  ul li {
+  label div ul li {
     list-style: none;
   }
-  ul li a {
+  label div ul li a {
     color: rgb(0, 0, 0);
     font-weight: 800;
     padding: 5px 20px;
@@ -71,11 +77,11 @@
     transition: 0.25s ease-out;
     text-shadow: 2px 2px 4px rgb(255, 255, 255);
   }
-  ul li:hover a {
+  label div ul li:hover a {
     color: #fff;
     background-color: rgb(0, 0, 0);
   }
-  input {
+  label input {
     display: none;
     visibility: hidden;
     appearance: none;
@@ -84,7 +90,7 @@
     position: fixed;
     height: 30px;
     width: 30px;
-    top: 20px;
+    top: 25px;
     left: 20px;
     z-index: 1;
     cursor: pointer;
@@ -135,55 +141,5 @@
     transform: translateX(0);
     box-shadow: 2px 0 10px rgb(255, 255, 255);
   }
-  /* Sidebar end --*/
 }
-/* Header */
-/* Precisa usar o clear:both no h2 se ficar um em cima do outro */
-
-#divright button {
-  float: right;
-  margin-right: 10%;
-  margin-left: 20px;
-  margin-top: 2%;
-}
-
-#logo {
-  width: 150px;
-  float: left;
-  margin-top: 2%;
-  margin-left: 2%;
-}
-
-/* Footer */
-
-footer {
-  border: 2px solid black;
-  background-color: #ffbf00;
-  width: 0 auto;
-  height: 15rem;
-  margin-top: 2%;
-  padding: 2%;
-}
-
-li {
-  margin-left: 70%;
-}
-
-@media (max-width: 768px) {
-  footer {
-    max-width: 100%;
-    height: auto;
-    text-align: center;
-  }
-
-  footer .row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  li {
-    margin: 10px 0;
-    text-align: center;
-  }
-}
+/* Sidebar end --*/
