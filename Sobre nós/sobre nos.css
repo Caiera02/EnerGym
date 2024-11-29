@@ -36,6 +36,10 @@
   margin-top: 5%; /* Espaço no topo */
 }
 
+#logo{
+  padding: 2%;
+}
+
 /* =======================
    ESTILO DE NAVEGAÇÃO
 ======================== */
@@ -90,7 +94,7 @@
 }
 
 /* =======================
-   SEÇÃO AMARELA
+   SEÇÃO AMARELA E PRETA
 ======================== */
 
 /* Seção com fundo degradê amarelo para chamar a atenção */
@@ -99,18 +103,42 @@
   flex-direction: column; /* Organiza os itens em coluna */
   align-items: center; /* Centraliza os itens horizontalmente */
   justify-content: flex-start; /* Alinha os itens ao topo */
-  background: linear-gradient(to bottom, #f9bb00, #000000e0); /* Fundo degradê */
+  background: linear-gradient(to bottom, #f9bb00, #000000); /* Fundo degradê */
   padding: 20px 0; /* Espaçamento interno da seção */
 }
 
 /* Estilo para o título dentro da seção 'SobreNos' */
 .SobreNos h1 {
-  font-size: 28px; /* Tamanho da fonte */
+  font-size: 35px; /* Tamanho da fonte */
   color: #000; /* Cor do texto */
   text-align: center; /* Centraliza o texto */
   border: solid 2px black; /* Borda preta */
   padding: 10px; /* Espaçamento interno */
+  margin-top: 20%;
   border-radius: 40px; /* Cantos arredondados */
+}
+
+/*IMG SECTION AMARELA*/
+.ImgAmarela {
+  width: auto;
+  height: auto;
+  padding-left: 3%;
+  padding-top: 3%;
+  padding-right: 3%;
+  float: left
+;
+}
+
+/*TEXTO SOBRE NÓS*/
+#text {
+  color: #fff;
+  padding: 7%;
+}
+
+/* Seção com fundo Preto */
+.Preto {
+  
+  background-color: #000; /* Fundo Preto */
 }
 
 /* =======================
@@ -118,12 +146,22 @@
 ======================== */
 
 /* Container que envolve o formulário, garantindo centralização */
-.form-container {
+.form-section  {
   display: flex; /* Flexbox para centralizar o conteúdo */
   justify-content: center; /* Centraliza o conteúdo horizontalmente */
   align-items: center; /* Centraliza o conteúdo verticalmente */
   min-height: 100vh; /* Garante que ocupe 100% da altura da tela */
+  height: 100vh;
   padding: 20px; /* Espaçamento interno */
+}
+
+.container  {
+  background-color: #000;
+  display: flex; /* Flexbox para centralizar o conteúdo */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  /* min-height: 100vh; /* Garante que ocupe 100% da altura da tela */
+  padding: 5%;
 }
 
 /* Estilo do formulário */
@@ -153,7 +191,7 @@ form {
 /* Estilo dos radios e checkboxes */
 .sexo,
 input[type="checkbox"] {
-  margin-right: 10px; /* Espaço à direita dos checkboxes */
+  margin-right: 10px 5px; /* Espaço à direita dos checkboxes */
 }
 
 /* Estilo do botão de envio */
@@ -183,9 +221,9 @@ input[type="checkbox"] {
 footer {
   border: 2px solid black; /* Borda preta */
   background-color: #ffbf00; /* Fundo amarelo */
-  max-width: 1390px; /* Largura máxima do rodapé */
+  max-width: auto; /* Largura máxima do rodapé */
   height: 15rem; /* Altura do rodapé */
-  margin-top: 5%; /* Espaço superior */
+  margin-top: 0; /* Espaço superior */
   padding: 2%; /* Espaçamento interno */
 }
 
