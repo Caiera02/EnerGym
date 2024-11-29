@@ -210,8 +210,7 @@ li {
 /* Footer */
 
 /* Cor da fonte footer */
-footer div.row div.col p,
-footer p {
+footer div{
   color: black;
 }
 
@@ -219,14 +218,51 @@ footer {
   border: 2px solid black;
   background-color: #ffbf00;
   width: 0 auto;
-  height: 15rem;
+  height: 20rem;
   margin-top: 2%;
   padding: 2%;
 }
-
-footer li {
+#gridContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 9fr 1fr;
+ 
+}
+.coluna1{
+  display: flex;
+  flex-direction: column;
+}
+.tituloFooter{
+  font-size: 1.5rem;
+  font-weight: 800;
+  ;
+  border-bottom:2px solid #000000;
+  text-align: center;
+}
+.links{
+  
+  padding-top: 10px;
+  text-decoration: none;
   color: black;
-  margin-left: 70%;
+  cursor: pointer;
+}
+
+.lista1{
+  display: flex;
+  flex-direction: column;
+  text-align: start; /* Add this line to set text alignment to the start */
+}
+  
+
+.copy{
+  grid-row: 2/3;
+  grid-column: 1/4;
+}
+
+.flexContatos{
+  padding-top: 2;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 @media (max-width: 768px) {
@@ -235,15 +271,3 @@ footer li {
     height: auto;
     text-align: center;
   }
-
-  footer .row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  footer li {
-    margin: 10px 0;
-    text-align: center;
-  }
-}
