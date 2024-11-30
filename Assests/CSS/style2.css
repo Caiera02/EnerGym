@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kdam+Thmor+Pro&family=Marcellus&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-    color:white
+@import url("https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kdam+Thmor+Pro&family=Marcellus&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Jomolhari&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: white;
 }
-body{
-    background-color: #000000 ;
+body {
+  background-color: #000000;
 }
-
 @media (min-width: 842px) {
   .flex{
     display: flex;
@@ -134,11 +134,13 @@ body{
   max-width: 120vh;
   margin: 0 auto;
 }
+
 /* Alinhamento de elementos */
 h2,
 h3, .calc{
-  justify-self: center;
+  text-align: center;
 }
+
 .flex1{
   display: flex;
   flex-direction: column;
@@ -154,18 +156,10 @@ h3, .calc{
   margin:5px
 }
 
-main button {
-  display: block;
-  margin: 20px auto;
-  padding: 10px 80px;
-  font-size: 18px;
-  text-align: center;
-}
-
 
 /* Estilização de elementos */
 
-h2 {
+main h2 {
   clear:both;
   font-size: 2em;
   text-align: center;
@@ -174,10 +168,11 @@ h2 {
   color: #FFBF00;
   border-radius: 20px;
   filter: drop-shadow( 0px 4px 3px #FFBF00);
-  margin: 20px;
+  margin: 0 auto;
+  max-width: 500px;
 }
 
-h3 {
+main h3 {
   font-size: 1.5em;
   text-align: center;
   padding: 25px;
@@ -204,10 +199,14 @@ main button {
   background-color: rgb(240, 236, 43);
   color: rgb(0, 0, 0);
   border: none;
-  border-radius: 2px;
+  border-radius: 8px;
   cursor: pointer;
-  padding-bottom: 20px;
+  margin: 40px auto;
+  padding: 10px 50px;
+  font-size: 18px;
+  font-weight: 600;
 }
+
 main button:hover {
   background-color:#FFBF00;
 }
@@ -225,6 +224,7 @@ main button:active {
   padding-left: 100px;
   padding-right: 100px;
 }
+
 /* Esse espaçamento é a div do resultado */
 .espacamento{
   padding: 40px 0;
@@ -243,41 +243,131 @@ input[type="number"] {
 
 /* Footer */
 
-/* Cor da fonte footer */
-footer div.row div.col p,
-footer p {
+footer div{
   color: black;
 }
 
+.textfamily{
+  font-family: "Jomolhari", serif;
+}
+.textsize{
+  font-size: 1.5rem;
+}
 footer {
   border: 2px solid black;
   background-color: #ffbf00;
   width: 0 auto;
-  height: 15rem;
+  height: auto;
   margin-top: 2%;
   padding: 2%;
 }
+.gridContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 9fr 1fr;
 
-footer li {
+  /* Coluna 1 */
+}
+.coluna1{
+  
+  display: flex;
+  flex-direction: column;
+}
+.tituloFooter{
+  
+  font-size: 2.5rem;
+  font-weight: 800;
+  ;
+  border-bottom:2px solid #000000;
+  text-align: center;
+}
+.links{
+  
+  padding-top: 10px;
+  text-decoration: none;
   color: black;
-  margin-left: 70%;
+  cursor: pointer;
+  margin: 0;
 }
 
-@media (max-width: 768px) {
-  footer {
-    max-width: 100%;
-    height: auto;
-    text-align: center;
-  }
-
-  footer .row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  footer li {
-    margin: 10px 0;
-    text-align: center;
-  }
+.lista1{
+  display: flex;
+  flex-direction: column;
+  text-align: start; /* Add this line to set text alignment to the start */
 }
+/* Coluna 2 */
+#coluna2{
+
+}
+.flexIcones{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 15px 0;
+}
+.iconeFooter{
+  width: 35px;
+}
+.centralizacaoFooter{
+  text-align: center;
+}
+.iconeLogoFooter{
+  width: 120px;
+}
+.coluna3{
+  display: flex;
+  flex-direction: column;
+}
+
+.flexContatos{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: end;
+  padding-top: 15px;
+  float: inline-start;
+
+}
+
+.linha{
+  grid-row: 2/3;
+  grid-column: 1/4;
+  border-top:2px solid #000000;
+  width: 100%;
+  
+}
+.copy{
+  grid-row: 3/4;
+  grid-column: 1/4;
+}
+
+@media (max-width: 912px) {
+  .gridContainer{
+    grid-template-columns: 1fr;
+    grid-template-rows: 7fr 7fr 7fr 0.4fr 0.5fr;
+
+  } 
+  .coluna1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding-bottom: 40px;
+  }
+  .coluna2{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding-bottom: 40px;
+  }
+  .coluna3{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    padding-bottom: 40px;
+  }
+  .linha{
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .copy{
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+
+  }
