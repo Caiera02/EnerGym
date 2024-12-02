@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Login</title>
+    <link rel="stylesheet" href="Assests/CSS/login.css">
+</head>
+<body>
+    <div class="login-container">
+        
+        <h2> CADASTRO </h2>
+
+        <form id="loginForm">
+            <div class="input-field">
+                <label for="username">Nome:</label>
+                <input type="text" id="username" name="username" placeholder="Digite seu nome completo" required>
+            </div>
+
+            <div class="input-field">
+                <label for="password">E-mail:</label>
+                <input type="email" id="email" name="password" placeholder="seuemail@gmail.com" required>
+            </div>
+
+            <div class="input-field">
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" placeholder="Senha" required>
+            </div>
+
+            <div id="error-msg" class="error"></div>
+
+            <button type="submit">Cadastar</button>
+        </form>
+
+    </div>
+
+</body>
+<script src="Assests/Javascript/registro.js"></script>
+</html>
