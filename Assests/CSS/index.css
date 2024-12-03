@@ -651,8 +651,6 @@ footer {
 }
 
 /* Coluna 2 */
-#coluna2 {}
-
 .flexIcones {
   display: flex;
   flex-direction: row;
