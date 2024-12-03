@@ -12,26 +12,27 @@
 
 <body>
     <!-- Novo Header -->
-    <header class="header">
+    <header style="background-image: url(./Assests/IMG/IMG/ENERGYM\ ACADEMIA.jpg);">
         <nav>
             <div id="capa">
-                <div id="divright">
-                    <!-- Navbar content -->
-                    <a href="Login.html"> <button type="button" class="btn btn-outline-warning">Área do aluno</button></a>
-                    <a href="planos.html"> <button type="button" class="btn btn-outline-warning"> Planos</button></a>
-                    <a href="#"> <button type="button" class="btn btn-outline-warning"> Unidades</button></a>
-                    <a href="SobreNos.html"> <button type="button" class="btn btn-outline-warning"> Sobre nós</button></a>
+                <div class="flex">
+                    <!-- Navbar -->
+                    <a href="index.html"><img style="width:200px;" src="/Assests/IMG/LOGO original.png"
+                            alt="Logo Energym"></a>
+                    <a href="#"> <button type="button" class="btn btn-outline-warning">Planos</button></a>
+                    <a href="#"><button type="button" class="btn btn-outline-warning"> Unidades</button></a>
+                    <a href="#"><button type="button" class="btn btn-outline-warning">Sobre nós</button></a>
+                    <a href="#"><button type="button" class="btn btn-outline-warning"> Area do Aluno</button></a>
+                </div>
+                <div class="centralizada">
+                    <h1 class="titulo-principal">ENERGYM</h1>
+                    <h1 class="subtitulo">ACADEMIA</h1>
                 </div>
                 <a href="index.html"><img id="logo" src="Assests/IMG/LOGO original.png" width="" alt="Logo"></a>
                 <!-- <img id="logo" src="./IMG/LOGO original.png" width="" alt=""> -->
 
             </div>
         </nav>
-
-        <div class="centralizada">
-            <h1 class="titulo-principal">ENERGYM</h1>
-            <h1 class="subtitulo">ACADEMIA</h1>
-        </div>
     </header>
 
     <!-- Seções continuam aqui (inalteradas) -->
@@ -44,7 +45,7 @@
                     <img src="Assests/IMG/primeira.jpg" class="card-img-top" alt="Imagem 01">
                     <h3>Rio de Janeiro - RJ</h3>
                     <div class="card-body">
-                        <p><strong>Endereço:</strong> Rua A, 123, São Paulo</p>
+                        <p><strong>Endereço:</strong> Rua A, 123, Rio de Janeiro</p>
                         <p><strong>Horário:</strong> 6:00 - 22:00</p>
                         <p><strong>Estacionamento:</strong> Gratuito</p>
                         <p><strong>WiFi:</strong> Disponível</p>
@@ -57,7 +58,7 @@
                     <img src="Assests/IMG/embreve.png" class="card-img-top" alt="Imagem 02">
                     <h3>Espirito Santo - ES</h3>
                     <div class="card-body">
-                        <p><strong>Endereço:</strong> Rua B, 456, São Paulo</p>
+                        <p><strong>Endereço:</strong> Rua B, 456, Espirito Santo</p>
                         <p><strong>Horário:</strong> 6:00 - 22:00</p>
                         <p><strong>Estacionamento:</strong> Pago</p>
                         <p><strong>WiFi:</strong> Disponível</p>
@@ -70,7 +71,7 @@
                     <img src="Assests/IMG/terceira.jpg" class="card-img-top" alt="Imagem 03">
                     <h3>Recife - PE</h3>
                     <div class="card-body">
-                        <p><strong>Endereço:</strong> Rua C, 789, São Paulo</p>
+                        <p><strong>Endereço:</strong> Rua C, 789, Recife</p>
                         <p><strong>Horário:</strong> 6:00 - 22:00</p>
                         <p><strong>Estacionamento:</strong> Gratuito</p>
                         <p><strong>WiFi:</strong> Disponível</p>
@@ -99,7 +100,7 @@
                     <img src="Assests/IMG/embreve.png" class="card-img-top" alt="Imagem 05">
                     <h3>Bahia - BA</h3>
                     <div class="card-body">
-                        <p><strong>Endereço:</strong> Rua D, 101, São Paulo</p>
+                        <p><strong>Endereço:</strong> Rua D, 101, Bahia</p>
                         <p><strong>Horário:</strong> 6:00 - 22:00</p>
                         <p><strong>Estacionamento:</strong> Gratuito</p>
                         <p><strong>WiFi:</strong> Disponível</p>
@@ -112,7 +113,7 @@
                     <img src="Assests/IMG/sexta.jpg" class="card-img-top" alt="Imagem 06">
                     <h3>Rio Grande do Sul - RS</h3>
                     <div class="card-body">
-                        <p><strong>Endereço:</strong> Rua D, 101, São Paulo</p>
+                        <p><strong>Endereço:</strong> Rua D, 101, Minas Gerais</p>
                         <p><strong>Horário:</strong> 6:00 - 22:00</p>
                         <p><strong>Estacionamento:</strong> Gratuito</p>
                         <p><strong>WiFi:</strong> Disponível</p>
@@ -132,11 +133,11 @@
                     <div class="card-inner">
                         <div class="card-front">
                             <h5 class="card-title">Plano Plus</h5>
-                            <p class="price-value">R$ 200,00</p>
+                            <p class="price-value">R$ 250,00</p>
                         </div>
                         <div class="card-back">
                             <h5 class="card-title">Plano Plus</h5>
-                            <ul class="features">
+                            <ul class="features li-color">
                                 <li>Acesso ilimitado a todas as academias<span>✔️</span></li>
                                 <li>Leve um amigo 5x por mês<span>✔️</span></li>
                                 <li>Cadeira de massagem<span>✔️</span></li>
@@ -147,20 +148,42 @@
                     </div>
                 </div>
             </div>
-    
+
             <!-- Segundo Card -->
             <div class="col-md-3">
                 <div class="card-flip">
                     <div class="card-inner">
                         <div class="card-front">
-                            <h5 class="card-title">Plano Basic</h5>
+                            <h5 class="card-title">Plano Basic+</h5>
+                            <p class="price-value">R$ 200,00</p>
+                        </div>
+                        <div class="card-back">
+                            <h5 class="card-title">Plano Basic+</h5>
+                            <ul class="features li-color">
+                                <li>Acesso ilimitado a todas as academias<span>✔️</span></li>
+                                <li>Leve um amigo 5x por mês<span>✔️</span></li>
+                                <li>Cadeira de massagem<span>✔️</span></li>
+                                <li>Área de musculação e aeróbicos<span>✔️</span></li>
+                                <li>Aulas de Grupo Consciente<span>✔️</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Terceiro Card -->
+            <div class="col-md-3">
+                <div class="card-flip">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h5 class="card-title">Plano Eco</h5>
                             <p class="price-value">R$ 180,00</p>
                         </div>
                         <div class="card-back">
-                            <h5 class="card-title">Plano Basic</h5>
-                            <ul class="features">
+                            <h5 class="card-title">Plano Eco</h5>
+                            <ul class="features li-color">
                                 <li>Acesso ilimitado a todas as academias<span>❌</span></li>
-                                <li>Leve um amigo 5x por mês<span>✔️</span></li>
+                                <li>Leve um amigo 5x por mês<span>❌</span></li>
                                 <li>Cadeira de massagem<span>✔️</span></li>
                                 <li>Área de musculação e aeróbicos<span>✔️</span></li>
                                 <li>Aulas de Grupo Consciente<span>❌</span></li>
@@ -169,45 +192,23 @@
                     </div>
                 </div>
             </div>
-    
-            <!-- Terceiro Card -->
-            <div class="col-md-3">
-                <div class="card-flip">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h5 class="card-title">Plano Master</h5>
-                            <p class="price-value">R$ 220,00</p>
-                        </div>
-                        <div class="card-back">
-                            <h5 class="card-title">Plano Master</h5>
-                            <ul class="features">
-                                <li>Acesso ilimitado a todas as academias<span>✔️</span></li>
-                                <li>Leve um amigo 5x por mês<span>✔️</span></li>
-                                <li>Cadeira de massagem<span>✔️</span></li>
-                                <li>Área de musculação e aeróbicos<span>✔️</span></li>
-                                <li>Aulas de Grupo Consciente<span>✔️</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
+
             <!-- Quarto Card -->
             <div class="col-md-3">
                 <div class="card-flip">
                     <div class="card-inner">
                         <div class="card-front">
-                            <h5 class="card-title">Plano Vip</h5>
-                            <p class="price-value">R$ 300,00</p>
+                            <h5 class="card-title">Avulso</h5>
+                            <p class="price-value">R$ 50,00</p>
                         </div>
                         <div class="card-back">
                             <h5 class="card-title">Plano Vip</h5>
-                            <ul class="features">
-                                <li>Acesso ilimitado a todas as academias<span>✔️</span></li>
-                                <li>Leve um amigo 5x por mês<span>✔️</span></li>
-                                <li>Cadeira de massagem<span>✔️</span></li>
+                            <ul class="features li-color">
+                                <li>Acesso ilimitado a todas as academias<span>❌</span></li>
+                                <li>Leve um amigo 5x por mês<span>❌</span></li>
+                                <li>Cadeira de massagem<span>❌</span></li>
                                 <li>Área de musculação e aeróbicos<span>✔️</span></li>
-                                <li>Aulas de Grupo Consciente<span>✔️</span></li>
+                                <li>Aulas de Grupo Consciente<span>❌</span></li>
                             </ul>
                         </div>
                     </div>
@@ -228,9 +229,9 @@
             <div class="col">
                 <p>Contatos</p>
                 <ul>
-                    <li>sac@energym.com.br</li>
-                    <li>Trabalhe conosco</li>
-                    <li>4002-8922</li>
+                    <li class="li-footer">sac@energym.com.br</li>
+                    <li class="li-footer">Trabalhe conosco</li>
+                    <li class="li-footer">4002-8922</li>
                 </ul>
             </div>
         </div>
