@@ -11,25 +11,25 @@
 </head>
 
 <body>
-    <header class="header">
+    <header style="background-image: url(./Assests/IMG/IMG/ENERGYM\ ACADEMIA.jpg);">
         <nav>
             <div id="capa">
-                <div id="divright">
-                    <a href="Login.html"><button type="button" class="btn btn-outline-warning">Área do aluno</button></a>
-                    <button type="button" class="btn btn-outline-warning">Planos</button>
-                    <button type="button" class="btn btn-outline-warning">Unidades</button>
-                    <button type="button" class="btn btn-outline-warning">Sobre nós</button>
-                    <a href=""><img id="logo" src="./IMG/LOGO original.png" alt=""></a>
+                <div class="flex">
+                    <!-- Navbar -->
+                    <a href="index.html"><img style="width:200px;" src="/Assests/IMG/LOGO original.png"
+                            alt="Logo Energym"></a>
+                    <a href="#"> <button type="button" class="btn btn-outline-warning">Planos</button></a>
+                    <a href="#"><button type="button" class="btn btn-outline-warning"> Unidades</button></a>
+                    <a href="#"><button type="button" class="btn btn-outline-warning">Sobre nós</button></a>
+                    <a href="#"><button type="button" class="btn btn-outline-warning"> Area do Aluno</button></a>
+                </div>
+                <div class="centralizada">
+                    <h1 class="titulo-principal">ENERGYM</h1>
+                    <h1 class="subtitulo">ACADEMIA</h1>
                 </div>
             </div>
         </nav>
-
-        <div class="centralizada">
-            <h1 class="titulo-principal">ENERGYM</h1>
-            <h1 class="subtitulo">ACADEMIA</h1>
-        </div>
     </header>
-
     <section class="Amarelo">
         <div class="SobreNos">
             <h1 class="SobreNos">Sobre Nós</h1>
@@ -51,7 +51,7 @@
     <section class="Preto">
         <div class="container">
             <h2 class="form-heading">Para mais informações, cadastre-se:</h2>
-            <form class="form-container">
+            <form id="formulario" class="form-container">
                 <div class="input-single">
                     <label for="nome">Seu nome completo</label>
                     <input class="input" type="text" id="nome" required>
@@ -89,30 +89,37 @@
                     <input type="submit" value="Enviar">
                 </div>
             </form>
+            <!-- Modal -->
+            <div id="modal" class="modal" style="display: none;">
+                <div class="modal-content">
+                    <p id="mensagemModal"></p>
+                    <button onclick="fecharModal()">Fechar</button>
+                </div>
+            </div>
+
         </div>
     </section>
-
     <footer>
         <div class="row">
             <div class="col">
-                <p>Siga EnerGym</p>
-                <a href="https://wa.me/5511971498691"><img src="./IMG/whatsapp.svg" alt=""></a>
-                <img src="./IMG/instagram.svg" alt="">
-                <img src="./IMG/telegram.svg" alt="">
+                <p>Siga a Energym</p>
+                <a href="https://wa.me/5511971498691"><img src="./Assests/IMG/IMG/whatsapp.svg" alt="WhatsApp"></a>
+                <img src="./Assests/IMG/IMG/instagram.svg" alt="Instagram">
+                <img src="./Assests/IMG/IMG/telegram.svg" alt="Telegram">
             </div>
             <div class="col">
                 <p>Contatos</p>
                 <ul>
-                    <li>sac@energym.com.br</li>
-                    <li>Trabalhe conosco</li>
-                    <li>4002-8922</li>
+                    <li class="li-footer">sac@energym.com.br</li>
+                    <li class="li-footer">Trabalhe conosco</li>
+                    <li class="li-footer">4002-8922</li>
                 </ul>
             </div>
         </div>
-        <p>2024 &copy; Todos os direitos reservados</p>
+        <p style="text-align: center;">2024&copy; Todos os direitos reservados</p>
     </footer>
 
-    <script src="./sobre nos.js"></script>
+    <script src="./Assests/Javascript/sobre nos.js"></script>
 </body>
 
 </html>
