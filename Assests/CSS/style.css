@@ -13,32 +13,60 @@ body {
 ======================== */
 .header {
   width: 100%;
-  background-image: url('./Assests/IMG/IMG 2/ENERFYM ACADENIA.jpg');
+  background-image: url('./IMG/ENERGYM ACADEMIA.jpg');
   background-size: cover;
-  background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-}
-
-#divright {
-  display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
 }
 
 #divright button {
-  margin: 5px;
-  width: auto;
+  float: right;
+  margin: 5% 20px 0 10%;
 }
 
 #logo {
-  max-width: 150px;
-  height: auto;
+  padding: 2%;
+}
+
+.centralizada {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.titulo-principal {
+  font-size: 12rem;
+  font-weight: bold;
+  color: #f9bb00;
+}
+
+.subtitulo {
+  font-size: 12rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Responsividade para header */
+@media (max-width: 768px) {
+  #divright button {
+    float: none;
+    margin: 10px auto;
+  }
+
+  #logo {
+    width: 100px;
+    margin: 10px auto;
+    float: left;
+    display: none;
+  }
+
+  #capa {
+    height: auto;
+    text-align: center;
+    padding: 20px;
+  }
 }
 
 /* =======================
@@ -90,32 +118,58 @@ body {
  ESTILO DO RODAPÉ
 ======================== */
 footer {
+  border: 2px solid black;
   background-color: #ffbf00;
-  padding: 20px;
+  max-width: 1390px;
+  height: 15rem;
+  margin: 5% auto 0;
+  padding: 2%;
+}
+
+footer div {
   color: black;
-  text-align: center;
 }
 
 footer .row {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  padding: 20px;
 }
 
-footer .col {
-  flex: 1;
-  min-width: 200px;
-  margin: 10px 0;
+footer p, li {
+  color: black;
+  font-size: 1rem;
 }
 
-footer ul {
-  list-style-type: none;
+footer img {
+  width: 10%;
+  margin-left: 10px;
+}
+
+ul {
   padding: 0;
 }
 
-footer li {
-  margin: 5px 0;
+li {
+  list-style-type: none;
+  text-align: center;
 }
+
+@media (max-width: 768px) {
+  footer {
+      max-width: 100%;
+      height: auto;
+      text-align: center;
+  }
+  footer .row {
+      flex-direction: column;
+      align-items: center;
+  }
+  li {
+      margin: 10px 0;
+  }
+}
+
 
 /* =======================
  ESTILO DOS CARDS FLIP
