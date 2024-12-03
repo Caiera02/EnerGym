@@ -7,7 +7,7 @@
 
 .header {
   width: 100%;
-  background-image: url('./IMG/ENERGYM ACADEMIA.jpg');
+  background-image: url(../IMG/ENERGYM\ ACADEMIA.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
