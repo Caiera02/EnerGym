@@ -1,0 +1,332 @@
+/* Estilo geral do body */
+body {
+  background-color: black;
+  color: #f9bb00;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =======================
+ ESTILO DO HEADER
+======================== */
+.header {
+  width: 100%;
+  background-image: url('./IMG/ENERGYM ACADEMIA.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#divright button {
+  float: right;
+  margin: 5% 20px 0 10%;
+}
+
+#logo {
+  padding: 2%;
+}
+
+.centralizada {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.titulo-principal {
+  font-size: 12rem;
+  font-weight: bold;
+  color: #f9bb00;
+}
+
+.subtitulo {
+  font-size: 12rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Responsividade para header */
+@media (max-width: 768px) {
+  #divright button {
+    float: none;
+    margin: 10px auto;
+  }
+
+  #logo {
+    width: 100px;
+    margin: 10px auto;
+    float: left;
+    display: none;
+  }
+
+  #capa {
+    height: auto;
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+/* =======================
+ ESTILO DE NAVEGAÇÃO
+======================== */
+#nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#nav-container a {
+  color: #f9bb00;
+  text-decoration: none;
+  border: 2px solid #f9bb00;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+#nav-container a:hover {
+  color: #000;
+  background-color: #f9bb00;
+  border-color: #000;
+}
+
+/* =======================
+ ESTILO DOS TÍTULOS
+======================== */
+.centralizada {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.titulo-principal {
+  font-size: 6rem;
+  font-weight: bold;
+  color: #f9bb00;
+}
+
+.subtitulo {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* =======================
+ ESTILO DO RODAPÉ
+======================== */
+footer {
+  border: 2px solid black;
+  background-color: #ffbf00;
+  max-width: 1390px;
+  height: 15rem;
+  margin: 5% auto 0;
+  padding: 2%;
+}
+
+footer div {
+  color: black;
+}
+
+footer .row {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+footer p, li {
+  color: black;
+  font-size: 1rem;
+}
+
+footer img {
+  width: 10%;
+  margin-left: 10px;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  footer {
+      max-width: 100%;
+      height: auto;
+      text-align: center;
+  }
+  footer .row {
+      flex-direction: column;
+      align-items: center;
+  }
+  li {
+      margin: 10px 0;
+  }
+}
+
+
+/* =======================
+ ESTILO DOS CARDS FLIP
+======================== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-flip {
+  perspective: 1000px;
+  width: 100%;
+  max-width: 300px;
+  margin: 10px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.card-flip:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #282828;
+  color: #f9bb00;
+  border: 2px solid #f9bb00;
+  padding: 20px;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.price-value {
+  font-size: 1.2rem;
+  margin-top: 5px;
+}
+
+.features {
+  list-style-type: none;
+  padding: 0;
+}
+
+.features li {
+  margin: 5px 0;
+}
+
+/* =======================
+ ESTILO DOS CARDS DE UNIDADES
+======================== */
+.Unidades {
+  width: 100%;
+  max-width: 300px;
+  border: 2px solid #f9bb00;
+  background-color: #ffffff;
+  color: #000;
+  margin: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.Estado {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.card-body {
+  padding: 10px;
+  text-align: center;
+}
+
+/* =======================
+ RESPONSIVIDADE
+======================== */
+@media (max-width: 1200px) {
+  .titulo-principal {
+    font-size: 4rem;
+  }
+
+  .subtitulo {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .titulo-principal {
+    font-size: 3rem;
+  }
+
+  .subtitulo {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 10px;
+  }
+
+  #divright button {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .titulo-principal {
+    font-size: 2.5rem;
+  }
+
+  .subtitulo {
+    font-size: 1.8rem;
+  }
+
+  footer .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer ul {
+    padding: 0;
+  }
+}
