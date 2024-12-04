@@ -10,7 +10,7 @@
 body {
   background-color: #000000;
 }
-@media (min-width: 842px) {
+@media (min-width: 900px) {
   .flex{
     display: flex;
     justify-content: space-around;
@@ -21,9 +21,12 @@ body {
   .slide {
     display: none;
   }
+  .container{
+    font-size:25px
+  }
 }
 
-@media (max-width: 842px) {
+@media (max-width: 900px) {
   header nav {
     display: none;
   }
@@ -127,6 +130,11 @@ body {
     transform: translateX(0);
     box-shadow: 2px 0 10px rgb(255, 255, 255);
   }
+  .container{
+    width:88%;
+    height:10px;
+    font-size:24px
+  }
 }
 /* Sidebar end --*/
 
@@ -173,10 +181,12 @@ main h3 {
 /* White Square */
 .quadroPlano {
   background-color: #fff;
-  max-width: 250px;
-  height: 300px;
+  max-width: 350px;
+  height: 400px;
   margin: 0 auto;
-  box-shadow: 0px 0px 30px #ffbf00;
+  box-shadow: 0px 0px 40px #ffbf00;
+  border-radius:10px;
+ 
 }
 section h4 {
   padding: 40px;
@@ -186,16 +196,23 @@ section h4 {
 .container {
   justify-content: center;
   align-items: center;
-  height: 500px;
+  height: 800px;
   max-width: 500px;
   margin: 40px auto;
   padding: 20px;
   background-color: #ffbf00;
+  border-radius:10px;
 }
 h4 {
-  font-size: x-large;
+  font-size: 38px;
   text-align: center;
   color: black;
+}
+#planoativo{
+  background-color: #ffbf00;
+  border-radius:10px;
+  color:white;
+  text-shadow: 0px 0px 5px black
 }
 ul {
   padding: 0;
