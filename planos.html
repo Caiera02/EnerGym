@@ -19,8 +19,8 @@
                     <!-- Navbar -->
                     <a href="index.html"><img style="width:200px;" src="/Assests/IMG/LOGO original.png"
                             alt="Logo Energym"></a>
-                    <a href="#"> <button type="button" class="btn btn-outline-warning">Planos</button></a>
-                    <a href="#"><button type="button" class="btn btn-outline-warning"> Unidades</button></a>
+                    <a href="#"> <button type="button" class="btn btn-outline-warning">Planos / Unidades</button></a>
+                    <!-- <a href="#"><button type="button" class="btn btn-outline-warning"> Unidades</button></a> -->
                     <a href="#"><button type="button" class="btn btn-outline-warning">Sobre nós</button></a>
                     <a href="#"><button type="button" class="btn btn-outline-warning"> Area do Aluno</button></a>
                 </div>
@@ -32,8 +32,28 @@
         </nav>
     </header>
 
-    <!-- Seções continuam aqui (inalteradas) -->
+    <!-- SIDE BAR -->
+    <label>
+        <input type="checkbox">
+        <div class="toggle">
+            <span class="top_line common"></span>
+            <span class="middle_line common"></span>
+            <span class="bottom_line common"></span>
+        </div>
 
+        <div class="slide">
+            <h2>Menu</h2>
+            <img src="/Assests/IMG/logo.svg" alt="">
+            <ul>
+                <li><a href="#"> Planos</a></li>
+                <li><a href="#"> Unidades</a></li>
+                <li><a href="#"> Sobre nós</a></li>
+                <li><a href="#"> Area do Aluno</a></li>
+            </ul>
+        </div>
+    </label>
+
+    <!-- Seções continuam aqui (inalteradas) -->
     <section class="container mt-5 pt-5">
         <h2 class="section-title" style="text-align: center;">Nossas Unidades</h2>
         <div class="row">
@@ -122,25 +142,27 @@
     </section>
 
     <section class="container">
-        <h2 class="section-title" style="text-align: center;">Nossos Planos</h2>
-        <div class="row">
-            <!-- Primeiro Card -->
-            <div class="col-md-3">
-                <div class="card-flip">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h5 class="card-title">Plano Plus</h5>
-                            <p class="price-value">R$ 250,00</p>
-                        </div>
-                        <div class="card-back">
-                            <h5 class="card-title">Plano Plus</h5>
-                            <ul class="features li-color">
-                                <li>Acesso ilimitado a todas as academias<span>✔️</span></li>
-                                <li>Leve um amigo 5x por mês<span>✔️</span></li>
-                                <li>Cadeira de massagem<span>✔️</span></li>
-                                <li>Área de musculação e aeróbicos<span>✔️</span></li>
-                                <li>Aulas de Grupo Consciente<span>✔️</span></li>
-                            </ul>
+        <div class="container1">
+            <h2 class="section-title" style="text-align: center;">Nossos Planos</h2>
+            <div class="row">
+                <!-- Primeiro Card -->
+                <div class="col-md-3">
+                    <div class="card-flip">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <h5 class="card-title">Plano Plus</h5>
+                                <p class="price-value">R$ 250,00</p>
+                            </div>
+                            <div class="card-back">
+                                <h5 class="card-title">Plano Plus</h5>
+                                <ul class="features li-color">
+                                    <li>Acesso ilimitado a todas as academias<span>✔️</span></li>
+                                    <li>Leve um amigo 5x por mês<span>✔️</span></li>
+                                    <li>Cadeira de massagem<span>✔️</span></li>
+                                    <li>Área de musculação e aeróbicos<span>✔️</span></li>
+                                    <li>Aulas de Grupo Consciente<span>✔️</span></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -212,27 +234,55 @@
                 </div>
             </div>
         </div>
+
     </section>
 
     <!-- Novo Footer -->
     <footer>
-        <div class="row">
-            <div class="col">
-                <p>Siga a Energym</p>
-                <a href="https://wa.me/5511971498691"><img src="./Assests/IMG/whatsapp.svg" alt="WhatsApp"></a>
-                <img src="./Assests/IMG/instagram.svg" alt="Instagram">
-                <img src="./Assests/IMG/telegram.svg" alt="Telegram">
+        <div class="gridContainer">
+            <div class="coluna1">
+                <div class="tituloFooter textfamily">Conheça</div>
+                <div class="lista1">
+
+                    <a class="links textfamily textsize" href="#">Sobre nós</a>
+                    <a class="links textfamily textsize" href="#">Unidades</a>
+                    <a class="links textfamily textsize" href="1Planos.html">Planos</a>
+                    <a class="links textfamily textsize" href="#">Nosso espaço</a>
+                </div>
             </div>
-            <div class="col">
-                <p>Contatos</p>
-                <ul>
-                    <li class="li-footer">sac@energym.com.br</li>
-                    <li class="li-footer">Trabalhe conosco</li>
-                    <li class="li-footer">4002-8922</li>
-                </ul>
+            <div id="coluna2">
+                <div class="tituloFooter textfamily">Siga a Energym</div>
+                <div class="flexIcones">
+                    <a href="facebook.com"><img class="iconeFooter" src="/Assests/IMG/facebookincone.svg"
+                            alt="Facebook"></a>
+                    <a href="tiktok.com"><img class="iconeFooter" src="/Assests/IMG/tiktokicones.svg"
+                            alt="Tiktok"></a>
+                    <a href="instagram.com"><img class="iconeFooter" src="/Assests/IMG/instagramicone.svg"
+                            alt="Instagram"></a>
+                </div>
+                <div class="centralizacaoFooter">
+                    <a href="#"><img class="iconeLogoFooter" src="/Assests/IMG/logo.svg" alt="Imagem logo"></a>
+                </div>
+                <a href="#"><img src="" alt=""></a>
             </div>
+            <div class="coluna3">
+                <div class="tituloFooter textfamily">Contatos</div>
+                <div class="flexContatos">
+                    <img style="width: 40px;" src="/Assests/IMG/homemicone.svg" alt=" img contatos">
+                    <div class="textfamily textsize">Trabalhe Conosco</div>
+                </div>
+                <div class="flexContatos">
+                    <img style="width: 40px;" src="/Assests/IMG/telefoneicone.svg" alt=" img contatos">
+                    <div class="textfamily textsize">(11) 4002-8922</div>
+                </div>
+                <div class="flexContatos">
+                    <img style="width: 40px;" src="/Assests/IMG/mensagemicone.svg" alt=" img contatos">
+                    <div class="textfamily textsize">sac@energym.com.br</div>
+                </div>
+            </div>
+            <div class="linha"></div>
+            <div class="copy textfamily">2024 &copy Energym todos os direitos reservados</div>
         </div>
-        <p style="text-align: center;">2024&copy; Todos os direitos reservados</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

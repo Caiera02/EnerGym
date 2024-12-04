@@ -22,10 +22,6 @@
   margin-top: 2%;
 }
 
-#esconde {
-  display: none;
-}
-
 #logo {
   width: 150px;
   float: left;
@@ -76,22 +72,9 @@
   margin-top: 3%;
 }
 
-/* #form-container {
-  display: none; Esconde o formulário inicialmente 
-  background-image: url(../IMG/fundo_destorcido.png);
-  /* background: white; 
-  border-radius: 2%;
-  float: right;
-  margin-top: 20%;
-  margin-right: 20%;
-  max-width: 30%;
-  padding: 30px;
-  text-align: center;
-} */
-
 /* Adesão de novos planos */
 #fundo2 {
-  background-image: url(../IMG/fundo\ home\ .png);
+  background-image: url(../IMG/fundohome\ .png);
   max-width: 100%;
   height: 50rem;
 }
@@ -107,14 +90,22 @@
 .texto-centralizado {
   position: absolute;
   top: 12%;
-  left: 50%;  /* Move o texto horizontalmente para o centro */
-  transform: translate(-50%, -50%);  /* Ajusta o ponto de referência para o centro */
-  color: #ffbf00;  /* Cor do texto */  
-  font-size: 2rem;  /* Ajuste o tamanho do texto conforme necessário */
-  text-align: center;  /* Alinha o texto no centro */
-  font-weight: bold;  /* Torna o texto em negrito */
-  background: rgba(0, 0, 0, 0.5);  /* Fundo transparente escuro, opcional */
-  padding: 10px;  /* Adiciona espaçamento interno */
+  left: 50%;
+  /* Move o texto horizontalmente para o centro */
+  transform: translate(-50%, -50%);
+  /* Ajusta o ponto de referência para o centro */
+  color: #ffbf00;
+  /* Cor do texto */
+  font-size: 2rem;
+  /* Ajuste o tamanho do texto conforme necessário */
+  text-align: center;
+  /* Alinha o texto no centro */
+  font-weight: bold;
+  /* Torna o texto em negrito */
+  background: rgba(0, 0, 0, 0.5);
+  /* Fundo transparente escuro, opcional */
+  padding: 10px;
+  /* Adiciona espaçamento interno */
   border-radius: 5px;
 }
 
@@ -163,6 +154,7 @@
 
 .card-text {
   text-align: center;
+  display: none;
 }
 
 span {
@@ -183,10 +175,8 @@ li {
 }
 
 @media (min-width: 842px) {
-  #capa {
-    background-image: url(../IMG/capa3.png);
-    width: 100%;
-    height: 40rem;
+  label {
+    display: none;
   }
 
   ul {
@@ -264,12 +254,6 @@ li {
 
 @media (max-width: 842px) {
 
-  #capa {
-    background-image: url(../IMG/capa3.png);
-    width: 100%;
-    height: 40rem;
-  }
-
   .flex {
     display: none;
   }
@@ -278,18 +262,53 @@ li {
     margin-right: 60%;
   }
 
+  /* Card */
   #flex2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-right: 30%;
+    margin-right: 2%;
+    margin-left: 10%;
+    margin-top: 10%;
+  }
+  /*  FIM DO CARD */
+
+  #capa {
+    background-image: url(../IMG/capa3.png);
+    max-width: 80vh;
+    height: 40rem;
   }
 
+  #fundo {
+    max-width: 80vh;
+    height: 40rem;
+  }
+
+  #texto {
+    /* display: none; */
+    border-radius: 2%;
+    background-image: url(../IMG/fundo_destorcido.png);
+    margin-top: 12%;
+    margin-left: 20%;
+    max-width: 60%;
+    max-height: 30% ;
+    text-align: center;
+  }
+/* Adesão de novos alunos */
   #fundo2 {
-    background-image: url(../IMG/fundo\ home\ .png);
-    max-width: 100%;
+    /* display: none; */
+    background-image: url(../IMG/fundohome\ .png);
+    max-width: 80vh;
     height: 50rem;
   }
-
+  .container {
+    /* display: none; */
+    position: relative; /* Define o container como relativo para posicionar o texto */
+    width: fit-content; /* Ajusta ao tamanho da imagem */
+    /* width: 842px; */
+    /* Ajusta ao tamanho da imagem */
+    margin-bottom: 5%;
+  }
+  
   #text {
     font-size: 40px;
     text-align: center;
@@ -297,20 +316,11 @@ li {
     float: left;
     margin-top: 10%;
   }
-
-  .container {
-    position: relative;
-    /* Define o container como relativo para posicionar o texto */
-    /*width: fit-content;  Ajusta ao tamanho da imagem */
-    width: 842px;
-    /* Ajusta ao tamanho da imagem */
-    margin-bottom: 5%;
-  }
-
+  
   .texto-centralizado {
     position: absolute;
     top: 12%;
-    left: 36%;
+    left: 50%;
     /* Move o texto horizontalmente para o centro */
     transform: translate(-50%, -50%);
     /* Ajusta o ponto de referência para o centro */
@@ -332,7 +342,7 @@ li {
   .texto-centralizado1 {
     position: absolute;
     top: 29%;
-    left: 35%;
+    left: 50%;
     transform: translate(-50%, -50%);
     color: #ffbf00;
     font-size: 2rem;
@@ -346,7 +356,7 @@ li {
   .button-centralizado {
     position: absolute;
     top: 60%;
-    left: 35%;
+    left: 50%;
     transform: translate(-50%, -50%);
     color: black;
     font-size: 2rem;
@@ -355,6 +365,13 @@ li {
     background: #ffbf00;
     padding: 10px;
     border-radius: 5px;
+  }
+
+  /* carrousel */
+  #flex3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-right: 30%;
   }
 
   /* Sidebar start */
@@ -734,8 +751,7 @@ footer {
 }
 
 @media (max-width: 768px) {
- 
- 
+
   #divright button {
     float: none;
     margin: 10px auto;
@@ -748,28 +764,32 @@ footer {
     float: left;
     display: none;
   }
-
-  
-
   #text {
-    font-size: 40px;
-    text-align: right;
+    margin-top: 20%;
+    font-size: 50px;
+    text-align: left;
   }
-
+/* fundo quadrado 2 */
   #fundo {
     background-image: url(../IMG/image.png);
-    width: 100%;
+    /* width: 55vh; */
     margin-top: 0 auto;
     height: 45rem;
 
   }
 
   #texto {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
+    /* display: none; */
+    border-radius: 2%;
+    background-image: url(../IMG/fundo_destorcido.png);
+    margin-top: 12%;
+    margin-left: 20%;
+    max-width: 60%;
+    max-height: 30% ;
+    text-align: center;
   }
 
+  /* Adesao */
   .texto-centralizado {
     position: absolute;
     top: 12%;
