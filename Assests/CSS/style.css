@@ -25,6 +25,108 @@ body {
   height: 100vh;
 }
 
+/* Sidebar toggle */
+input[type="checkbox"] {
+  display: none; /* Oculta o checkbox */
+}
+
+label {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+/* Estilizando as linhas do menu */
+.toggle .common {
+  display: block;
+  width: 30px;
+  height: 5px;
+  margin: 6px auto;
+  background-color: #fff;
+  transition: 0.3s ease;
+  border-radius: 50px;
+}
+
+.top_line {
+  transform: rotate(0deg);
+}
+
+.middle_line {
+  transform: rotate(0deg);
+}
+
+.bottom_line {
+  transform: rotate(0deg);
+}
+
+/* Quando o checkbox estiver checado */
+input:checked ~ .slide {
+  transform: translateX(0); /* Exibe o sidebar */
+}
+
+input:checked ~ .toggle .top_line {
+  transform: rotate(45deg);
+  position: relative;
+  top: 10px;
+}
+
+input:checked ~ .toggle .middle_line {
+  opacity: 0;
+}
+
+input:checked ~ .toggle .bottom_line {
+  transform: rotate(-45deg);
+  position: relative;
+  top: -10px;
+}
+
+/* Sidebar */
+.slide {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Inicialmente escondido à esquerda */
+  width: 250px;
+  height: 100vh;
+  background-color: #ffbf00;
+  color: #000;
+  transition: transform 0.3s ease;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+.slide h2 {
+  font-size: 2em;
+  color: #000;
+}
+
+.slide ul {
+  list-style: none;
+  padding: 0;
+}
+
+.slide ul li {
+  margin: 20px 0;
+}
+
+.slide ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.slide ul li a:hover {
+  color: #fff;
+}
+
+/* Quando o checkbox é checado */
+input:checked ~ .slide {
+  transform: translateX(0); /* Exibe o menu lateral */
+}
+
+
 #divright {
   float: right;
   margin-right: 10%;
