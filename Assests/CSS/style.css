@@ -1,297 +1,301 @@
 /* Estilo geral do body */
 body {
-  background-color: black;
-  color: #f9bb00;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-weight: normal;
+  background-color: black; /* Define a cor de fundo como preto */
+  color: #f9bb00; /* Define a cor do texto como dourado */
+  font-family: Arial, sans-serif; /* Define a fonte principal como Arial */
+  margin: 0; /* Remove as margens padrão */
+  padding: 0; /* Remove o padding padrão */
+  box-sizing: border-box; /* Garante que o padding e border não afetem o tamanho total do elemento */
+  font-weight: normal; /* Define o peso da fonte como normal */
 }
 
 /* Estilo do Header */
 .header {
-  width: 100%;
-  background-image: url('./Assests/IMG/IMG 2/ENERFYM ACADENIA.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  height: 100vh;
+  width: 100%; /* Faz o header ocupar toda a largura da tela */
+  background-image: url('./Assests/IMG/IMG 2/ENERFYM ACADENIA.jpg'); /* Define a imagem de fundo */
+  background-size: cover; /* Faz a imagem de fundo cobrir completamente a área */
+  background-repeat: no-repeat; /* Evita a repetição da imagem */
+  background-attachment: fixed; /* A imagem de fundo não se move ao rolar a página */
+  background-position: center; /* Centraliza a imagem de fundo */
+  display: flex; /* Usa flexbox para organizar os itens dentro do header */
+  flex-wrap: wrap; /* Permite que os itens que não couberem se movam para a linha seguinte */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  align-items: center; /* Centraliza os itens verticalmente */
+  padding: 20px; /* Adiciona um padding de 20px ao redor do header */
+  height: 100vh; /* Faz o header ocupar toda a altura da tela */
 }
 
 #divright {
-  float: right;
-  margin-right: 10%;
-  margin-left: 20px;
-  margin-top: 2%;
+  float: right; /* Faz esse elemento flutuar à direita */
+  margin-right: 10%; /* Adiciona uma margem à direita */
+  margin-left: 20px; /* Adiciona uma margem à esquerda */
+  margin-top: 2%; /* Adiciona uma margem no topo */
 }
 
 #logo {
-  width: 150px;
-  float: left;
-  margin-top: 2%;
-  margin-left: 2%;
+  width: 150px; /* Define a largura do logo */
+  float: left; /* Faz o logo flutuar à esquerda */
+  margin-top: 2%; /* Adiciona uma margem no topo */
+  margin-left: 2%; /* Adiciona uma margem à esquerda */
 }
 
 #capa {
-  background-image: url(../IMG/capa3.png);
-  width: 100%;
-  height: 40rem;
+  background-image: url(../IMG/capa3.png); /* Define a imagem de fundo */
+  width: 100%; /* Faz o elemento ocupar toda a largura */
+  height: 40rem; /* Define a altura do elemento */
 }
 
 /* Estilo dos títulos */
 .centralizada {
-  text-align: center;
-  margin-top: 1em;
+  text-align: center; /* Centraliza o texto */
+  margin-top: 1em; /* Adiciona uma margem no topo */
 }
 
 .titulo-principal {
-  font-size: 12rem;
-  font-weight: bold;
-  color: #ffbf00;
-  margin: 0;
-  line-height: 1.2;
+  font-size: 12rem; /* Define o tamanho da fonte para o título principal */
+  font-weight: bold; /* Define o peso da fonte como negrito */
+  color: #ffbf00; /* Define a cor do texto como dourado */
+  margin: 0; /* Remove as margens */
+  line-height: 1.2; /* Define o espaçamento entre as linhas */
 }
 
 .subtitulo {
-  font-size: 10rem;
-  font-weight: bold;
-  color: #fff;
-  margin: 0;
-  line-height: 1.2;
+  font-size: 10rem; /* Define o tamanho da fonte para o subtítulo */
+  font-weight: bold; /* Define o peso da fonte como negrito */
+  color: #fff; /* Define a cor do texto como branco */
+  margin: 0; /* Remove as margens */
+  line-height: 1.2; /* Define o espaçamento entre as linhas */
 }
 
 /* Responsividade do Header */
 @media (max-width: 1200px) {
   .titulo-principal {
-    font-size: 8rem;
+    font-size: 8rem; /* Reduz o tamanho da fonte em telas menores */
   }
   .subtitulo {
-    font-size: 6rem;
+    font-size: 6rem; /* Reduz o tamanho da fonte em telas menores */
   }
 }
 
 @media (max-width: 768px) {
   .titulo-principal {
-    font-size: 5rem;
+    font-size: 5rem; /* Reduz o tamanho da fonte em telas ainda menores */
   }
   .subtitulo {
-    font-size: 4rem;
+    font-size: 4rem; /* Reduz o tamanho da fonte em telas ainda menores */
   }
   .header {
-    flex-direction: column;
-    text-align: center;
+    flex-direction: column; /* Alinha os itens do header em coluna */
+    text-align: center; /* Centraliza o texto */
   }
   #logo {
-    display: none;
+    display: none; /* Esconde o logo em telas menores */
   }
 }
 
 @media (max-width: 480px) {
   .titulo-principal {
-    font-size: 3rem;
+    font-size: 3rem; /* Reduz ainda mais o tamanho do título em telas muito pequenas */
   }
   .subtitulo {
-    font-size: 2.5rem;
+    font-size: 2.5rem; /* Reduz ainda mais o tamanho do subtítulo em telas muito pequenas */
   }
   .header {
-    padding: 10px;
+    padding: 10px; /* Reduz o padding no header */
   }
   #divright {
-    margin: 10px auto;
+    margin: 10px auto; /* Centraliza o conteúdo do divright em telas muito pequenas */
   }
 }
 
 /* Estilo de navegação */
 .flex {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  display: flex; /* Usa flexbox para organizar os itens */
+  justify-content: space-around; /* Distribui os itens igualmente com espaços ao redor */
+  align-items: center; /* Alinha os itens verticalmente */
 }
+
 .flex a img {
-  width: 200px;
+  width: 200px; /* Define a largura das imagens dentro de links */
 }
+
 .flex button {
-  border: 2px solid #ffbf00;
-  background-color: transparent;
-  color: #ffbf00;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.3s ease, color 0.3s ease;
+  border: 2px solid #ffbf00; /* Adiciona uma borda dourada nos botões */
+  background-color: transparent; /* Define o fundo do botão como transparente */
+  color: #ffbf00; /* Define a cor do texto do botão como dourado */
+  padding: 10px 20px; /* Adiciona padding nos botões */
+  border-radius: 5px; /* Torna os cantos do botão arredondados */
+  font-size: 1rem; /* Define o tamanho da fonte do botão */
+  cursor: pointer; /* Mostra o cursor como ponteiro quando passa sobre o botão */
+  transition: background 0.3s ease, color 0.3s ease; /* Adiciona transições suaves para a cor de fundo e texto */
 }
+
 .flex button:hover {
-  background-color: #ffbf00;
-  color: black;
+  background-color: #ffbf00; /* Altera o fundo do botão para dourado ao passar o mouse */
+  color: black; /* Altera a cor do texto do botão para preto ao passar o mouse */
 }
 
 /* Responsividade para navegação */
 @media (max-width: 768px) {
   .flex {
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: column; /* Organiza os itens de navegação em coluna */
+    gap: 10px; /* Adiciona espaçamento entre os itens */
   }
   .flex button {
-    width: 80%;
+    width: 80%; /* Define a largura dos botões para 80% da tela */
   }
 }
 
 /* Estilo Geral do Footer */
 footer {
-  display: flex;
-  flex-direction: column;
-  background-color: #ffbf00;
-  color: black;
-  border: 2px solid black;
-  padding: 2%;
+  display: flex; /* Usa flexbox para organizar o conteúdo do footer */
+  flex-direction: column; /* Organiza os itens do footer em coluna */
+  background-color: #ffbf00; /* Define o fundo como dourado */
+  color: black; /* Define a cor do texto como preto */
+  border: 2px solid black; /* Adiciona uma borda preta ao redor do footer */
+  padding: 2%; /* Adiciona padding no footer */
 }
 
 .gridContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
+  display: grid; /* Usa grid para organizar os elementos no footer */
+  grid-template-columns: 1fr 1fr 1fr; /* Define três colunas no grid */
+  gap: 20px; /* Adiciona espaçamento entre as colunas */
 }
 
 .tituloFooter {
-  font-size: 2.5rem;
-  font-weight: 800;
-  text-align: center;
-  margin-bottom: 10px;
-  border-bottom: 2px solid black;
+  font-size: 2.5rem; /* Define o tamanho da fonte do título no footer */
+  font-weight: 800; /* Define o peso da fonte como negrito */
+  text-align: center; /* Centraliza o texto do título */
+  margin-bottom: 10px; /* Adiciona uma margem abaixo do título */
+  border-bottom: 2px solid black; /* Adiciona uma linha embaixo do título */
 }
 
 .lista1 {
-  display: flex;
-  flex-direction: column;
-  text-align: start;
+  display: flex; /* Usa flexbox para organizar os itens da lista */
+  flex-direction: column; /* Organiza os itens em coluna */
+  text-align: start; /* Alinha o texto à esquerda */
 }
 
 .links {
-  color: black;
-  text-decoration: none;
-  font-size: 1.5rem;
-  padding: 5px 0;
+  color: black; /* Define a cor dos links como preto */
+  text-decoration: none; /* Remove o sublinhado dos links */
+  font-size: 1.5rem; /* Define o tamanho da fonte dos links */
+  padding: 5px 0; /* Adiciona espaçamento nos links */
 }
 
 .flexIcones {
-  display: flex;
-  justify-content: space-around;
-  padding: 15px 0;
+  display: flex; /* Usa flexbox para organizar os ícones */
+  justify-content: space-around; /* Distribui os ícones com espaço ao redor */
+  padding: 15px 0; /* Adiciona padding ao redor dos ícones */
 }
 
 .iconeFooter {
-  width: 35px;
+  width: 35px; /* Define o tamanho dos ícones */
 }
 
 .centralizacaoFooter {
-  text-align: center;
+  text-align: center; /* Centraliza o conteúdo */
 }
 
 .iconeLogoFooter {
-  width: 120px;
+  width: 120px; /* Define o tamanho do logo no footer */
 }
 
 .flexContatos {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding-top: 15px;
+  display: flex; /* Usa flexbox para organizar os itens de contato */
+  align-items: center; /* Alinha os itens verticalmente */
+  gap: 10px; /* Adiciona espaçamento entre os itens */
+  padding-top: 15px; /* Adiciona padding no topo */
 }
 
 .linha {
-  border-top: 2px solid black;
-  width: 100%;
+  border-top: 2px solid black; /* Adiciona uma linha no topo */
+  width: 100%; /* Define a largura da linha como 100% */
 }
 
 .copy {
-  text-align: center;
-  margin-top: 20px;
+  text-align: center; /* Centraliza o texto */
+  margin-top: 20px; /* Adiciona margem no topo */
 }
 
 /* Responsividade para Footer */
 @media (max-width: 912px) {
   .gridContainer {
-    grid-template-columns: 1fr;
-    gap: 10px;
+    grid-template-columns: 1fr; /* Organiza os itens em uma única coluna */
+    gap: 10px; /* Reduz o espaçamento entre os itens */
   }
   .tituloFooter {
-    font-size: 2rem;
+    font-size: 2rem; /* Reduz o tamanho do título */
   }
   .links {
-    font-size: 1.3rem;
+    font-size: 1.3rem; /* Reduz o tamanho dos links */
   }
   .iconeFooter {
-    width: 35px;
+    width: 35px; /* Ajusta o tamanho dos ícones */
   }
   .copy {
-    font-size: 1rem;
+    font-size: 1rem; /* Ajusta o tamanho da fonte no rodapé */
   }
 }
 
 @media (max-width: 480px) {
   footer {
-    padding: 1%;
+    padding: 1%; /* Reduz o padding do footer */
   }
   .tituloFooter {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Reduz o tamanho do título */
   }
   .links {
-    font-size: 1rem;
+    font-size: 1rem; /* Reduz o tamanho dos links */
   }
   .iconeFooter {
-    width: 30px;
+    width: 30px; /* Ajusta o tamanho dos ícones */
   }
 }
 
 /* Estilo adicional */
 .textfamily {
-  font-family: "Jomolhari", serif;
+  font-family: "Jomolhari", serif; /* Define uma fonte diferente */
 }
 
 .textsize {
-  font-size: 1.5rem;
+  font-size: 1.5rem; /* Define um tamanho de fonte */
 }
 
 /* Estilo dos cards flip */
 .card-flip {
-  perspective: 1000px;
-  max-width: 300px;
-  margin: 10px;
+  perspective: 1000px; /* Define a perspectiva para a animação de flip */
+  max-width: 300px; /* Define a largura máxima do card */
+  margin: 10px; /* Adiciona margem ao redor do card */
 }
+
 .card-inner {
-  position: relative;
-  width: 100%;
-  height: 300px;
-  text-align: center;
-  transform-style: preserve-3d;
-  transition: transform 0.6s;
+  position: relative; /* Define a posição do card */
+  width: 100%; /* Define a largura do card */
+  height: 300px; /* Define a altura do card */
+  text-align: center; /* Centraliza o texto dentro do card */
+  transform-style: preserve-3d; /* Mantém os elementos em 3D */
+  transition: transform 0.6s; /* Adiciona uma transição suave para a rotação */
 }
+
 .card-flip:hover .card-inner {
-  transform: rotateY(180deg);
+  transform: rotateY(180deg); /* Gira o card ao passar o mouse */
 }
+
 .card-front, .card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff;
-  color: #f9bb00;
-  border: 2px solid #f9bb00;
+  position: absolute; /* Posiciona os dois lados do card */
+  width: 100%; /* Define a largura do card */
+  height: 100%; /* Define a altura do card */
+  backface-visibility: hidden; /* Esconde o verso do card quando virado */
+  display: flex; /* Usa flexbox para organizar os itens dentro do card */
+  flex-direction: column; /* Organiza os itens em coluna */
+  justify-content: center; /* Centraliza os itens no card */
+  align-items: center; /* Centraliza os itens no card */
+  background-color: #fff; /* Define a cor de fundo */
+  color: #f9bb00; /* Define a cor do texto */
+  border: 2px solid #f9bb00; /* Adiciona borda dourada */
 }
 
 .card-back {
-  transform: rotateY(180deg);
+  transform: rotateY(180deg); /* Gira o verso do card */
 }
-
-
