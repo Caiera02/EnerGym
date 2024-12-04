@@ -268,7 +268,7 @@ footer {
   flex-direction: column;
 }
 
-#coluna2 {}
+/* #coluna2 {} */
 
 /* Responsividade para Dispositivos Menores */
 @media (max-width: 912px) {
