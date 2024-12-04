@@ -9,27 +9,22 @@ body {
   font-weight: normal;
 }
 
-/* =======================
-   ESTILO DO HEADER
-======================== */
+/* Estilo do Header */
 .header {
   width: 100%;
   background-image: url('./Assests/IMG/IMG 2/ENERFYM ACADENIA.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed; /* Fixa a imagem de fundo */
+  background-attachment: fixed;
   background-position: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  height: 100vh; /* Garantir que ocupe toda a altura da tela */
+  height: 100vh;
 }
 
-
-
-/* Estilo do logo */
 #divright {
   float: right;
   margin-right: 10%;
@@ -50,16 +45,14 @@ body {
   height: 40rem;
 }
 
-/* =======================
-   ESTILO DOS TÍTULOS
-======================== */
+/* Estilo dos títulos */
 .centralizada {
   text-align: center;
   margin-top: 1em;
 }
 
 .titulo-principal {
-  font-size: 12rem; /* Ajuste conforme necessário */
+  font-size: 12rem;
   font-weight: bold;
   color: #ffbf00;
   margin: 0;
@@ -67,21 +60,18 @@ body {
 }
 
 .subtitulo {
-  font-size: 10rem; /* Ajuste conforme necessário */
+  font-size: 10rem;
   font-weight: bold;
   color: #fff;
   margin: 0;
   line-height: 1.2;
 }
 
-/* =======================
-   RESPONSIVIDADE PARA HEADER
-======================== */
+/* Responsividade do Header */
 @media (max-width: 1200px) {
   .titulo-principal {
     font-size: 8rem;
   }
-
   .subtitulo {
     font-size: 6rem;
   }
@@ -91,18 +81,15 @@ body {
   .titulo-principal {
     font-size: 5rem;
   }
-
   .subtitulo {
     font-size: 4rem;
   }
-
   .header {
     flex-direction: column;
     text-align: center;
   }
-
   #logo {
-    display: none; /* Esconde logo em telas menores */
+    display: none;
   }
 }
 
@@ -110,50 +97,26 @@ body {
   .titulo-principal {
     font-size: 3rem;
   }
-
   .subtitulo {
     font-size: 2.5rem;
   }
-
-  footer .row {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  footer ul {
-    padding: 0;
-  }
-
   .header {
     padding: 10px;
   }
-
   #divright {
     margin: 10px auto;
   }
-
-  #capa {
-    height: auto;
-  }
 }
 
-/* =======================
-   ESTILO DE NAVEGAÇÃO
-======================== */
+/* Estilo de navegação */
 .flex {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-
 .flex a img {
-  width: 200px; /* Define o tamanho da logo */
+  width: 200px;
 }
-
-.flex a {
-  text-decoration: none;
-}
-
 .flex button {
   border: 2px solid #ffbf00;
   background-color: transparent;
@@ -164,7 +127,6 @@ body {
   cursor: pointer;
   transition: background 0.3s ease, color 0.3s ease;
 }
-
 .flex button:hover {
   background-color: #ffbf00;
   color: black;
@@ -176,50 +138,50 @@ body {
     flex-direction: column;
     gap: 10px;
   }
-
   .flex button {
     width: 80%;
   }
 }
 
 /* Estilo Geral do Footer */
-footer div {
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffbf00;
   color: black;
+  border: 2px solid black;
+  padding: 2%;
 }
 
-footer {
-  border: 2px solid black;
-  background-color: #ffbf00;
-  width: 0 auto;
-  height: auto;
-  margin-top: 2%;
-  padding: 2%;
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
 }
 
 .tituloFooter {
   font-size: 2.5rem;
   font-weight: 800;
-  border-bottom: 2px solid #000000;
   text-align: center;
-}
-
-.links {
-  padding-top: 10px;
-  text-decoration: none;
-  color: black;
-  cursor: pointer;
-  margin: 0;
+  margin-bottom: 10px;
+  border-bottom: 2px solid black;
 }
 
 .lista1 {
   display: flex;
   flex-direction: column;
-  text-align: start; /* Define alinhamento do texto */
+  text-align: start;
+}
+
+.links {
+  color: black;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 5px 0;
 }
 
 .flexIcones {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   padding: 15px 0;
 }
@@ -238,75 +200,57 @@ footer {
 
 .flexContatos {
   display: flex;
-  flex-wrap: nowrap;
-  align-items: end;
+  align-items: center;
+  gap: 10px;
   padding-top: 15px;
 }
 
 .linha {
-  grid-row: 2/3;
-  grid-column: 1/4;
-  border-top: 2px solid #000000;
+  border-top: 2px solid black;
   width: 100%;
 }
 
 .copy {
-  grid-row: 3/4;
-  grid-column: 1/4;
+  text-align: center;
+  margin-top: 20px;
 }
 
-/* Grid Layout do Footer */
-.gridContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 9fr 1fr;
-}
-
-.coluna1,
-.coluna3 {
-  display: flex;
-  flex-direction: column;
-}
-
-/* #coluna2 {} */
-
-/* Responsividade para Dispositivos Menores */
+/* Responsividade para Footer */
 @media (max-width: 912px) {
   .gridContainer {
     grid-template-columns: 1fr;
-    grid-template-rows: 7fr 7fr 7fr 0.4fr 0.5fr;
+    gap: 10px;
   }
-
-  .coluna1 {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    padding-bottom: 40px;
+  .tituloFooter {
+    font-size: 2rem;
   }
-
-  .coluna2 {
-    grid-column: 1/2;
-    grid-row: 2/3;
-    padding-bottom: 40px;
+  .links {
+    font-size: 1.3rem;
   }
-
-  .coluna3 {
-    grid-column: 1/2;
-    grid-row: 3/4;
-    padding-bottom: 40px;
+  .iconeFooter {
+    width: 35px;
   }
-
-  .linha {
-    grid-column: 1/2;
-    grid-row: 4/5;
-  }
-
   .copy {
-    grid-column: 1/2;
-    grid-row: 5/6;
+    font-size: 1rem;
   }
 }
 
-/* Estilo Adicional */
+@media (max-width: 480px) {
+  footer {
+    padding: 1%;
+  }
+  .tituloFooter {
+    font-size: 1.5rem;
+  }
+  .links {
+    font-size: 1rem;
+  }
+  .iconeFooter {
+    width: 30px;
+  }
+}
+
+/* Estilo adicional */
 .textfamily {
   font-family: "Jomolhari", serif;
 }
@@ -315,29 +259,12 @@ footer {
   font-size: 1.5rem;
 }
 
-
-/* =======================
-   ESTILO DOS CARDS FLIP
-======================== */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.row {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
+/* Estilo dos cards flip */
 .card-flip {
   perspective: 1000px;
-  width: 100%;
   max-width: 300px;
   margin: 10px;
 }
-
 .card-inner {
   position: relative;
   width: 100%;
@@ -346,13 +273,10 @@ footer {
   transform-style: preserve-3d;
   transition: transform 0.6s;
 }
-
 .card-flip:hover .card-inner {
   transform: rotateY(180deg);
 }
-
-.card-front,
-.card-back {
+.card-front, .card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -364,97 +288,8 @@ footer {
   background-color: #fff;
   color: #f9bb00;
   border: 2px solid #f9bb00;
-  padding: 20px;
 }
 
 .card-back {
   transform: rotateY(180deg);
-}
-
-.card-title {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
-.price-value {
-  font-size: 1.2rem;
-  margin-top: 5px;
-}
-
-.features {
-  list-style-type: none;
-  padding: 0;
-}
-
-.features li {
-  margin: 5px 0;
-}
-
-/* =======================
-   ESTILO DOS CARDS DE UNIDADES
-======================== */
-.Unidades {
-  width: 100%;
-  max-width: 300px;
-  border: 2px solid #f9bb00;
-  background-color: #ffffff;
-  color: #000;
-  margin: 15px;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.Card-img-top {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.Estado {
-  text-align: center;
-  font-weight: bold;
-  margin-top: 10px;
-}
-
-.card-body {
-  padding: 10px;
-  text-align: center;
-}
-
-/* =======================
-   RESPONSIVIDADE PARA CARDS
-======================== */
-@media (max-width: 1200px) {
-  .titulo-principal {
-    font-size: 6rem;
-  }
-
-  .subtitulo {
-    font-size: 4rem;
-  }
-
-  .card-flip {
-    max-width: 250px;
-  }
-}
-
-@media (max-width: 768px) {
-  .card-flip {
-    max-width: 100%;
-  }
-
-  .card-inner {
-    height: auto;
-  }
-}
-
-@media (max-width: 480px) {
-  .Unidades {
-    max-width: 100%;
-    margin: 10px;
-  }
-
-  .card-body {
-    padding: 5px;
-  }
 }
