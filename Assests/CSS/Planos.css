@@ -251,6 +251,7 @@ li {
   li {
     margin: 10px 0;
   }
+
 }
 
 /* =======================
@@ -288,8 +289,7 @@ li {
   transform: rotateY(180deg);
 }
 
-.card-front,
-.card-back {
+.card-front,.card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -358,6 +358,114 @@ li {
   text-align: center;
 }
 
+/* Footer */
+
+footer div {
+  color: black;
+}
+
+.textfamily {
+  font-family: "Jomolhari", serif;
+}
+
+.textsize {
+  font-size: 1.5rem;
+}
+
+footer {
+  border: 2px solid black;
+  background-color: #ffbf00;
+  width: 0 auto;
+  height: auto;
+  margin-top: 2%;
+  padding: 2%;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 9fr 1fr;
+
+  /* Coluna 1 */
+}
+
+.coluna1 {
+
+  display: flex;
+  flex-direction: column;
+}
+
+.tituloFooter {
+
+  font-size: 2.5rem;
+  font-weight: 800;
+  border-bottom: 2px solid #000000;
+  text-align: center;
+}
+
+.links {
+
+  padding-top: 10px;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  margin: 0;
+}
+
+.lista1 {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  /* Add this line to set text alignment to the start */
+}
+
+/* Coluna 2 */
+
+.flexIcones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 15px 0;
+}
+
+.iconeFooter {
+  width: 35px;
+}
+
+.centralizacaoFooter {
+  text-align: center;
+}
+
+.iconeLogoFooter {
+  width: 120px;
+}
+
+.coluna3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexContatos {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: end;
+  padding-top: 15px;
+  float: inline-start;
+
+}
+
+.linha {
+  grid-row: 2/3;
+  grid-column: 1/4;
+  border-top: 2px solid #000000;
+  width: 100%;
+}
+
+.copy {
+  grid-row: 3/4;
+  grid-column: 1/4;
+}
+
 /* =======================
    RESPONSIVIDADE PARA CARDS
 ======================== */
@@ -372,6 +480,12 @@ li {
 
   .card-flip {
     max-width: 250px;
+  }
+}
+@media (min-width: 768px) {
+  .col-md-3, .card-front {
+      flex: 0 0 auto;
+      width: 100%;
   }
 }
 
@@ -420,7 +534,7 @@ li {
     flex-direction: column;
   }
 
-  
+
 
   .flex {
     display: flex;
@@ -568,5 +682,25 @@ li {
     max-width: 15%;
     margin-right: 38%;
   }
-  .container1{}
+
+  .container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: #f9bb00;
+    border: 2px solid #f9bb00;
+    padding: 20px;
+}
 }
