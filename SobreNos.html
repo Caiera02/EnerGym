@@ -11,19 +11,48 @@
 </head>
 
 <body>
-    <header style="background-image: url(./Assests/IMG/IMG/ENERGYM\ ACADEMIA.jpg);">
+    
+    <header>
         <nav>
             <div id="capa">
-                <div id="divright">
-                    <a href="Login.html"><button type="button" style="font-size:24px" class="btn btn-outline-warning">Área do aluno</button></a>
-                    <a href="planos.html"><button type="button" style="font-size:24px" class="btn btn-outline-warning">Planos</button></a>
-                    <a href="planos.html"><button type="button" style="font-size:24px" class="btn btn-outline-warning">Unidades</button></a>
-                    <a href="SobreNos.html"><button type="button" style="font-size:24px" class="btn btn-outline-warning">Sobre nós</button></a>
-                    <a href=""><img id="logo" src="Assests/IMG/LOGO original.png" alt=""></a>
+                <div class="flex">
+                    <!-- Navbar -->
+                    <a href="index.html"><img style="width:200px;" src="/Assests/IMG/LOGO original.png"
+                            alt="Logo Energym"></a>
+                    <a href="planos.html"> <button type="button" class="btn btn-outline-warning">Planos / Unidades</button></a>
+                    <!-- <a href="#"><button type="button" class="btn btn-outline-warning"> Unidades</button></a> -->
+                    <a href="SobreNos.html"><button type="button" class="btn btn-outline-warning">Sobre nós</button></a>
+                    <a href="Login.html"><button type="button" class="btn btn-outline-warning"> Area do Aluno</button></a>
+                </div>
+                <div class="centralizada">
+                    <h1 class="titulo-principal">ENERGYM</h1>
+                    <h1 class="subtitulo">ACADEMIA</h1>
                 </div>
             </div>
         </nav>
     </header>
+
+    <!-- SIDE BAR -->
+    <!-- <label>
+        <input type="checkbox">
+        <div class="toggle">
+            <span class="top_line common"></span>
+            <span class="middle_line common"></span>
+            <span class="bottom_line common"></span>
+        </div>
+
+        <div class="slide">
+            <h2>Menu</h2>
+            <img src="/Assests/IMG/logo.svg" alt="">
+            <ul>
+                <li><a href="planos.html"> Planos / Unidades </a></li>
+                <!-- <li><a href="#"> </a></li> 
+                <li><a href="SobreNos.html"> Sobre nós</a></li>
+                <li><a href="Login.html"> Area do Aluno</a></li>
+            </ul>
+        </div>
+    </label> -->
+
     <section class="Amarelo">
         <div class="SobreNos">
             <h1 class="SobreNos">Sobre Nós</h1>
@@ -93,25 +122,54 @@
 
         </div>
     </section>
+
     <footer>
-        <div class="row">
-            <div class="col">
-                <p>Siga a Energym</p>
-                <a href="https://wa.me/5511971498691"><img src="./Assests/IMG/IMG/whatsapp.svg" alt="WhatsApp"></a>
-                <img src="./Assests/IMG/IMG/instagram.svg" alt="Instagram">
-                <img src="./Assests/IMG/IMG/telegram.svg" alt="Telegram">
+        <div class="gridContainer">
+            <div class="coluna1">
+                <div class="tituloFooter textfamily">Conheça</div>
+                <div class="lista1">
+
+                    <a class="links textfamily textsize" href="#">Sobre nós</a>
+                    <a class="links textfamily textsize" href="#">Unidades</a>
+                    <a class="links textfamily textsize" href="1Planos.html">Planos</a>
+                    <a class="links textfamily textsize" href="#">Nosso espaço</a>
+                </div>
             </div>
-            <div class="col">
-                <p>Contatos</p>
-                <ul>
-                    <li class="li-footer">sac@energym.com.br</li>
-                    <li class="li-footer">Trabalhe conosco</li>
-                    <li class="li-footer">4002-8922</li>
-                </ul>
+            <div id="coluna2">
+                <div class="tituloFooter textfamily">Siga a Energym</div>
+                <div class="flexIcones">
+                    <a href="facebook.com"><img class="iconeFooter" src="/Assests/IMG/facebookincone.svg"
+                            alt="Facebook"></a>
+                    <a href="tiktok.com"><img class="iconeFooter" src="/Assests/IMG/tiktokicones.svg"
+                            alt="Tiktok"></a>
+                    <a href="instagram.com"><img class="iconeFooter" src="/Assests/IMG/instagramicone.svg"
+                            alt="Instagram"></a>
+                </div>
+                <div class="centralizacaoFooter">
+                    <a href="#"><img class="iconeLogoFooter" src="/Assests/IMG/logo.svg" alt="Imagem logo"></a>
+                </div>
+                <a href="#"><img src="" alt=""></a>
             </div>
+            <div class="coluna3">
+                <div class="tituloFooter textfamily">Contatos</div>
+                <div class="flexContatos">
+                    <img style="width: 40px;" src="/Assests/IMG/homemicone.svg" alt=" img contatos">
+                    <div class="textfamily textsize">Trabalhe Conosco</div>
+                </div>
+                <div class="flexContatos">
+                    <img style="width: 40px;" src="/Assests/IMG/telefoneicone.svg" alt=" img contatos">
+                    <div class="textfamily textsize">(11) 4002-8922</div>
+                </div>
+                <div class="flexContatos">
+                    <img style="width: 40px;" src="/Assests/IMG/mensagemicone.svg" alt=" img contatos">
+                    <div class="textfamily textsize">sac@energym.com.br</div>
+                </div>
+            </div>
+            <div class="linha"></div>
+            <div class="copy textfamily">2024 &copy Energym todos os direitos reservados</div>
         </div>
-        <p style="text-align: center;">2024&copy; Todos os direitos reservados</p>
     </footer>
+
 
     <script src="./Assests/Javascript/sobre nos.js"></script>
 </body>
