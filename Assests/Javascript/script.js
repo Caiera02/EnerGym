@@ -3,36 +3,44 @@ document.getElementById('loginForm1').addEventListener('submit', function (event
 
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
-
     // Fetch os dados do JSON
-    fetch('login.json').then((response) => {
+    //fetch(teste).then((response) => {
         // Transforma JSON em OBJ
-        return response.json();
-    })
-        .then(users => {
-            const user = users.find(user => user.usuario === username && user.pwd === password);
-            const messageDiv = document.getElementById('error-msg');
-            const saudacaoDiv = document.getElementById('saud')
-           
+      //  return response.json();
+    //})
+      //  .then(users => {
+            //const user = users.find(user => user.username === username && user.password === password);
 
-            if (user) {
-                messageDiv.textContent = 'Login bem-sucedido!';
-                messageDiv.style.color = "green"
+            var user = localStorage.infoUsuarios;
 
-                // Redirecionamento de tela 
-                alert(`${user.usuario} Seja Bem vindo a area do aluno!!`)
-                window.location.href = "1Planos.html"
+            if(user){
+                var parsedUser = JSON.parse(user)
 
-                saudacaoDiv.textContent= `Olá ${user.usuario} ! Você tem [quantidade de pontos1] pontos para trocar em
-        recompensas!`
-                //  Olá ! Você tem [quantidade de pontos1] pontos para trocar em recompensas!`
-                //document.getElementsByClassName('saudacao').innerHTML = ``
+                const messageDiv = document.getElementById('error-msg');
+                const saudacaoDiv = document.getElementById('saud')
+               
+    
+                if (parsedUser.username === username && parsedUser.password === password) {
+                    messageDiv.textContent = 'Login bem-sucedido!';
+                    messageDiv.style.color = "green"
+    
+                    // Redirecionamento de tela 
+                    alert(`${parsedUser.username} Seja Bem vindo a area do aluno!!`)
+                    window.location.href = "1Planos.html"
+                    localStorage.nomeUsuario = parsedUser.username;
+    
+                    saudacaoDiv.textContent= `Olá ${user.usuario} ! Você tem [quantidade de pontos1] pontos para trocar em
+            recompensas!`
+                    //  Olá ! Você tem [quantidade de pontos1] pontos para trocar em recompensas!`
+                    //document.getElementsByClassName('saudacao').innerHTML = ``
+    
+                } else {
+                    messageDiv.textContent = 'Usuário ou senha inválidos.';
+                    messageDiv.style.color = "red"
+                }
 
-            } else {
-                messageDiv.textContent = 'Usuário ou senha inválidos.';
-                messageDiv.style.color = "red"
             }
 
-        })
+       // })
 
 });

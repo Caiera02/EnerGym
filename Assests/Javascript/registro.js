@@ -7,6 +7,15 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
 
-    // const user = 
+    const user = {
+        username: username,
+        email: email,
+        password: password
+    }
 
+    localStorage.infoUsuarios = JSON.stringify(user)
+
+    window.location.href = "Login.html"
+
+    console.log(localStorage.infoUsuarios)
 });
