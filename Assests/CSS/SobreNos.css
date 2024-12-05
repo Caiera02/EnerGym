@@ -41,7 +41,7 @@
 }
 
 .titulo-principal {
-  font-size: 12rem; /* Ajuste conforme necessário */
+  font-size: 8rem; /* Ajuste conforme necessário */
   font-weight: bold;
   color: #ffbf00;
   margin: 0;
@@ -49,11 +49,16 @@
 }
 
 .subtitulo {
-  font-size: 10rem; /* Ajuste conforme necessário */
+  font-size: 7rem; /* Ajuste conforme necessário */
   font-weight: bold;
   color: #fff;
   margin: 0;
   line-height: 1.2;
+}
+
+#objAcademia{
+  text-align: justify;
+  width: 90%;
 }
 
 /* Responsividade para o Header */
@@ -241,6 +246,14 @@ footer {
   footer ul {
     padding: 0;
   }
+
+  .gridContainer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 10px;
+  }
 }
 
 /* =======================
@@ -319,6 +332,8 @@ footer {
 #text {
   color: #fff;
   padding: 7%;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .Preto {

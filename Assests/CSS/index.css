@@ -265,7 +265,6 @@ li {
   /* Card */
   #flex2 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     margin-right: 2%;
     margin-left: 10%;
     margin-top: 10%;
@@ -275,7 +274,8 @@ li {
   #capa {
     background-image: url(../IMG/capa3.png);
     max-width: 80vh;
-    height: 40rem;
+    height: 20rem;
+    background-size: cover;
   }
 
   #fundo {
@@ -632,7 +632,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 9fr 1fr;
-
+  justify-items: center;
   /* Coluna 1 */
 }
 
@@ -766,7 +766,7 @@ footer {
   }
   #text {
     margin-top: 20%;
-    font-size: 50px;
+    font-size: 2em;
     text-align: left;
   }
 /* fundo quadrado 2 */
@@ -775,7 +775,8 @@ footer {
     /* width: 55vh; */
     margin-top: 0 auto;
     height: 45rem;
-
+    background-size: cover;
+    background-position: center;
   }
 
   #texto {

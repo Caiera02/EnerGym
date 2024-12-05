@@ -77,15 +77,15 @@
             <form id="formulario" class="form-container">
                 <div class="input-single">
                     <label for="nome">Seu nome completo</label>
-                    <input class="input" type="text" id="nome" required>
+                    <input class="input" type="text" id="nome" required placeholder="Nome Completo">
                 </div>
                 <div class="input-single">
                     <label for="email">Seu e-mail</label>
-                    <input class="input" type="email" id="email" required>
+                    <input class="input" type="email" id="email" required placeholder="E-mail">
                 </div>
                 <div class="input-single">
                     <label for="telefone">Seu telefone</label>
-                    <input class="input" type="text" id="telefone" required>
+                    <input class="input" type="text" id="telefone" required placeholder="Telefone">
                 </div>
                 <div>
                     <h3 style="text-align: center;">Sexo:</h3>
@@ -101,12 +101,14 @@
                 <br>
                 <div>
                     <h3>Qual seu principal objetivo ao ir a uma academia</h3><br>
-                    <input type="checkbox" id="massa" name="massa" value="massa">
-                    <label for="">Ganho de massa magra</label><br>
-                    <input type="checkbox" id="peso" name="peso" value="peso">
-                    <label for="">Perder peso</label><br>
-                    <input type="checkbox" id="saude" name="saude" value="saude">
-                    <label for="">Melhorar a saúde</label><br>
+                    <div id="objAcademia">
+                        <input type="checkbox" id="massa" name="massa" value="massa">
+                        <label for="">Ganho de massa magra</label><br>
+                        <input type="checkbox" id="peso" name="peso" value="peso">
+                        <label for="">Perder peso</label><br>
+                        <input type="checkbox" id="saude" name="saude" value="saude">
+                        <label for="">Melhorar a saúde</label><br>
+                    </div>
                 </div><br>
                 <div class="btn">
                     <input type="submit" value="Enviar">
