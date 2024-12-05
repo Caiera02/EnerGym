@@ -330,7 +330,6 @@ li {
     /* Ajuste o tamanho do texto conforme necessário */
     text-align: center;
     /* Alinha o texto no centro */
-    font-weight: bold;
     /* Torna o texto em negrito */
     background: rgba(0, 0, 0, 0.5);
     /* Fundo transparente escuro, opcional */
