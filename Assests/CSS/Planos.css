@@ -76,15 +76,15 @@ body {
   line-height: 1.2;
 }
 
-.localidadeCard{
+.localidadeCard {
   height: 550px;
 }
 
-.localidadeCard h3{
+.localidadeCard h3 {
   font-size: 1.5em;
 }
 
-.localidadeCard img{
+.localidadeCard img {
   height: 270px;
 }
 
@@ -129,9 +129,9 @@ body {
     display: none;
   }
 
-  .containerPlanos{
+  .containerPlanos {
     display: grid;
-    grid-template-columns:70vw;
+    grid-template-columns: 70vw;
     grid-template-rows: repeat(4, 350px);
   }
 }
@@ -145,7 +145,7 @@ body {
     font-size: 2.5rem;
   }
 
-  footer  {
+  footer {
     flex-direction: column;
     text-align: center;
   }
@@ -233,7 +233,8 @@ footer .row {
   display: flex;
   justify-content: space-between;
   padding: 20px;
- }
+}
+
 /* footer .row {
   display: flex;
   justify-content: space-between;
@@ -285,7 +286,7 @@ li {
     width: 100%;
   }
 
-  .gridContainer{
+  .gridContainer {
     display: flex !important;
     flex-direction: column;
     flex-wrap: wrap;
@@ -293,10 +294,10 @@ li {
     row-gap: 5px;
   }
 
-  .cardIntern li{
+  .cardIntern li {
     color: black !important;
   }
-  
+
 }
 
 /* =======================
@@ -342,7 +343,8 @@ li {
   transform: rotateY(180deg);
 }
 
-.card-front, .card-back {
+.card-front,
+.card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -384,7 +386,7 @@ li {
   margin: 5px 0;
 }
 
-.cardIntern li{
+.cardIntern li {
   font-size: 1.0em;
   color: white;
 }
@@ -643,7 +645,8 @@ footer {
   /* Sidebar start */
 
   .slide {
-    margin: -18px 0px 0px 0px;
+
+    /* margin: -18px 0px 0px 0px; */
     height: 100vh;
     width: 190px;
     position: fixed;
@@ -652,7 +655,11 @@ footer {
     background-color: #ffbf00;
     transition: 0.3s ease;
     transform: translateX(-190px);
-}
+    z-index: 9999;
+    /* Certifique-se de que o valor seja maior que o dos outros elementos */
+
+  }
+
   /* .slide {
     margin: -18px 0px 0px 0px;
     height: 100vh;
@@ -675,7 +682,7 @@ footer {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
 
-  label div  {
+  label div {
     width: 100%;
   }
 
