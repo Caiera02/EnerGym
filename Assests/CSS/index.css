@@ -1,15 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kdam+Thmor+Pro&family=Marcellus&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Jomolhari&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+/* @import url("https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kdam+Thmor+Pro&family=Marcellus&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Jomolhari&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap'); */
 
 * {
-  margin: 0 ;
-  padding: 0 ; 
+  margin: 0;
+  padding: 0;
   /* box-sizing: border-box; */
   font-family: "Poppins", sans-serif;
-  
+
 }
 
-.flex{
+.flex {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -44,12 +44,14 @@
   text-align: right;
 }
 
+/* -----------------
+    Quadro 2
+   -----------------*/
+
 #fundo {
   background-image: url(../IMG/image.png);
-  /* display: flex;
-    justify-content: center;
-    align-items: center; */
   width: 100%;
+  margin-top: 0 auto;
   height: 45rem;
 }
 
@@ -63,37 +65,16 @@
   text-align: center;
 }
 
-/* #btnCalculador {
-    max-width: 190px;
-    border-radius: 10px;
-    text-align: center;
-    margin-bottom: 4%;
-    background-color: #73FF00;
-
+#flex2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3%;
 }
 
-#btnCalculador:hover {
-    background: linear-gradient(200deg, #73FF00, #FFBF00);
-    box-shadow: 1px 2px 8px black;
-
-} */
-
-#form-container {
-  display: none;
-  /* Esconde o formulário inicialmente */
-  background-image: url(../IMG/fundo_destorcido.png);
-  /* background: white; */
-  border-radius: 2%;
-  float: right;
-  margin-top: 20%;
-  margin-right: 20%;
-  max-width: 30%;
-  padding: 30px;
-  text-align: center;
-}
-
+/* Adesão de novos planos */
 #fundo2 {
-  background-image: url(../IMG/fundo\ home\ .png);
+  background-image: url(../IMG/fundohome\ .png);
   max-width: 100%;
   height: 50rem;
 }
@@ -109,7 +90,6 @@
 .texto-centralizado {
   position: absolute;
   top: 12%;
-  /* Move o texto verticalmente para o centro */
   left: 50%;
   /* Move o texto horizontalmente para o centro */
   transform: translate(-50%, -50%);
@@ -174,6 +154,7 @@
 
 .card-text {
   text-align: center;
+  display: none;
 }
 
 span {
@@ -194,6 +175,71 @@ li {
 }
 
 @media (min-width: 842px) {
+  label {
+    display: none;
+  }
+
+  ul {
+    background-color: black;
+  }
+
+  #fundo {
+    background-image: url(../IMG/image.png);
+    width: 100%;
+    margin-top: 0 auto;
+    background-color: #000000;
+    height: 45rem;
+
+  }
+
+  #texto {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  /* .texto-centralizado {
+    position: absolute;
+    top: 12%;
+    left: 36%;
+    transform: translate(-50%, -50%);
+    color: #ffbf00;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .texto-centralizado1 {
+    position: absolute;
+    top: 29%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    color: #ffbf00;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .button-centralizado {
+    position: absolute;
+    top: 60%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    background: #ffbf00;
+    padding: 10px;
+    border-radius: 5px;
+  } */
+
   .flex {
     display: flex;
     justify-content: space-around;
@@ -207,8 +253,125 @@ li {
 }
 
 @media (max-width: 842px) {
-  header nav {
+
+  .flex {
     display: none;
+  }
+
+  ul {
+    margin-right: 60%;
+  }
+
+  /* Card */
+  #flex2 {
+    display: grid;
+    margin-right: 2%;
+    margin-left: 10%;
+    margin-top: 10%;
+  }
+  /*  FIM DO CARD */
+
+  #capa {
+    background-image: url(../IMG/capa3.png);
+    max-width: 80vh;
+    height: 20rem;
+    background-size: cover;
+  }
+
+  #fundo {
+    max-width: 80vh;
+    height: 40rem;
+  }
+
+  #texto {
+    /* display: none; */
+    border-radius: 2%;
+    background-image: url(../IMG/fundo_destorcido.png);
+    margin-top: 12%;
+    margin-left: 20%;
+    max-width: 60%;
+    max-height: 30% ;
+    text-align: center;
+  }
+/* Adesão de novos alunos */
+  #fundo2 {
+    /* display: none; */
+    background-image: url(../IMG/fundohome\ .png);
+    max-width: 80vh;
+    height: 50rem;
+  }
+  .container {
+    /* display: none; */
+    position: relative; /* Define o container como relativo para posicionar o texto */
+    width: fit-content; /* Ajusta ao tamanho da imagem */
+    /* width: 842px; */
+    /* Ajusta ao tamanho da imagem */
+    margin-bottom: 5%;
+  }
+  
+  #text {
+    font-size: 40px;
+    text-align: center;
+    margin-left: 20%;
+    float: left;
+    margin-top: 10%;
+  }
+  
+  .texto-centralizado {
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    /* Move o texto horizontalmente para o centro */
+    transform: translate(-50%, -50%);
+    /* Ajusta o ponto de referência para o centro */
+    color: #ffbf00;
+    /* Cor do texto */
+    font-size: 2rem;
+    /* Ajuste o tamanho do texto conforme necessário */
+    text-align: center;
+    /* Alinha o texto no centro */
+    font-weight: bold;
+    /* Torna o texto em negrito */
+    background: rgba(0, 0, 0, 0.5);
+    /* Fundo transparente escuro, opcional */
+    padding: 10px;
+    /* Adiciona espaçamento interno */
+    border-radius: 5px;
+  }
+
+  .texto-centralizado1 {
+    position: absolute;
+    top: 29%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffbf00;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .button-centralizado {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    background: #ffbf00;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  /* carrousel */
+  #flex3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-right: 30%;
   }
 
   /* Sidebar start */
@@ -216,7 +379,10 @@ li {
     margin: -18px 0px 0px 0px;
     height: 100vh;
     width: 190px;
-    position: fixed;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    /* position: fixed; */
     background-color: #ffbf00;
     transition: 0.3s ease;
     transform: translateX(-190px);
@@ -225,7 +391,7 @@ li {
   label h2 {
     color: rgb(254, 254, 254);
     font-weight: 800;
-    text-align: right;
+    text-align: center;
     padding: 25px 0px;
     padding-right: 30px;
     pointer-events: none;
@@ -236,8 +402,30 @@ li {
     width: 100%;
   }
 
+  /* label div ul li {
+    list-style: none;
+  }
+
   label div ul li {
     list-style: none;
+  }
+
+  ul li a {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+
+  } */
+
+  label div ul li a {
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    padding: 5px 20px;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.25s ease-out;
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
   }
 
   label div ul li a {
@@ -444,7 +632,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 9fr 1fr;
-
+  justify-items: center;
   /* Coluna 1 */
 }
 
@@ -480,8 +668,6 @@ footer {
 }
 
 /* Coluna 2 */
-#coluna2 {}
-
 .flexIcones {
   display: flex;
   flex-direction: row;
@@ -532,7 +718,6 @@ footer {
   .gridContainer {
     grid-template-columns: 1fr;
     grid-template-rows: 7fr 7fr 7fr 0.4fr 0.5fr;
-
   }
 
   .coluna1 {
@@ -566,6 +751,7 @@ footer {
 }
 
 @media (max-width: 768px) {
+
   #divright button {
     float: none;
     margin: 10px auto;
@@ -578,21 +764,81 @@ footer {
     float: left;
     display: none;
   }
-
-  #capa {
-    height: auto;
-    text-align: center;
-    padding: 20px;
-  }
-
   #text {
-    font-size: 40px;
-    text-align: right;
+    margin-top: 20%;
+    font-size: 2em;
+    text-align: left;
+  }
+/* fundo quadrado 2 */
+  #fundo {
+    background-image: url(../IMG/image.png);
+    /* width: 55vh; */
+    margin-top: 0 auto;
+    height: 45rem;
+    background-size: cover;
+    background-position: center;
   }
 
-  #fundo {
-    height: auto;
-    padding: 20px;
+  #texto {
+    /* display: none; */
+    border-radius: 2%;
+    background-image: url(../IMG/fundo_destorcido.png);
+    margin-top: 12%;
+    margin-left: 20%;
+    max-width: 60%;
+    max-height: 30% ;
+    text-align: center;
+  }
+
+  /* Adesao */
+  .texto-centralizado {
+    position: absolute;
+    top: 12%;
+    left: 36%;
+    /* Move o texto horizontalmente para o centro */
+    transform: translate(-50%, -50%);
+    /* Ajusta o ponto de referência para o centro */
+    color: #ffbf00;
+    /* Cor do texto */
+    font-size: 2rem;
+    /* Ajuste o tamanho do texto conforme necessário */
+    text-align: center;
+    /* Alinha o texto no centro */
+    font-weight: bold;
+    /* Torna o texto em negrito */
+    background: rgba(0, 0, 0, 0.5);
+    /* Fundo transparente escuro, opcional */
+    padding: 10px;
+    /* Adiciona espaçamento interno */
+    border-radius: 5px;
+  }
+
+  .texto-centralizado1 {
+    position: absolute;
+    top: 29%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: #ffbf00;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .button-centralizado {
+    position: absolute;
+    top: 60%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    background: #ffbf00;
+    padding: 10px;
+    border-radius: 5px;
   }
 
   #texto {

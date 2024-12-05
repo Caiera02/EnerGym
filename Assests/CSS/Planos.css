@@ -1,0 +1,790 @@
+/* Estilo geral do body */
+body {
+  background-color: black;
+  color: #f9bb00;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: normal;
+}
+
+/* =======================
+   ESTILO DO HEADER
+======================== */
+.header {
+  width: 100%;
+  background-image: url(../IMG/EnergymAcademia.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* Fixa a imagem de fundo */
+  background-position: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 100vh;
+  /* Garantir que ocupe toda a altura da tela */
+}
+
+/* Estilo do logo */
+#divright {
+  float: right;
+  margin-right: 10%;
+  margin-left: 20px;
+  margin-top: 2%;
+}
+
+#logo {
+  width: 150px;
+  float: left;
+  margin-top: 2%;
+  margin-left: 2%;
+}
+
+#capa {
+  background-image: url(../IMG/EnergymAcademia.jpg);
+  width: 100%;
+  height: 40rem;
+}
+
+/* =======================
+   ESTILO DOS TÍTULOS
+======================== */
+.centralizada {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.titulo-principal {
+  font-size: 8rem;
+  /* Ajuste conforme necessário */
+  font-weight: bold;
+  color: #ffbf00;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.subtitulo {
+  font-size: 7.5rem;
+  /* Ajuste conforme necessário */
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.localidadeCard{
+  height: 550px;
+}
+
+.localidadeCard h3{
+  font-size: 1.5em;
+}
+
+.localidadeCard img{
+  height: 270px;
+}
+
+/* =======================
+   RESPONSIVIDADE PARA HEADER
+======================== */
+@media (max-width: 1200px) {
+  .titulo-principal {
+    font-size: 8rem;
+  }
+
+  .subtitulo {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .titulo-principal {
+    font-size: 5rem;
+  }
+
+  .subtitulo {
+    font-size: 4rem;
+  }
+
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #logo {
+    display: none;
+    /* Esconde logo em telas menores */
+  }
+
+  .container {
+    margin-left: 20%;
+    width: 80%;
+  }
+
+  .container1 {
+    display: none;
+  }
+
+  .containerPlanos{
+    display: grid;
+    grid-template-columns:70vw;
+    grid-template-rows: repeat(4, 350px);
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo-principal {
+    font-size: 3rem !important;
+  }
+
+  .subtitulo {
+    font-size: 2.5rem;
+  }
+
+  footer  {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer ul {
+    padding: 0;
+  }
+
+  .header {
+    padding: 10px;
+  }
+
+  #divright {
+    margin: 10px auto;
+  }
+
+  #capa {
+    height: auto;
+  }
+}
+
+/* =======================
+   ESTILO DE NAVEGAÇÃO
+======================== */
+.flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex a img {
+  width: 200px;
+  /* Define o tamanho da logo */
+}
+
+.flex a {
+  text-decoration: none;
+}
+
+.flex button {
+  border: 2px solid #ffbf00;
+  background-color: transparent;
+  color: #ffbf00;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.flex button:hover {
+  background-color: #ffbf00;
+  color: black;
+}
+
+/* Responsividade para navegação */
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .flex button {
+    width: 80%;
+  }
+}
+
+/* =======================
+   ESTILO DO RODAPÉ
+======================== */
+footer {
+  border: 2px solid black;
+  background-color: #ffbf00;
+  max-width: 1390px;
+  height: 15rem;
+  margin: 5% auto 0;
+  padding: 2%;
+}
+
+footer div {
+  color: black;
+}
+
+footer .row {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+footer p,
+li {
+  color: black;
+  font-size: 1rem;
+}
+
+footer img {
+  width: 10%;
+  margin-left: 10px;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  text-align: center;
+}
+
+
+
+@media (max-width: 768px) {
+  footer {
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  footer .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  li {
+    margin: 10px 0;
+  }
+
+  .container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .gridContainer{
+    display: flex !important;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 5px;
+  }
+
+  .cardIntern li{
+    color: black !important;
+  }
+
+}
+
+/* =======================
+   ESTILO DOS CARDS FLIP
+======================== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* .container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+} */
+
+/*Comentado para ajustar a responsividade*/
+/*.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}*/
+
+.card-flip {
+  perspective: 1000px;
+  width: 100%;
+  max-width: 300px;
+  margin: 10px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.card-flip:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #f9bb00;
+  border: 3px solid #f9bb00;
+  padding: 20px;
+  font-weight: 800;
+  border-radius: 10px;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  width: auto;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.price-value {
+  font-size: 1.2rem;
+  margin-top: 5px;
+}
+
+.features {
+  list-style-type: none;
+  padding: 0;
+}
+
+.features li {
+  margin: 5px 0;
+}
+
+.cardIntern li{
+  font-size: 1.0em;
+  color: white;
+}
+
+/* =======================
+   ESTILO DOS CARDS DE UNIDADES
+======================== */
+.Unidades {
+  width: 100%;
+  max-width: 300px;
+  border: 2px solid #f9bb00;
+  background-color: #ffffff;
+  color: #000;
+  margin: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.Estado {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.card-body {
+  padding: 10px;
+  text-align: center;
+}
+
+
+
+
+/* Footer */
+
+footer div {
+  color: black;
+}
+
+.textfamily {
+  font-family: "Jomolhari", serif;
+}
+
+.textsize {
+  font-size: 1.5rem;
+}
+
+footer {
+  border: 2px solid black;
+  background-color: #ffbf00;
+  width: 0 auto;
+  height: auto;
+  margin-top: 2%;
+  padding: 2%;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 9fr 1fr;
+
+  /* Coluna 1 */
+}
+
+.coluna1 {
+
+  display: flex;
+  flex-direction: column;
+}
+
+.tituloFooter {
+
+  font-size: 2.5rem;
+  font-weight: 800;
+  border-bottom: 2px solid #000000;
+  text-align: center;
+}
+
+.links {
+
+  padding-top: 10px;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  margin: 0;
+}
+
+.lista1 {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  /* Add this line to set text alignment to the start */
+}
+
+/* Coluna 2 */
+
+.flexIcones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 15px 0;
+}
+
+.iconeFooter {
+  width: 35px;
+}
+
+.centralizacaoFooter {
+  text-align: center;
+}
+
+.iconeLogoFooter {
+  width: 120px;
+}
+
+.coluna3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexContatos {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: end;
+  padding-top: 15px;
+  float: inline-start;
+
+}
+
+.linha {
+  grid-row: 2/3;
+  grid-column: 1/4;
+  border-top: 2px solid #000000;
+  width: 100%;
+}
+
+.copy {
+  grid-row: 3/4;
+  grid-column: 1/4;
+}
+
+/* =======================
+   RESPONSIVIDADE PARA CARDS
+======================== */
+@media (max-width: 1200px) {
+  .titulo-principal {
+    font-size: 6rem;
+  }
+
+  .subtitulo {
+    font-size: 4rem;
+  }
+
+  .card-flip {
+    max-width: 250px;
+  }
+}
+
+/* @media (max-width: 668px) {
+  .card-flip {
+    max-width: 100%;
+  }
+
+  .card-inner {
+    height: auto;
+  }
+
+  .container1 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+} */
+
+@media (max-width: 768px) {
+  .card-flip {
+    max-width: 100%;
+  }
+
+  .card-inner {
+    height: auto;
+    height: 300px;
+  }
+
+
+  .container1 {
+    display: flex;
+    /* width: 100%; */
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col-md-3,
+  .card-front {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .Unidades {
+    max-width: 100%;
+    margin: 10px;
+  }
+
+  .card-body {
+    padding: 5px;
+  }
+}
+
+/* Side Bar */
+@media (min-width: 842px) {
+  label {
+    display: none;
+  }
+
+  ul {
+    background-color: black;
+  }
+
+  #fundo {
+    background-image: url(../IMG/image.png);
+    width: 100%;
+    margin-top: 0 auto;
+    background-color: #000000;
+    height: 45rem;
+  }
+
+  #texto {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  input,
+  .slide {
+    display: none;
+  }
+}
+
+@media (max-width: 842px) {
+  .flex {
+    display: none;
+  }
+
+  /* Sidebar start */
+  .slide {
+    margin: -18px 0px 0px 0px;
+    height: 100vh;
+    width: 190px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    /* position: fixed; */
+    background-color: #ffbf00;
+    transition: 0.3s ease;
+    transform: translateX(-190px);
+  }
+
+  label h2 {
+    color: rgb(254, 254, 254);
+    font-weight: 800;
+    text-align: right;
+    padding: 25px 0px;
+    padding-right: 30px;
+    pointer-events: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  label div img {
+    width: 100%;
+  }
+
+  label div ul li a {
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    padding: 5px 20px;
+    display: block;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.25s ease-out;
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+  }
+
+  label div ul li:hover a {
+    color: #fff;
+    background-color: rgb(0, 0, 0);
+  }
+
+  label input {
+    display: none;
+    visibility: hidden;
+    appearance: none;
+  }
+
+  .toggle {
+    position: fixed;
+    height: 30px;
+    width: 30px;
+    top: 25px;
+    left: 20px;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .toggle .common {
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background-color: #000000;
+    border-radius: 50px;
+    transition: 0.3s ease;
+  }
+
+  .toggle .top_line {
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .toggle .middle_line {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .toggle .bottom_line {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  input:checked~.toggle .top_line {
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(45deg);
+  }
+
+  input:checked~.toggle .bottom_line {
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(-45deg);
+  }
+
+  input:checked~.toggle .middle_line {
+    opacity: 0;
+    transform: translate(30px);
+  }
+
+  input:checked~.slide {
+    transform: translateX(0);
+    box-shadow: 2px 0 10px rgb(255, 255, 255);
+  }
+
+  #capa {
+    /* display: none; */
+    max-width: 80vh;
+  }
+
+  .col-md-4 {
+
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    /* grid-column: auto; */
+    /* align-content: space-between; */
+    /* justify-content: center; */
+    max-width: 15%;
+    margin-right: 38%;
+  }
+
+  .container1 {
+    display: flex;
+    /* width: 100%; */
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .card-front,
+  .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: #f9bb00;
+    border: 2px solid #f9bb00;
+    padding: 20px;
+  }
+}
