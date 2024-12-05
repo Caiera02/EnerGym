@@ -233,7 +233,12 @@ footer .row {
   display: flex;
   justify-content: space-between;
   padding: 20px;
-}
+ }
+/* footer .row {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+} */
 
 footer p,
 li {
@@ -291,7 +296,7 @@ li {
   .cardIntern li{
     color: black !important;
   }
-
+  
 }
 
 /* =======================
@@ -636,18 +641,29 @@ footer {
   }
 
   /* Sidebar start */
+
   .slide {
     margin: -18px 0px 0px 0px;
     height: 100vh;
     width: 190px;
-    position: absolute;
+    position: fixed;
     top: 0%;
     left: 0%;
-    /* position: fixed; */
     background-color: #ffbf00;
     transition: 0.3s ease;
     transform: translateX(-190px);
-  }
+}
+  /* .slide {
+    margin: -18px 0px 0px 0px;
+    height: 100vh;
+    width: 190px;
+    position: relative;
+    top: 0%;
+    left: 0%;
+    background-color: #ffbf00;
+    transition: 0.3s ease;
+    transform: translateX(-190px);
+  } */
 
   label h2 {
     color: rgb(254, 254, 254);
@@ -659,7 +675,7 @@ footer {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
 
-  label div img {
+  label div  {
     width: 100%;
   }
 
