@@ -10,14 +10,3 @@ document.getElementById('my-Form').addEventListener('submit', function (event) {
     const result = document.getElementById('result');
     result.innerText = `O Seu IMC é de ${contar.toFixed(1)}`;
 });
-
-function toggleForm() {
-    const formContainer = document.getElementById('form-container')
-
-    if (formContainer.style.display === 'none' || formContainer.style.display === '') {
-        formContainer.style.display = 'block'; // Mostra o formulário
-        // alert('vc clicou!!!')
-    } else {
-        formContainer.style.display = 'none'; // Esconde o formulário
-    }
-}

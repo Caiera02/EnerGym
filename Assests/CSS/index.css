@@ -269,6 +269,7 @@ li {
     margin-left: 10%;
     margin-top: 10%;
   }
+
   /*  FIM DO CARD */
 
   #capa {
@@ -290,25 +291,29 @@ li {
     margin-top: 12%;
     margin-left: 20%;
     max-width: 60%;
-    max-height: 30% ;
+    max-height: 30%;
     text-align: center;
   }
-/* Adesão de novos alunos */
+
+  /* Adesão de novos alunos */
   #fundo2 {
     /* display: none; */
     background-image: url(../IMG/fundohome\ .png);
     max-width: 80vh;
     height: 50rem;
   }
+
   .container {
     /* display: none; */
-    position: relative; /* Define o container como relativo para posicionar o texto */
-    width: fit-content; /* Ajusta ao tamanho da imagem */
+    position: relative;
+    /* Define o container como relativo para posicionar o texto */
+    width: fit-content;
+    /* Ajusta ao tamanho da imagem */
     /* width: 842px; */
     /* Ajusta ao tamanho da imagem */
     margin-bottom: 5%;
   }
-  
+
   #text {
     font-size: 40px;
     text-align: center;
@@ -316,7 +321,7 @@ li {
     float: left;
     margin-top: 10%;
   }
-  
+
   .texto-centralizado {
     position: absolute;
     top: 12%;
@@ -763,12 +768,14 @@ footer {
     float: left;
     display: none;
   }
+
   #text {
     margin-top: 20%;
     font-size: 2em;
     text-align: left;
   }
-/* fundo quadrado 2 */
+
+  /* fundo quadrado 2 */
   #fundo {
     background-image: url(../IMG/image.png);
     /* width: 55vh; */
@@ -785,7 +792,7 @@ footer {
     margin-top: 12%;
     margin-left: 20%;
     max-width: 60%;
-    max-height: 30% ;
+    max-height: 30%;
     text-align: center;
   }
 
