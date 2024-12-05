@@ -1,39 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Login</title>
-    <link rel="stylesheet" href="Assests/CSS/login.css">
+    <link rel="stylesheet" href="Assests/CSS/registro.css">
 </head>
+
 <body>
     <div class="login-container">
-        
+
         <h2> CADASTRO </h2>
 
-        <form id="loginForm">
+        <form id="registroForm">
             <div class="input-field">
-                <label for="username">Nome:</label>
-                <input type="text" id="username" name="username" placeholder="Digite seu nome completo" required>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="" required>
             </div>
 
             <div class="input-field">
-                <label for="password">E-mail:</label>
+                <label for="password">Nome:</label>
+                <input type="text" id="name" name="name" placeholder="Digite seu nome completo" required>
+            </div>
+
+            <div class="input-field">
+                <label for="password">email:</label>
                 <input type="email" id="email" name="password" placeholder="seuemail@gmail.com" required>
-            </div>
-
-            <div class="input-field">
-                <label for="password">Senha:</label>
-                <input type="password" id="password" name="password" placeholder="Senha" required>
             </div>
 
             <div id="error-msg" class="error"></div>
 
             <button type="submit">Cadastar</button>
         </form>
-
+        <div id="modal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <p id="mensagemModal"></p>
+                <button onclick="fecharModal()">Fechar</button>
+            </div>
+            
+        </div>
     </div>
 
 </body>
 <script src="Assests/Javascript/registro.js"></script>
+
 </html>

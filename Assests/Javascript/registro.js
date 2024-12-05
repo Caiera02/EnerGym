@@ -1,12 +1,18 @@
-// Script para registrar usuários
-document.getElementById("loginForm").addEventListener("submit", function (event) {
-    event.preventDefault();
+document.getElementById("registroForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Impede o envio do formulário
+  
+    var nome = document.getElementById("username").value; // Obtém o nome digitado no campo de texto
 
-    // Captura os valores do formulário
-    const username = document.getElementById("username").value;
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
-
-    // const user = 
-
+    if (nome) {
+        // Exibe o modal com a mensagem personalizada
+        document.getElementById("mensagemModal").innerText = `Em breve, Você recebera um e-mail com as instruções de login, ${nome}.`;
+        document.getElementById("modal").style.display = "flex"; // Mostra o modal
+        
+        // Limpa os campos do formulário
+        // document.getElementById("formulario").reset();  // Limpa os campos do formulário
+    }
 });
+
+function fecharModal() {
+    document.getElementById("modal").style.display = "none"; // Fecha o modal quando o botão é clicado
+}
