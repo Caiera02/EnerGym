@@ -12,7 +12,7 @@ body {
 /* Estilo do Header */
 .header {
   width: 100%;
-  background-image: url('./Assests/IMG/IMG 2/ENERFYM ACADENIA.jpg');
+  background-image: url('./Assets/IMG/IMG 2/ENERFYM ACADENIA.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -25,107 +25,13 @@ body {
   height: 100vh;
 }
 
-/* Sidebar toggle */
-input[type="checkbox"] {
-    display: none; /* Oculta o checkbox */
+/* Estilo do logo */
+#logo {
+  width: 150px;
+  float: left;
+  margin-top: 2%;
+  margin-left: 2%;
 }
-
-label {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    cursor: pointer;
-    z-index: 100;
-}
-
-/* Estilizando as linhas do menu */
-.toggle .common {
-    display: block;
-    width: 30px;
-    height: 5px;
-    margin: 6px auto;
-    background-color: #fff;
-    transition: 0.3s ease;
-    border-radius: 50px;
-}
-
-.top_line {
-    transform: rotate(0deg);
-}
-
-.middle_line {
-    transform: rotate(0deg);
-}
-
-.bottom_line {
-    transform: rotate(0deg);
-}
-
-/* Quando o checkbox estiver checado */
-input:checked ~ .slide {
-    transform: translateX(0); /* Exibe o sidebar */
-}
-
-input:checked ~ .toggle .top_line {
-    transform: rotate(45deg);
-    position: relative;
-    top: 10px;
-}
-
-input:checked ~ .toggle .middle_line {
-    opacity: 0;
-}
-
-input:checked ~ .toggle .bottom_line {
-    transform: rotate(-45deg);
-    position: relative;
-    top: -10px;
-}
-
-/* Sidebar */
-.slide {
-    position: fixed;
-    top: 0;
-    left: -250px; /* Inicialmente escondido à esquerda */
-    width: 250px;
-    height: 100vh;
-    background-color: #ffbf00;
-    color: #000;
-    transition: transform 0.3s ease;
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
-    padding: 20px;
-}
-
-.slide h2 {
-    font-size: 2em;
-    color: #000;
-}
-
-.slide ul {
-    list-style: none;
-    padding: 0;
-}
-
-.slide ul li {
-    margin: 20px 0;
-}
-
-.slide ul li a {
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-.slide ul li a:hover {
-    color: #fff;
-}
-
-/* Quando o checkbox é checado */
-input:checked ~ .slide {
-    transform: translateX(0); /* Exibe o menu lateral */
-}
-
 
 #divright {
   float: right;
@@ -134,25 +40,25 @@ input:checked ~ .slide {
   margin-top: 2%;
 }
 
-#logo {
-  width: 150px;
-  float: left;
-  margin-top: 2%;
-  margin-left: 2%;
-}
-
 #capa {
-  background-image: url(../IMG/capa3.png);
+  position: relative; /* Permite que elementos filhos absolutos se posicionem nele */
   width: 100%;
-  height: 40rem;
+  height: 100vh; /* Ocupa toda a altura da viewport */
+  background-image: url(../IMG/capa3.png);
+  background-size: cover;
+  background-position: center;
 }
 
-/* Estilo dos títulos */
+/* Estilo da div centralizada */
 .centralizada {
   text-align: center;
   margin-top: 1em;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
+/* Estilo dos títulos */
 .titulo-principal {
   font-size: 12rem;
   font-weight: bold;
@@ -169,7 +75,42 @@ input:checked ~ .slide {
   line-height: 1.2;
 }
 
-/* Responsividade do Header */
+/* Ajustes para telas menores */
+@media (max-width: 1200px) {
+  .titulo-principal {
+    font-size: 8rem;
+  }
+  .subtitulo {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .titulo-principal {
+    font-size: 5rem;
+  }
+  .subtitulo {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo-principal {
+    font-size: 3rem;
+  }
+  .subtitulo {
+    font-size: 2.5rem;
+  }
+
+  /* Mantém a centralização */
+  .centralizada {
+    margin-top: 2em;
+    padding: 10px;
+  }
+}
+
+
+/* Responsividade */
 @media (max-width: 1200px) {
   .titulo-principal {
     font-size: 8rem;
@@ -192,6 +133,14 @@ input:checked ~ .slide {
   }
   #logo {
     display: none;
+  }
+  .flex {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .flex button {
+    width: 80%;
   }
 }
 
@@ -216,9 +165,11 @@ input:checked ~ .slide {
   justify-content: space-around;
   align-items: center;
 }
+
 .flex a img {
   width: 200px;
 }
+
 .flex button {
   border: 2px solid #ffbf00;
   background-color: transparent;
@@ -229,20 +180,10 @@ input:checked ~ .slide {
   cursor: pointer;
   transition: background 0.3s ease, color 0.3s ease;
 }
+
 .flex button:hover {
   background-color: #ffbf00;
   color: black;
-}
-
-/* Responsividade para navegação */
-@media (max-width: 768px) {
-  .flex {
-    flex-direction: column;
-    gap: 10px;
-  }
-  .flex button {
-    width: 80%;
-  }
 }
 
 /* Estilo Geral do Footer */
@@ -367,6 +308,7 @@ footer {
   max-width: 300px;
   margin: 10px;
 }
+
 .card-inner {
   position: relative;
   width: 100%;
@@ -375,9 +317,11 @@ footer {
   transform-style: preserve-3d;
   transition: transform 0.6s;
 }
+
 .card-flip:hover .card-inner {
   transform: rotateY(180deg);
 }
+
 .card-front, .card-back {
   position: absolute;
   width: 100%;
@@ -395,37 +339,448 @@ footer {
 
 .card-back {
   transform: rotateY(180deg);
-  text-align: left; /* Alinha o texto à direita na parte de trás */
+  text-align: left;
 }
 
 .card-front h5, .card-back h5 {
-  font-weight: bold; /* Deixa o título (nome do plano) em negrito */
+  font-weight: bold;
 }
 
 .card-front .price-value {
-  font-weight: bold; /* Deixa o valor em negrito */
+  font-weight: bold;
 }
 
 .features {
-  list-style-type: none;  /* Remove os marcadores da lista */
+  list-style-type: none;
   padding: 0;
 }
 
 .features li {
-  margin-bottom: 10px; /* Espaçamento entre os itens */
+  margin-bottom: 10px;
 }
 
 .features li span {
-  margin-left: 10px; /* Adiciona margem à esquerda para o ícone */
+  margin-left: 10px;
 }
 
 .Estado {
-text-align: center;
-font-weight: bold;
-padding: 5%;
+  text-align: center;
+  font-weight: bold;
+  padding: 5%;
 }
 
 .Card-img-top {
   width: 100%;
   height: 20rem;
+}
+
+
+
+/* /////////////////////////////////////// */
+@media (min-width: 842px) {
+  .flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  input,
+  .slide {
+    display: none;
+  }
+}
+
+@media (max-width: 842px) {
+  header nav {
+    display: none;
+  }
+
+  /* Sidebar start */
+  .slide {
+    margin: -18px 0px 0px 0px;
+    height: 100vh;
+    width: 190px;
+    position: fixed;
+    background-color: #ffbf00;
+    transition: 0.3s ease;
+    transform: translateX(-190px);
+  }
+
+  label h2 {
+    color: rgb(254, 254, 254);
+    font-weight: 800;
+    text-align: right;
+    padding: 25px 0px;
+    padding-right: 30px;
+    pointer-events: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  label div img {
+    width: 100%;
+  }
+
+  label div ul li {
+    list-style: none;
+  }
+
+  label div ul li a {
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    padding: 5px 20px;
+    display: block;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.25s ease-out;
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+  }
+
+  label div ul li:hover a {
+    color: #fff;
+    background-color: rgb(0, 0, 0);
+  }
+
+  label input {
+    display: none;
+    visibility: hidden;
+    appearance: none;
+  }
+
+  .toggle {
+    position: fixed;
+    height: 30px;
+    width: 30px;
+    top: 25px;
+    left: 20px;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .toggle .common {
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background-color: #000000;
+    border-radius: 50px;
+    transition: 0.3s ease;
+  }
+
+  .toggle .top_line {
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .toggle .middle_line {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .toggle .bottom_line {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  input:checked~.toggle .top_line {
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(45deg);
+  }
+
+  input:checked~.toggle .bottom_line {
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(-45deg);
+  }
+
+  input:checked~.toggle .middle_line {
+    opacity: 0;
+    transform: translate(30px);
+  }
+
+  input:checked~.slide {
+    transform: translateX(0);
+    box-shadow: 2px 0 10px rgb(255, 255, 255);
+  }
+}
+
+/* Sidebar end --*/
+
+/* --Main content start */
+
+/* Estilo geral do body */
+body {
+  background-color: black;
+  color: #f9bb00;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: normal;
+}
+
+/* Estilo do Header */
+.header {
+  width: 100%;
+  background-image: url('./Assets/IMG/IMG 2/ENERFYM ACADENIA.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 100vh;
+}
+
+/* Estilo do logo */
+#logo {
+  width: 150px;
+  float: left;
+  margin-top: 2%;
+  margin-left: 2%;
+}
+
+#divright {
+  float: right;
+  margin-right: 10%;
+  margin-left: 20px;
+  margin-top: 2%;
+}
+
+/* Estilo dos títulos */
+.centralizada {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.titulo-principal {
+  font-size: 12rem;
+  font-weight: bold;
+  color: #ffbf00;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.subtitulo {
+  font-size: 10rem;
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+  .titulo-principal {
+    font-size: 8rem;
+  }
+  .subtitulo {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .titulo-principal {
+    font-size: 5rem;
+  }
+  .subtitulo {
+    font-size: 4rem;
+  }
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+  #logo {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo-principal {
+    font-size: 3rem;
+  }
+  .subtitulo {
+    font-size: 2.5rem;
+  }
+  .header {
+    padding: 10px;
+  }
+  #divright {
+    margin: 10px auto;
+  }
+}
+
+/* Estilo de navegação */
+.flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex button {
+  border: 2px solid #ffbf00;
+  background-color: transparent;
+  color: #ffbf00;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.flex button:hover {
+  background-color: #ffbf00;
+  color: black;
+}
+
+/* Estilo Geral do Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffbf00;
+  color: black;
+  border: 2px solid black;
+  padding: 2%;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.tituloFooter {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 10px;
+  border-bottom: 2px solid black;
+}
+
+.lista1 {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.links {
+  color: black;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 5px 0;
+}
+
+.flexIcones {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0;
+}
+
+.iconeFooter {
+  width: 35px;
+}
+
+.centralizacaoFooter {
+  text-align: center;
+}
+
+.iconeLogoFooter {
+  width: 120px;
+}
+
+.flexContatos {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 15px;
+}
+
+.linha {
+  border-top: 2px solid black;
+  width: 100%;
+}
+
+.copy {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Responsividade para Footer */
+@media (max-width: 912px) {
+  .gridContainer {
+    grid-template-columns: 1fr;
+  }
+  .tituloFooter {
+    font-size: 2rem;
+  }
+  .links {
+    font-size: 1.3rem;
+  }
+}
+
+/* Sidebar */
+.slide {
+  position: fixed;
+  width: 190px;
+  height: 100vh;
+  background-color: #ffbf00;
+  transform: translateX(-190px);
+  transition: 0.3s;
+  z-index: 9999;
+}
+
+.toggle {
+  position: fixed;
+  height: 30px;
+  width: 30px;
+  top: 25px;
+  left: 20px;
+  z-index: 10000;
+  cursor: pointer;
+}
+
+.toggle .common {
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: #000;
+  transition: 0.3s;
+}
+
+.toggle .top_line {
+  top: 30%;
+}
+
+.toggle .middle_line {
+  top: 50%;
+}
+
+.toggle .bottom_line {
+  top: 70%;
+}
+
+input:checked ~ .toggle .top_line {
+  transform: rotate(45deg) translateY(8px);
+}
+
+input:checked ~ .toggle .bottom_line {
+  transform: rotate(-45deg) translateY(-8px);
+}
+
+input:checked ~ .toggle .middle_line {
+  opacity: 0;
+}
+
+input:checked ~ .slide {
+  transform: translateX(0);
 }

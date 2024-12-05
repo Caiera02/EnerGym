@@ -15,3 +15,21 @@ document.getElementById("formulario").addEventListener("submit", function(event)
 function fecharModal() {
     document.getElementById("modal").style.display = "none"; // Fecha o modal quando o botão é clicado
 }
+
+
+// Captura do elemento input que controla o estado do sidebar
+const sidebarToggle = document.querySelector('input[type="checkbox"]');
+const flexContainer = document.querySelector('.flex'); // A div que contém os botões
+const sidebar = document.querySelector('.slide'); // Sidebar
+
+// Função para alternar entre o sidebar e a div de navegação
+sidebarToggle.addEventListener('change', () => {
+  if (sidebarToggle.checked) {
+    // Quando o checkbox estiver marcado (sidebar visível), esconde a navegação
+    flexContainer.style.display = 'none';
+  } else {
+    // Quando o checkbox não estiver marcado (sidebar escondido), mostra a navegação
+    flexContainer.style.display = 'block';
+  }
+});
+
